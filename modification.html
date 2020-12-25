@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width,target-densitydpi=device-dpi,user-scalable=no"> -->
+    <meta name="viewport"
+        content="width=device-width,target-densitydpi=device-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>修改密码</title>
+    <!-- 手机设备适配 -->
+    <link rel="stylesheet" media="only screen and (min-width:750px)" href="css/common-pad.css?v=t64">
+    <link rel="stylesheet" media="only screen and (min-width:750px)" href="css/modification-pad.css?v=t64">
+    <!-- pad设备适配 -->
+    <link rel="stylesheet" media="only screen and (max-width:750px)" href="css/common.css?v=t64">
+    <link rel="stylesheet" media="only screen and (max-width:750px)" href="css/modification.css?v=t64">
+
+</head>
+
+<body>
+    <!-- 导航栏 开始 -->
+    <div class="nav">
+        <!-- logo -->
+        <div class="logo">
+            <img src="img/LOGO.png" class="logo">
+        </div>
+        <!-- 菜单按钮 -->
+        <div class="menu">
+            <img src="img/menu.png" class="menu-img">
+        </div>
+        <div class="menu-box">
+            <ul class="menu-list">
+                <li>
+                    <a href="management.html">病例管理</a>
+                </li>
+                <li>
+                    <a href="center.html">个人中心</a>
+                </li>
+                <li>
+                    <a href="help.html">帮助中心</a>
+                </li>
+                <li>
+                    <a href="clinic.html">临床偏好</a>
+                </li>
+                <li>
+                    <a href="javascript:;">修改密码</a>
+                </li>
+                <li>
+                    <a href="index.html">退出登录</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 导航栏 结束 -->
+
+    <!-- 修改密码 开始 -->
+    <div class="appliance">
+        <div class="headbox">
+            <div class="left-arrow">
+                <img src="img/left-arrow.png" alt="">
+            </div>
+            <span class="centre-text">修改密码</span>
+            <span class="right-text">确定</span>
+        </div>
+        <div class="form-big-box">
+            <div class="form-box">
+                <input type="password" class="old-psd" placeholder="请输入旧密码" id="oldPw" maxlength="12">
+                <input type="password" class="old-psd" placeholder="请输入新密码" id="newPw" maxlength="12">
+                <input type="password" class="old-psd" placeholder="请再次输入新密码" id="newPwAgain" maxlength="12">
+                <div class="form-msg">
+                    <input type="text" class="old-psd" placeholder="请输入验证码" id="test-code" maxlength="6">
+                    <div class="go code-send">发送验证码</div>
+                </div>
+                <div class="form-tel">当前手机号为: <span></span></div>
+            </div>
+        </div>
+    </div>
+    <!-- 修改密码 结束 -->
+
+    <!-- 屏幕旋转提示 -->
+    <script src="js/LandscapeTip.js"></script>
+    <script src="js/layer.js"></script>
+    <script src="js/jquery.min.3.5.1.js"></script>
+    <script src="js/jsencrypt.js?v=t64"></script>
+    <script src="js/common.js?v=t64"></script>
+    <script src="js/modification.js?v=t64"></script>
+</body>
+
+</html>

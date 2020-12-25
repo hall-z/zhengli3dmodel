@@ -1,0 +1,334 @@
+/* 设计稿宽 1324 */
+@rem: 13.24vw;
+
+.setwh(@w: 750, @h: 1448) {
+    width: @w/@rem;
+    height: @h/@rem;
+}
+
+
+//less 定位函数 左上
+.lt(@l: 0, @t: 0) {
+    position: absolute;
+    left: @l/@rem;
+    top: @t/@rem;
+}
+
+//右上
+.rt(@r: 0, @t: 0) {
+    position: absolute;
+    right: @r/@rem;
+    top: @t/@rem;
+}
+
+//less 定位函数 左下
+.lb(@l: 0, @b: 0) {
+    position: absolute;
+    left: @l/@rem;
+    bottom: @b/@rem;
+}
+
+//右下
+.rb(@r: 0, @b: 0) {
+    position: absolute;
+    right: @r/@rem;
+    bottom: @b/@rem;
+}
+
+.cl(@w) {
+    position: absolute;
+    left: 50%;
+    margin-left: -@w/2/@rem;
+}
+
+.ct(@h) {
+    position: absolute;
+    top: 50%;
+    margin-top: -@h/2/@rem;
+}
+
+.tc(@t: 0, @w: 0) {
+    position: absolute;
+    top: @t/@rem;
+    left: 50%;
+    margin-left: -@w/2/@rem;
+}
+
+.bc(@b: 0, @w: 0) {
+    position: absolute;
+    bottom: @b/@rem;
+    left: 50%;
+    margin-left: -@w/2/@rem;
+}
+
+.lc(@l: 0, @h: 0) {
+    position: absolute;
+    top: 50%;
+    left: @l / @rem;
+    margin-top: -@h/2/@rem;
+}
+
+.cc(@w: 0, @h: 0) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -@w/2/@rem;
+    margin-top: -@h/2/@rem;
+}
+
+body,
+html {
+    overflow-x: hidden;
+    background-color: #dfe0e2;
+    min-height: 100%;
+}
+
+/* 切换按钮栏 start */
+.tab {
+    display: flex;
+    width: 100%;
+    height: 159 / @rem;
+    align-items: flex-end;
+    padding: 0 26 / @rem;
+    background-color: #565759;
+
+    ul {
+        display: flex;
+
+        li {
+            .setwh(160, 60);
+            text-align: center;
+            line-height: 60 / @rem;
+            color: #ffffff;
+            border-radius: 7 / @rem 7 / @rem 0 0;
+            font-size: 23 / @rem;
+        }
+
+        .active {
+            color: #1175d2;
+            background-color: #f9f9f9;
+        }
+    }
+}
+
+/* 切换按钮栏 end */
+/* 内容部分 start */
+.message {
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 38 / @rem 25 / @rem 130/@rem;
+
+    ul {
+        border-radius: 10 / @rem;
+        overflow: hidden;
+        background: #f9f9f9;
+
+        li {
+            overflow: hidden;
+
+            .file-title {
+                height: 45 / @rem;
+                line-height: 45 / @rem;
+                margin-top: 45 / @rem;
+                border-left: 10 / @rem solid #1175d2;
+                text-indent: 15 / @rem;
+                font-size: 26 / @rem;
+                font-weight: 600;
+                color: #666666;
+            }
+
+            .file-box {
+                display: flex;
+                justify-content: space-between;
+                padding: 0 26 / @rem;
+                height: 56 / @rem;
+                margin-top: 46 / @rem;
+                line-height: 56 / @rem;
+                font-size: 26 / @rem;
+
+                .file-name {
+                    img {
+                        .setwh(195, 41);
+                        vertical-align: middle;
+                    }
+
+                    color: #1175d2;
+                }
+
+                .file-btn {
+                    .setwh(187, 56);
+                    background: url("../img/download.png") no-repeat;
+                    background-size: 100% 100%;
+                }
+            }
+
+            .file-title-two {
+                height: 45 / @rem;
+                line-height: 45 / @rem;
+                margin-top: 88 / @rem;
+                border-left: 10 / @rem solid #1175d2;
+                text-indent: 15 / @rem;
+                font-size: 26 / @rem;
+                font-weight: 600;
+                color: #666666;
+            }
+
+            .file-box-two {
+                display: flex;
+                justify-content: space-between;
+                padding: 0 26 / @rem;
+                height: 56 / @rem;
+                margin-top: 49 / @rem;
+                line-height: 56 / @rem;
+                font-size: 26 / @rem;
+
+                .file-name {
+                    img {
+                        .setwh(203, 34);
+                        vertical-align: middle;
+                    }
+
+                    color: #1175d2;
+                }
+
+                .file-btn {
+                    .setwh(187, 56);
+                    background: url("../img/download.png") no-repeat;
+                    background-size: 100% 100%;
+                }
+            }
+
+            >p:nth-of-type(1) {
+                padding: 0 29 / @rem;
+                margin-top: 54 / @rem;
+                line-height: 32 / @rem;
+                font-size: 25 / @rem;
+            }
+
+            .text {
+                padding: 0 29 / @rem;
+                margin-top: 39 / @rem;
+                margin-bottom: 86 / @rem;
+                font-size: 23 / @rem;
+                line-height: 30 / @rem;
+                color: #999999;
+            }
+
+            .text2 {
+                padding: 0 29 / @rem;
+                margin-top: 44 / @rem;
+                margin-bottom: 66 / @rem;
+                font-size: 23 / @rem;
+                line-height: 32 / @rem;
+                color: #999999;
+            }
+
+            .connection {
+                padding-left: 28 / @rem;
+
+                h3 {
+                    float: left;
+                    font-size: 24 / @rem;
+                    font-weight: 700;
+                    color: #333333;
+                    margin-right: 45 / @rem;
+                }
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    height: 180;
+                    justify-content: space-between;
+
+                    p {
+                        font-size: 24 / @rem;
+                        color: #666666;
+
+                        span {
+                            margin-left: 23 / @rem;
+                            color: #1175d2;
+                        }
+                    }
+                }
+            }
+
+            .worktime {
+                margin-top: 50 / @rem;
+                padding-left: 28 / @rem;
+
+                h3 {
+                    float: left;
+                    font-size: 24 / @rem;
+                    font-weight: 700;
+                    color: #333333;
+                    margin-right: 45 / @rem;
+                }
+
+                div {
+                    display: flex;
+
+                    p {
+                        font-size: 24 / @rem;
+                        color: #666666;
+                    }
+                }
+            }
+
+            .address {
+                margin-top: 27 / @rem;
+                padding-left: 28 / @rem;
+
+                h3 {
+                    float: left;
+                    font-size: 24 / @rem;
+                    font-weight: 700;
+                    color: #333333;
+                    margin-right: 45 / @rem;
+                    line-height: 48 / @rem;
+
+                    &::first-letter {
+                        margin-right: 48 / @rem;
+                    }
+                }
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+
+                    p {
+                        font-size: 23 / @rem;
+                        color: #666666;
+                        line-height: 48 / @rem;
+                    }
+                }
+            }
+
+            .clinical {
+                margin-top: 50 / @rem;
+                margin-bottom: 85 / @rem;
+                padding-left: 28 / @rem;
+
+                h3 {
+                    float: left;
+                    font-size: 24 / @rem;
+                    font-weight: 700;
+                    color: #333333;
+                    margin-right: 45 / @rem;
+                }
+
+                div {
+                    display: flex;
+
+                    p {
+                        font-size: 24 / @rem;
+                        color: #666666;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* 内容部分 end */

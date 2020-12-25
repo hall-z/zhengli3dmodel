@@ -1,0 +1,1055 @@
+/* 设计稿宽 750 */
+.dn {
+  display: none;
+}
+body,
+html {
+  min-height: 100%;
+  background-color: #dfe0e2;
+}
+.personal-centre {
+  height: 100%;
+}
+.appliance {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.personal-centre {
+  overflow: hidden;
+}
+.personal-centre .centre-control .account-switching {
+  background-color: #565759;
+  padding-top: 13.33333333vw;
+}
+.personal-centre .centre-control .account-switching .account-box {
+  display: flex;
+  padding: 0 3.33333333vw;
+}
+.personal-centre .centre-control .account-switching .account-box > div {
+  padding: 0 3.73333333vw;
+  line-height: 8vw;
+  height: 8vw;
+  color: #fff;
+  font-size: 3.33333333vw;
+  border-radius: 1.6vw 1.6vw 0 0;
+}
+.personal-centre .centre-control .account-switching div.account-box-active {
+  background-color: #fff;
+  color: #1175d2;
+}
+.personal-centre .centre-control .account-tab {
+  overflow-y: auto;
+  padding: 9.33333333vw 3.33333333vw 8vw;
+  box-sizing: border-box;
+}
+.personal-centre .centre-control .doctor-content {
+  background-color: #dfe0e2;
+}
+.personal-centre .centre-control .doctor-content li {
+  list-style: none;
+  font-size: 3.46666667vw;
+  color: #333;
+}
+.personal-centre .centre-control .doctor-content .information .inf-title {
+  padding: 0 3.06666667vw;
+  padding-bottom: 3.33333333vw;
+  font-size: 3.33333333vw;
+  color: #1175d2;
+}
+.personal-centre .centre-control .doctor-content .information .info-content {
+  background-color: #fff;
+  border-radius: 1.06666667vw;
+}
+.personal-centre .centre-control .doctor-content .information .info-content ul > li {
+  padding: 4.53333333vw 3.06666667vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #333;
+}
+.personal-centre .centre-control .doctor-content .information .info-content ul > li .info-right {
+  display: flex;
+  align-items: center;
+  color: #666666;
+}
+.personal-centre .centre-control .doctor-content .information .info-content ul > li .info-right img {
+  width: 1.46666667vw;
+  height: 2.93333333vw;
+  margin-left: 3.33333333vw;
+}
+.personal-centre .centre-control .doctor-content .address .address-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3.06666667vw;
+  padding-top: 7.2vw;
+  padding-bottom: 3.33333333vw;
+}
+.personal-centre .centre-control .doctor-content .address .address-header .address-title {
+  font-size: 3.33333333vw;
+  color: #1175d2;
+}
+.personal-centre .centre-control .doctor-content .address .address-header .address-right {
+  display: flex;
+  align-items: center;
+}
+.personal-centre .centre-control .doctor-content .address .address-header .address-right span {
+  color: #666;
+  font-size: 2.93333333vw;
+  margin-right: 1.06666667vw;
+}
+.personal-centre .centre-control .doctor-content .address .address-header .address-right img {
+  width: 1.46666667vw;
+  height: 2.93333333vw;
+}
+.personal-centre .centre-control .doctor-content .address .address-content {
+  position: relative;
+  background-color: #fff;
+  border-radius: 1.06666667vw;
+  padding: 4.4vw 3.06666667vw;
+  font-size: 3.33333333vw;
+  display: flex;
+  flex-direction: column;
+}
+.personal-centre .centre-control .doctor-content .address .address-content .address-name {
+  display: flex;
+  color: #333333;
+}
+.personal-centre .centre-control .doctor-content .address .address-content .address-name span:nth-child(1) {
+  max-width: 20vw;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.personal-centre .centre-control .doctor-content .address .address-content .address-name .phone {
+  margin-left: 8vw;
+}
+.personal-centre .centre-control .doctor-content .address .address-content .address-position {
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-top: 4.26666667vw;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.personal-centre .centre-control .doctor-content .address .address-content .address-position span {
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.personal-centre .centre-control .doctor-content .address .address-content .address-position span.message {
+  word-wrap: break-word;
+  color: #666666;
+  padding-right: 22vw;
+  line-height: 4.8vw;
+}
+.personal-centre .centre-control .doctor-content .address .address-content .edit-box {
+  position: absolute;
+  right: 3.06666667vw;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #1175d2;
+}
+.personal-centre .centre-control .doctor-content .remind {
+  padding-top: 7.2vw;
+}
+.personal-centre .centre-control .doctor-content .remind .inf-title {
+  padding: 0 3.06666667vw;
+  padding-bottom: 3.33333333vw;
+  font-size: 3.33333333vw;
+  color: #1175d2;
+}
+.personal-centre .centre-control .doctor-content .remind .info-content {
+  background-color: #fff;
+  border-radius: 1.06666667vw;
+}
+.personal-centre .centre-control .doctor-content .remind .info-content > ul > li {
+  padding: 4.53333333vw 3.06666667vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #333;
+}
+.personal-centre .centre-control .doctor-content .remind .info-content > ul > li .info-right {
+  display: flex;
+  align-items: center;
+  color: #666666;
+}
+.personal-centre .centre-control .doctor-content .remind .info-content > ul > li .info-right img {
+  width: 1.46666667vw;
+  height: 2.93333333vw;
+  margin-left: 3.33333333vw;
+}
+.personal-centre .centre-control .doctor-content .remind .info-content > ul > li:first-of-type .info-right {
+  color: #666666;
+  position: relative;
+  width: 6.66666667vw;
+  height: 4vw;
+  background: #dfe0e2;
+  border-radius: 2vw;
+}
+.personal-centre .centre-control .doctor-content .remind .info-content > ul > li:first-of-type .info-right span {
+  position: absolute;
+  top: 0.26666667vw;
+  width: 3.46666667vw;
+  height: 3.46666667vw;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.personal-centre .centre-control .doctor-content .remind .info-content > ul > li:first-of-type .info-right.active {
+  background-color: #f99400;
+}
+.personal-centre .centre-control .doctor-content .remind .info-content > ul > li:first-of-type .info-right.active span {
+  right: 0.26666667vw;
+}
+.personal-centre .centre-control .doctor-content .remind .info-content > ul > li:last-of-type {
+  width: 100%;
+  padding: 4.53333333vw 3.06666667vw;
+  box-sizing: border-box;
+}
+.personal-centre .centre-control .doctor-content .remind .info-content > ul > li:last-of-type .remind-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  font-size: 3.33333333vw;
+}
+.personal-centre .centre-control .doctor-content .remind .info-content > ul > li:last-of-type .remind-box .remind-box-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 4vw;
+}
+.personal-centre .centre-control .doctor-content .remind .info-content > ul > li:last-of-type .remind-box .remind-regulations > li {
+  font-size: 2.93333333vw;
+  color: #666666;
+  padding-bottom: 3.33333333vw;
+}
+.personal-centre .centre-control .new-account {
+  width: 100%;
+  height: 100%;
+  background-color: #dfe0e2;
+  box-sizing: border-box;
+}
+.personal-centre .centre-control .new-account .new-button {
+  width: 40vw;
+  padding-top: 6.4vw;
+  overflow: hidden;
+}
+.personal-centre .centre-control .new-account .new-button img {
+  width: 100%;
+}
+.personal-centre .centre-control .new-account .employee-list {
+  padding-top: 8.66666667vw;
+}
+.personal-centre .centre-control .new-account .employee-list p {
+  font-size: 3.46666667vw;
+  color: #1175d2;
+}
+.personal-centre .centre-control .new-account .employee-list p em {
+  color: #666666;
+  font-weight: 400;
+}
+.personal-centre .centre-control .new-account .list-information {
+  padding-top: 4.66666667vw;
+}
+.personal-centre .centre-control .new-account .list-information li:nth-child(1) {
+  border-radius: 1.33333333vw 1.33333333vw 0 0;
+}
+.personal-centre .centre-control .new-account .list-information li:nth-child(1) p {
+  display: block;
+  font-size: 3.06666667vw;
+  color: #666666;
+}
+.personal-centre .centre-control .new-account .list-information li:nth-child(1) p:nth-child(1) {
+  width: 19.46666667vw;
+}
+.personal-centre .centre-control .new-account .list-information li:nth-child(1) p:nth-child(2) {
+  width: 25.73333333vw;
+}
+.personal-centre .centre-control .new-account .list-information li:nth-child(1) p:nth-child(3) {
+  width: 37.86666667vw;
+  padding-right: 5.33333333vw;
+}
+.personal-centre .centre-control .new-account .list-information li {
+  width: 100%;
+  height: 13.6vw;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding-left: 5.33333333vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.personal-centre .centre-control .new-account .list-information li p {
+  max-width: 33%;
+  font-size: 3.06666667vw;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.personal-centre .centre-control .new-account .list-information li:nth-child(n+2) {
+  width: 100%;
+  height: 13.6vw;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding-left: 5.33333333vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.personal-centre .centre-control .new-account .list-information li:nth-child(n+2) p {
+  display: block;
+  font-size: 3.06666667vw;
+  color: #333333;
+}
+.personal-centre .centre-control .new-account .list-information li:nth-child(n+2) p:nth-child(1) {
+  width: 19.46666667vw;
+}
+.personal-centre .centre-control .new-account .list-information li:nth-child(n+2) p:nth-child(2) {
+  width: 25.73333333vw;
+}
+.personal-centre .centre-control .new-account .list-information li:nth-child(n+2) p:nth-child(3) {
+  width: 37.86666667vw;
+  padding-right: 5.33333333vw;
+}
+.personal-centre .centre-control .new-account .list-information li:nth-child(2n) {
+  width: 100%;
+  height: 13.6vw;
+  background-color: #edeeee;
+  box-sizing: border-box;
+  padding-left: 5.33333333vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.personal-centre .address-revise .content-box,
+.personal-centre .address-add .content-box {
+  border-radius: 1.06666667vw;
+  margin-top: 6.66666667vw;
+  padding: 0vw 3.33333333vw 2vw 3.33333333vw;
+  box-sizing: border-box;
+}
+.personal-centre .address-revise .content-box .content-bg,
+.personal-centre .address-add .content-box .content-bg {
+  background-color: #fff;
+  border-radius: 1.06666667vw;
+}
+.personal-centre .address-revise .content-box .content-bg li,
+.personal-centre .address-add .content-box .content-bg li {
+  font-size: 3.46666667vw;
+  padding: 4.53333333vw 3.06666667vw;
+  border-bottom: 1px solid #e2e2e2;
+  display: flex;
+}
+.personal-centre .address-revise .content-box .content-bg li:nth-child(3),
+.personal-centre .address-add .content-box .content-bg li:nth-child(3) {
+  padding: 2.66666667vw 3.06666667vw;
+  align-items: flex-start;
+}
+.personal-centre .address-revise .content-box .content-bg li label,
+.personal-centre .address-add .content-box .content-bg li label {
+  width: 13.86666667vw;
+  margin-right: 5.2vw;
+  color: #666666;
+}
+.personal-centre .address-revise .content-box .content-bg li .ipt-box-addr,
+.personal-centre .address-add .content-box .content-bg li .ipt-box-addr {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+}
+.personal-centre .address-revise .content-box .content-bg li .ipt-box-addr div,
+.personal-centre .address-add .content-box .content-bg li .ipt-box-addr div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 7.33333333vw;
+  padding: 0 2.66666667vw;
+  box-sizing: border-box;
+  border: 1px solid #1175d2;
+  border-radius: 7.33333333vw;
+  margin-bottom: 4vw;
+}
+.personal-centre .address-revise .content-box .content-bg li .ipt-box-addr div:last-child,
+.personal-centre .address-add .content-box .content-bg li .ipt-box-addr div:last-child {
+  margin-bottom: 0;
+}
+.personal-centre .address-revise .content-box .content-bg li .ipt-box-addr div select,
+.personal-centre .address-add .content-box .content-bg li .ipt-box-addr div select {
+  width: 60vw;
+  padding-left: 3.2vw;
+  box-sizing: border-box;
+  height: 100%;
+  font-size: 3.2vw;
+  color: #999999;
+  border: none;
+}
+.personal-centre .address-revise .content-box .content-bg li .ipt-box-addr div img,
+.personal-centre .address-add .content-box .content-bg li .ipt-box-addr div img {
+  width: 3.2vw;
+  height: 2.53333333vw;
+}
+.personal-centre .address-revise .content-box .content-bg li input,
+.personal-centre .address-add .content-box .content-bg li input {
+  color: #333333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 60vw;
+}
+.personal-centre .address-revise .content-box .sub-btn,
+.personal-centre .address-add .content-box .sub-btn {
+  margin-top: 9.33333333vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.personal-centre .address-revise .content-box .sub-btn > div,
+.personal-centre .address-add .content-box .sub-btn > div {
+  width: 53.33333333vw;
+  height: 8.53333333vw;
+  line-height: 8.53333333vw;
+  font-size: 3.2vw;
+  text-align: center;
+  border-radius: 1.06666667vw;
+}
+.personal-centre .address-revise .content-box .sub-btn .preserve,
+.personal-centre .address-add .content-box .sub-btn .preserve {
+  border: 1px #1175d2 solid;
+  background-color: #1175d2;
+  color: #fff;
+}
+.personal-centre .address-revise .content-box .sub-btn .cancel,
+.personal-centre .address-add .content-box .sub-btn .cancel {
+  margin-top: 6vw;
+  border: 1px #e53636 solid;
+  color: #e53636;
+}
+.personal-centre .address-add .content-box .sub-btn .cancel {
+  border: 1px #1175d2 solid;
+  color: #333333;
+}
+.personal-centre .address-list .list-box {
+  border-radius: 1.06666667vw;
+  margin-top: 6.66666667vw;
+  padding: 0vw 3.33333333vw 2vw 3.33333333vw;
+  box-sizing: border-box;
+}
+.personal-centre .address-list .list-box .content-bg {
+  background-color: #fff;
+  border-radius: 1.06666667vw;
+}
+.personal-centre .address-list .list-box .content-bg li {
+  position: relative;
+  border-radius: 1.06666667vw;
+  padding: 4.4vw 0 0 3.06666667vw;
+  font-size: 3.33333333vw;
+  display: flex;
+  flex-direction: column;
+}
+.personal-centre .address-list .list-box .content-bg li .border-bottom-box {
+  border-bottom: 1px #e2e2e2 solid;
+  padding-bottom: 4.4vw;
+}
+.personal-centre .address-list .list-box .content-bg li:last-of-type .border-bottom-box {
+  border-bottom: 1px #fff solid;
+}
+.personal-centre .address-list .list-box .content-bg li .address-name {
+  display: flex;
+  color: #333333;
+}
+.personal-centre .address-list .list-box .content-bg li .address-name span:nth-child(1) {
+  max-width: 20vw;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.personal-centre .address-list .list-box .content-bg li .address-name .phone {
+  margin-left: 8vw;
+}
+.personal-centre .address-list .list-box .content-bg li .address-position {
+  padding-top: 4.26666667vw;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.personal-centre .address-list .list-box .content-bg li .address-position span.message {
+  word-wrap: break-word;
+  color: #727272;
+  padding-right: 22vw;
+  line-height: 4.8vw;
+}
+.personal-centre .address-list .list-box .content-bg li .edit-box {
+  position: absolute;
+  right: 5.33333333vw;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #1175d2;
+}
+.personal-centre .address-list .list-box .sub-btn {
+  margin-top: 9.33333333vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.personal-centre .address-list .list-box .sub-btn > div {
+  width: 53.33333333vw;
+  height: 8.53333333vw;
+  line-height: 8.53333333vw;
+  font-size: 3.2vw;
+  text-align: center;
+  border-radius: 1.06666667vw;
+}
+.personal-centre .address-list .list-box .sub-btn .preserve {
+  border: 1px #1175d2 solid;
+  background-color: #1175d2;
+  color: #fff;
+}
+.personal-centre .address-list .list-box .sub-btn .cancel {
+  margin-top: 6vw;
+  border: 1px #1175d2 solid;
+  color: #1175d2;
+}
+.personal-centre .phone-revise .headbox .right-text,
+.personal-centre .postbox-revise .headbox .right-text,
+.personal-centre .account-revise .headbox .right-text {
+  color: #b7b8b8;
+}
+.personal-centre .phone-revise .phone-number-box,
+.personal-centre .postbox-revise .phone-number-box,
+.personal-centre .account-revise .phone-number-box {
+  padding: 5.33333333vw 6vw 0;
+}
+.personal-centre .phone-revise .phone-number-box .cur-number,
+.personal-centre .postbox-revise .phone-number-box .cur-number,
+.personal-centre .account-revise .phone-number-box .cur-number {
+  color: #666666;
+  font-size: 2.93333333vw;
+}
+.personal-centre .phone-revise .phone-number-box .new-phone,
+.personal-centre .postbox-revise .phone-number-box .new-phone,
+.personal-centre .account-revise .phone-number-box .new-phone {
+  margin-top: 2vw;
+  padding: 3.06666667vw 4vw;
+  background-color: #fff;
+  border-radius: 1.06666667vw;
+  display: flex;
+  align-items: center;
+}
+.personal-centre .phone-revise .phone-number-box .new-phone input,
+.personal-centre .postbox-revise .phone-number-box .new-phone input,
+.personal-centre .account-revise .phone-number-box .new-phone input {
+  width: 100%;
+  font-size: 3.33333333vw;
+  color: #333333;
+}
+.personal-centre .phone-revise .phone-number-box .new-phone input::placeholder,
+.personal-centre .postbox-revise .phone-number-box .new-phone input::placeholder,
+.personal-centre .account-revise .phone-number-box .new-phone input::placeholder {
+  color: #333333;
+}
+.personal-centre .phone-revise .phone-number-box .proving-code,
+.personal-centre .postbox-revise .phone-number-box .proving-code,
+.personal-centre .account-revise .phone-number-box .proving-code {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.53333333vw;
+}
+.personal-centre .phone-revise .phone-number-box .proving-code .proving-phone,
+.personal-centre .postbox-revise .phone-number-box .proving-code .proving-phone,
+.personal-centre .account-revise .phone-number-box .proving-code .proving-phone {
+  padding: 3.06666667vw 4vw;
+  background-color: #ecedee;
+  border-radius: 1.06666667vw;
+  box-sizing: border-box;
+  width: 52.4vw;
+  display: flex;
+  align-items: center;
+}
+.personal-centre .phone-revise .phone-number-box .proving-code .proving-phone input,
+.personal-centre .postbox-revise .phone-number-box .proving-code .proving-phone input,
+.personal-centre .account-revise .phone-number-box .proving-code .proving-phone input {
+  width: 100%;
+  font-size: 3.33333333vw;
+  color: #333333;
+}
+.personal-centre .phone-revise .phone-number-box .proving-code .send-prov,
+.personal-centre .postbox-revise .phone-number-box .proving-code .send-prov,
+.personal-centre .account-revise .phone-number-box .proving-code .send-prov {
+  width: 33.33333333vw;
+  padding: 3.06666667vw 0;
+  background-color: #1175d2;
+  color: #fff;
+  text-align: center;
+  font-size: 3.2vw;
+  box-sizing: border-box;
+  border-radius: 1.06666667vw;
+}
+.personal-centre .employeee-information {
+  width: 100%;
+  height: 100%;
+  background-color: #dfe0e2;
+  box-sizing: border-box;
+}
+.personal-centre .employeee-information .return-rutton {
+  width: 6.93333333vw;
+  height: 6.93333333vw;
+  padding-top: 1.73333333vw;
+}
+.personal-centre .employeee-information .return-rutton img {
+  width: 100%;
+}
+.personal-centre .employeee-information .employee-information-list {
+  padding: 4.4vw 0 0 2.93333333vw;
+}
+.personal-centre .employeee-information .employee-information-list p {
+  font-size: 3.06666667vw;
+  color: #1175d2;
+}
+.personal-centre .employeee-information .employee-number {
+  margin-top: 3.86666667vw;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 1.33333333vw;
+  padding: 5.06666667vw 7.2vw 7.73333333vw 3.06666667vw;
+  box-sizing: border-box;
+}
+.personal-centre .employeee-information .employee-number li {
+  display: flex;
+  justify-content: space-between;
+}
+.personal-centre .employeee-information .employee-number li span {
+  font-size: 3.06666667vw;
+  color: #333333;
+}
+.personal-centre .employeee-information .employee-number li span:nth-child(2) {
+  flex: 0 0 85%;
+  text-align: right;
+  color: #666666;
+}
+.personal-centre .employeee-information .employee-number li:nth-child(2) {
+  padding: 9.06666667vw 0;
+}
+.personal-centre .employeee-information .account-permissions {
+  padding: 7.33333333vw 0 0 2.93333333vw;
+}
+.personal-centre .employeee-information .account-permissions p {
+  font-size: 3.06666667vw;
+  color: #1175d2;
+}
+.personal-centre .employeee-information .account-permissions-text {
+  margin-top: 3.73333333vw;
+  background-color: #fff;
+  width: 100%;
+  border-radius: 1.33333333vw;
+  padding: 5.6vw 5.6vw 8.8vw 2.93333333vw;
+  box-sizing: border-box;
+}
+.personal-centre .employeee-information .account-permissions-text h2 {
+  font-weight: 400;
+  font-size: 3.46666667vw;
+  font-size: #333333;
+}
+.personal-centre .employeee-information .account-permissions-text div p {
+  font-size: 2.93333333vw;
+  color: #666666;
+  margin-top: 4.93333333vw;
+}
+.personal-centre .employeee-information .account-permissions-text div p:last-child {
+  font-size: 2.93333333vw;
+  color: #666666;
+  margin-top: 4vw;
+}
+.personal-centre .employeee-information .account-permissions-text > p {
+  font-size: 2.8vw;
+  color: #b1b1b1;
+  margin-top: 13.73333333vw;
+}
+.personal-centre .employeee-information .modify-information {
+  width: 53.33333333vw;
+  height: 8.8vw;
+  border-radius: 0.66666667vw;
+  border: 1px solid #1175d2;
+  background-color: #1175d2;
+  text-align: center;
+  line-height: 8.8vw;
+  margin: 7.73333333vw auto 6vw;
+}
+.personal-centre .employeee-information .modify-information p {
+  font-size: 3.06666667vw;
+  color: #fff;
+}
+.personal-centre .employeee-information .modify-cancel {
+  width: 53.33333333vw;
+  height: 8.8vw;
+  border-radius: 0.66666667vw;
+  border: 1px solid #1175d2;
+  text-align: center;
+  line-height: 8.8vw;
+  margin: 0 auto;
+}
+.personal-centre .employeee-information .modify-cancel p {
+  font-size: 3.06666667vw;
+  color: #333333;
+}
+.personal-centre .create-new-account .return-account-rutton {
+  width: 6.93333333vw;
+  height: 6.93333333vw;
+  padding-top: 1.73333333vw;
+}
+.personal-centre .create-new-account .return-account-rutton img {
+  width: 100%;
+}
+.personal-centre .create-new-account .employee-information-account {
+  padding: 4.4vw 0 0 2.93333333vw;
+}
+.personal-centre .create-new-account .employee-information-account p {
+  font-size: 3.06666667vw;
+  color: #1175d2;
+}
+.personal-centre .create-new-account .account-number-list {
+  width: 100%;
+  border-radius: 1.33333333vw;
+  background-color: #fff;
+  margin-top: 3.6vw;
+}
+.personal-centre .create-new-account .account-number-list li {
+  padding: 0 2.66666667vw;
+  box-sizing: border-box;
+}
+.personal-centre .create-new-account .account-number-list li:nth-child(-n + 4) {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 13.33333333vw;
+  border-bottom: 1px solid #ebebeb;
+}
+.personal-centre .create-new-account .account-number-list li:nth-child(-n + 4) p {
+  font-size: 3.46666667vw;
+  color: #666666;
+  padding-left: 2.93333333vw;
+  margin-right: 6.66666667vw;
+}
+.personal-centre .create-new-account .account-number-list li:nth-child(-n + 4) .right-arrow {
+  width: 1.46666667vw;
+  height: 2.93333333vw;
+}
+.personal-centre .create-new-account .account-number-list li:nth-child(-n + 4) .text-xm {
+  width: 64vw;
+  color: #333333;
+  font-size: 3.46666667vw;
+  padding-right: 2.93333333vw;
+  box-sizing: border-box;
+}
+.personal-centre .create-new-account .account-number-list li:nth-child(-n + 4) .text-xm::-webkit-input-placeholder {
+  color: #333333;
+}
+.personal-centre .create-new-account .account-number-list li:nth-child(4) {
+  flex-direction: column;
+  height: auto;
+  border-bottom: 1px solid #ffffff;
+}
+.personal-centre .create-new-account .account-number-list li:nth-child(4) div {
+  width: 100%;
+  display: flex;
+}
+.personal-centre .create-new-account .account-number-list li:nth-child(4) .account-title {
+  height: 13.33333333vw;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.33333333vw;
+  color: #333333;
+}
+.personal-centre .create-new-account .account-number-list li:nth-child(4) .account-jurisdiction {
+  flex-direction: column;
+  margin-bottom: 5.33333333vw;
+}
+.personal-centre .create-new-account .account-number-list li:nth-child(4) .account-jurisdiction p {
+  color: #333333;
+  margin-bottom: 5.33333333vw;
+}
+.personal-centre .create-new-account .account-number-list li:nth-child(5) {
+  font-size: 2.93333333vw;
+  color: #999999;
+  padding: 0 2.93333333vw 6vw;
+}
+.personal-centre .create-new-account .modify-keep {
+  width: 53.33333333vw;
+  height: 8.8vw;
+  border-radius: 0.66666667vw;
+  border: 1px solid #1175d2;
+  background-color: #1175d2;
+  text-align: center;
+  line-height: 8.8vw;
+  margin: 7.73333333vw auto 6vw;
+}
+.personal-centre .create-new-account .modify-keep p {
+  font-size: 3.06666667vw;
+  color: #fff;
+}
+.personal-centre .create-new-account .modify-cancel {
+  width: 53.33333333vw;
+  height: 8.8vw;
+  border-radius: 0.66666667vw;
+  border: 1px solid #1175d2;
+  text-align: center;
+  line-height: 8.8vw;
+  margin: 0 auto;
+}
+.personal-centre .create-new-account .modify-cancel p {
+  font-size: 3.06666667vw;
+  color: #333333;
+}
+.personal-centre .cancel-number {
+  box-sizing: border-box;
+}
+.personal-centre .cancel-number .return-account-cancel {
+  width: 6.93333333vw;
+  height: 6.93333333vw;
+  padding-top: 1.73333333vw;
+}
+.personal-centre .cancel-number .return-account-cancel img {
+  width: 100%;
+}
+.personal-centre .cancel-number .employee-information-cancel {
+  padding: 4.4vw 0 0 2.93333333vw;
+}
+.personal-centre .cancel-number .employee-information-cancel p {
+  font-size: 3.06666667vw;
+  color: #1175d2;
+}
+.personal-centre .cancel-number .employee-information-cancel p em {
+  color: #666666;
+  font-weight: 400;
+}
+.personal-centre .cancel-number .delete-account-number {
+  display: block;
+  width: 100%;
+  height: 14.26666667vw;
+  background-color: #fff;
+  border-radius: 1.33333333vw;
+  margin-top: 3.73333333vw;
+  font-size: 3.33333333vw;
+  box-sizing: border-box;
+  padding: 0 2.93333333vw 0;
+}
+.personal-centre .cancel-number .cancel-prompt {
+  margin-top: 3.33333333vw;
+}
+.personal-centre .cancel-number .cancel-prompt p {
+  color: #f13a3a;
+  font-size: 2.93333333vw;
+}
+.personal-centre .cancel-number .cancel-keep-confirm {
+  width: 53.33333333vw;
+  height: 8.8vw;
+  border-radius: 0.66666667vw;
+  border: 1px solid #1175d2;
+  background-color: #1175d2;
+  text-align: center;
+  line-height: 8.8vw;
+  margin: 8.66666667vw auto 6vw;
+}
+.personal-centre .cancel-number .cancel-keep-confirm p {
+  font-size: 3.06666667vw;
+  color: #ffff;
+}
+.personal-centre .cancel-number .cancel-cancel {
+  width: 53.33333333vw;
+  height: 8.8vw;
+  border-radius: 0.66666667vw;
+  border: 1px solid #1175d2;
+  text-align: center;
+  line-height: 8.8vw;
+  margin: 0 auto;
+}
+.personal-centre .cancel-number .cancel-cancel p {
+  font-size: 3.06666667vw;
+  color: #333333;
+}
+/* 个人中心弹层 开始 */
+.layer .layer-inner .layer-inner-box {
+  padding: 0 3.73333333vw;
+  /* 修改姓名弹层 start */
+  /* 修改姓名弹层 end */
+  /* 需要提醒的病例弹层 start */
+  /* 需要提醒的病例弹层 end */
+  /* 收到的提醒内容弹层 start */
+  /* 收到的提醒内容弹层 end */
+  /* 状态提醒弹层 strat */
+  /* 状态提醒弹层 end */
+  /* 输入手机账号弹层 start */
+  /* 输入手机账号弹层 end */
+  /* 输入邮箱弹层 start */
+  /* 输入邮箱弹层 end */
+  /* 选择地址弹窗 开始 */
+  /* 选择地址弹窗 结束 */
+  /* 权限弹窗 开始 */
+  /* 权限弹窗 结束 */
+  /* 选择后的背景颜色 */
+  /* 选择后的背景颜色 */
+}
+.layer .layer-inner .layer-inner-box .ipt-box-one {
+  height: 7.6vw;
+  line-height: 7.6vw;
+  margin: 4.66666667vw 6.13333333vw 9.73333333vw 6.13333333vw;
+}
+.layer .layer-inner .layer-inner-box .ipt-box-one input {
+  width: 100%;
+  color: #333333;
+  font-size: 3.2vw;
+  padding: 1.33333333vw 0;
+  border-bottom: 0.53333333vw solid #1175D2;
+}
+.layer .layer-inner .layer-inner-box .ipt-box-one input::placeholder {
+  font-size: 3.2vw;
+  color: #333333;
+}
+.layer .layer-inner .layer-inner-box .ipt-box-two {
+  margin: 7.33333333vw 5.33333333vw 7.73333333vw;
+  display: flex;
+  justify-content: space-between;
+}
+.layer .layer-inner .layer-inner-box .ipt-box-two div {
+  width: 34.66666667vw;
+  height: 7.46666667vw;
+  border: 1px solid #1175D2;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 7.46666667vw;
+  border-radius: 3.73333333vw;
+  font-size: 3.2vw;
+}
+.layer .layer-inner .layer-inner-box .ipt-box-two .chioce {
+  color: #000;
+}
+.layer .layer-inner .layer-inner-box .ipt-box-three {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.layer .layer-inner .layer-inner-box .ipt-box-three .sd {
+  margin: 6.93333333vw 0 4.4vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.layer .layer-inner .layer-inner-box .ipt-box-three .sd .lis {
+  width: 45%;
+  height: 7.46666667vw;
+  border: 1px solid #1175D2;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 7.46666667vw;
+  border-radius: 3.73333333vw;
+  font-size: 3.2vw;
+  color: #000;
+  margin-bottom: 4.93333333vw;
+}
+.layer .layer-inner .layer-inner-box .ipt-box-four {
+  padding: 0 18vw;
+  display: flex;
+  justify-content: space-between;
+  margin: 7.33333333vw 0 7.73333333vw;
+}
+.layer .layer-inner .layer-inner-box .ipt-box-four div {
+  border-radius: 3.73333333vw;
+  width: 21.33333333vw;
+  height: 7.33333333vw;
+  border: 1px solid #1175D2;
+  text-align: center;
+  line-height: 7.33333333vw;
+  font-size: 3.2vw;
+}
+.layer .layer-inner .layer-inner-box .ipt-box-five {
+  height: 7.6vw;
+  line-height: 7.6vw;
+  margin: 4.66666667vw 6.13333333vw 9.73333333vw 6.13333333vw;
+}
+.layer .layer-inner .layer-inner-box .ipt-box-five input {
+  width: 100%;
+  color: #333333;
+  font-size: 3.2vw;
+  padding: 1.33333333vw 0;
+  border-bottom: 0.53333333vw solid #1175D2;
+}
+.layer .layer-inner .layer-inner-box .ipt-box-five input::placeholder {
+  font-size: 3.2vw;
+  color: #333333;
+}
+.layer .layer-inner .layer-inner-box .ipt-box-sex {
+  height: 7.6vw;
+  line-height: 7.6vw;
+  margin: 4.66666667vw 6.13333333vw 9.73333333vw 6.13333333vw;
+}
+.layer .layer-inner .layer-inner-box .ipt-box-sex input {
+  width: 100%;
+  color: #333333;
+  font-size: 3.2vw;
+  padding: 1.33333333vw 0;
+  border-bottom: 0.53333333vw solid #1175D2;
+}
+.layer .layer-inner .layer-inner-box .ipt-box-sex input::placeholder {
+  font-size: 3.2vw;
+  color: #333333;
+}
+.layer .layer-inner .layer-inner-box .ipt-box-addr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5.33333333vw 0 9.33333333vw;
+}
+.layer .layer-inner .layer-inner-box .ipt-box-addr div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 26.66666667vw;
+  height: 7.33333333vw;
+  padding: 0 2.66666667vw;
+  box-sizing: border-box;
+  border: 1px solid #1678d3;
+  border-radius: 0.66666667vw;
+}
+.layer .layer-inner .layer-inner-box .ipt-box-addr div select {
+  width: 20vw;
+  height: 100%;
+  font-size: 3.2vw;
+  color: #999999;
+  border: none;
+}
+.layer .layer-inner .layer-inner-box .ipt-box-addr div img {
+  width: 3.2vw;
+  height: 2.53333333vw;
+}
+.layer .layer-inner .layer-inner-box .limint-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 6.4vw 0;
+}
+.layer .layer-inner .layer-inner-box .limint-list li {
+  width: 40vw;
+  height: 7.33333333vw;
+  border: 1px solid #4593db;
+  border-radius: 7.33333333vw;
+  text-align: center;
+  line-height: 7.33333333vw;
+  color: #333333;
+  font-size: 3.2vw;
+  margin-bottom: 5.33333333vw;
+}
+.layer .layer-inner .layer-inner-box .active {
+  background-color: #1175D2;
+  color: #fff !important;
+}
+.hide {
+  opacity: 0 !important;
+}
+/* 个人中心弹层 结束 */

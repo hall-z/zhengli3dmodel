@@ -1,0 +1,1351 @@
+/* 设计稿宽 750 */
+@rem: 7.5vw;
+
+
+.dn {
+    display: none;
+}
+
+body,
+html {
+    min-height: 100%;
+    // height: 100%;
+    min-height: 100%;
+    background-color: #dfe0e2;
+}
+
+.personal-centre {
+    height: 100%;
+}
+
+.appliance {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+//个人中心 开始
+.personal-centre {
+    overflow: hidden;
+
+    .centre-control {
+
+
+        .account-switching {
+            background-color: #565759;
+            padding-top: 100/@rem;
+
+            .account-box {
+                display: flex;
+                padding: 0 25/@rem;
+
+                >div {
+                    padding: 0 28/@rem;
+                    line-height: 60/@rem;
+                    height: 60/@rem;
+                    color: #fff;
+                    font-size: 25/@rem;
+                    border-radius: 12/@rem 12/@rem 0 0;
+                }
+
+            }
+
+            div.account-box-active {
+                background-color: #fff;
+                color: #1175d2;
+            }
+        }
+
+        .account-tab {
+            overflow-y: auto;
+            padding: 70/@rem 25/@rem 60/@rem;
+            box-sizing: border-box;
+        }
+
+        //医生账户 开始
+        .doctor-content {
+            background-color: #dfe0e2;
+
+
+
+            li {
+                list-style: none;
+                font-size: 26/@rem;
+                color: #333;
+            }
+
+            .information {
+                // margin-top: 70/@rem;
+
+                .inf-title {
+                    padding: 0 23/@rem;
+                    padding-bottom: 25/@rem;
+                    font-size: 25/@rem;
+                    color: #1175d2;
+                }
+
+                .info-content {
+                    background-color: #fff;
+                    border-radius: 8/@rem;
+
+                    ul {
+                        >li {
+                            padding: 34/@rem 23/@rem;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            color: #333;
+
+                            .info-right {
+                                display: flex;
+                                align-items: center;
+                                color: #666666;
+
+                                img {
+                                    width: 11/@rem;
+                                    height: 22/@rem;
+                                    margin-left: 25/@rem;
+                                }
+
+
+
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            .address {
+                .address-header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0 23/@rem;
+                    padding-top: 54/@rem;
+                    padding-bottom: 25/@rem;
+
+                    .address-title {
+                        font-size: 25/@rem;
+                        color: #1175d2;
+                    }
+
+                    .address-right {
+                        display: flex;
+                        align-items: center;
+
+                        span {
+                            color: #666;
+                            font-size: 22/@rem;
+                            margin-right: 8/@rem;
+                        }
+
+                        img {
+                            width: 11/@rem;
+                            height: 22/@rem;
+
+                        }
+
+                    }
+                }
+
+                .address-content {
+                    position: relative;
+                    background-color: #fff;
+                    border-radius: 8/@rem;
+                    padding: 33/@rem 23/@rem;
+                    font-size: 25/@rem;
+                    display: flex;
+                    flex-direction: column;
+
+                    .address-name {
+                        display: flex;
+                        color: #333333;
+
+                        span:nth-child(1) {
+                            max-width: 150/@rem;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+
+                        }
+
+                        .phone {
+                            margin-left: 60/@rem;
+                        }
+                    }
+
+                    .address-position {
+                        width: 100%;
+                        box-sizing: border-box;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        padding-top: 32/@rem;
+                        display: flex;
+                        justify-content: space-between;
+                        flex-wrap: nowrap;
+
+                        span {
+
+                            box-sizing: border-box;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+
+                            &.message {
+                                word-wrap: break-word;
+                                color: #666666;
+                                padding-right: 165/@rem;
+                                line-height: 36/@rem;
+                            }
+
+                        }
+                    }
+
+                    .edit-box {
+                        position: absolute;
+                        right: 23/@rem;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        color: #1175d2;
+                    }
+                }
+            }
+
+            .remind {
+                padding-top: 54/@rem;
+
+                .inf-title {
+                    padding: 0 23/@rem;
+                    padding-bottom: 25/@rem;
+                    font-size: 25/@rem;
+                    color: #1175d2;
+                }
+
+                .info-content {
+                    background-color: #fff;
+                    border-radius: 8/@rem;
+
+                    >ul {
+                        >li {
+                            padding: 34/@rem 23/@rem;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            color: #333;
+
+                            .info-right {
+                                display: flex;
+                                align-items: center;
+                                align-items: center;
+                                color: #666666;
+
+
+                                img {
+                                    width: 11/@rem;
+                                    height: 22/@rem;
+                                    margin-left: 25/@rem;
+                                }
+
+                            }
+
+                            &:first-of-type {
+                                .info-right {
+                                    color: #666666;
+                                    position: relative;
+                                    width: 50/@rem;
+                                    height: 30/@rem;
+                                    background: #dfe0e2;
+                                    border-radius: 15/@rem;
+
+                                    span {
+                                        position: absolute;
+                                        top: 2/@rem;
+                                        width: 26/@rem;
+                                        height: 26/@rem;
+                                        border-radius: 50%;
+                                        background-color: #fff;
+                                    }
+
+                                    &.active {
+                                        background-color: #f99400;
+
+                                        span {
+                                            right: 2/@rem;
+                                        }
+                                    }
+                                }
+                            }
+
+                            &:last-of-type {
+                                width: 100%;
+                                padding: 34/@rem 23/@rem;
+                                box-sizing: border-box;
+
+                                .remind-box {
+                                    width: 100%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    box-sizing: border-box;
+                                    font-size: 25/@rem;
+                                    .remind-box-top {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        padding-bottom: 30/@rem;
+                                    }
+
+                                    .remind-regulations {
+                                        >li {
+                                            font-size: 22/@rem;
+                                            color: #666666;
+                                            padding-bottom: 25/@rem;
+                                        }
+                                    }
+                                }
+                            }
+
+
+                        }
+                    }
+                }
+            }
+        }
+
+        //医生账户 结束
+        // 员工账户 开始
+        .new-account {
+            width: 100%;
+            height: 100%;
+            background-color: #dfe0e2;
+            box-sizing: border-box;
+            // padding: 0 25 / @rem 0;
+
+            // 新建账户
+            .new-button {
+                width: 300 / @rem;
+                padding-top: 48 / @rem;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            // 员工列表
+            .employee-list {
+                padding-top: 65 / @rem;
+
+                p {
+                    font-size: 26 / @rem;
+                    color: #1175d2;
+
+                    em {
+                        color: #666666;
+                        font-weight: 400;
+                    }
+                }
+            }
+
+            // 列表信息
+            .list-information {
+                padding-top: 35 / @rem;
+
+                li:nth-child(1) {
+                    border-radius: 10 / @rem 10 / @rem 0 0;
+
+                    p {
+                        display: block;
+                        font-size: 23 / @rem;
+                        color: #666666;
+                    }
+
+                    p:nth-child(1) {
+                        width: 146 / @rem;
+
+                    }
+
+                    p:nth-child(2) {
+                        width: 193 / @rem;
+
+                    }
+
+                    p:nth-child(3) {
+                        width: 284 / @rem;
+                        padding-right: 40 / @rem;
+                    }
+                }
+
+                li {
+                    width: 100%;
+                    height: 102 / @rem;
+                    background-color: #fff;
+                    box-sizing: border-box;
+                    padding-left: 40 / @rem;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    p {
+                        max-width: 33%;
+                        font-size: 23 / @rem;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
+                }
+
+                li:nth-child(n+2) {
+                    width: 100%;
+                    height: 102 / @rem;
+                    background-color: #fff;
+                    box-sizing: border-box;
+                    padding-left: 40 / @rem;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    p {
+                        display: block;
+                        font-size: 23 / @rem;
+                        color: #333333;
+                    }
+
+                    p:nth-child(1) {
+                        width: 146 / @rem;
+
+                    }
+
+                    p:nth-child(2) {
+                        width: 193 / @rem;
+
+                    }
+
+                    p:nth-child(3) {
+                        width: 284 / @rem;
+                        padding-right: 40 / @rem;
+                    }
+                }
+
+                li:nth-child(2n) {
+                    width: 100%;
+                    height: 102 / @rem;
+                    background-color: #edeeee;
+                    box-sizing: border-box;
+                    padding-left: 40 / @rem;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+            }
+        }
+
+        // 员工账户 结束
+    }
+
+    //新增收货地址与修改收货地址 开始
+    .address-revise,
+    .address-add {
+        .content-box {
+            border-radius: 8/@rem;
+            margin-top: 50/@rem;
+            padding: 0 / @rem 25 / @rem 15/@rem 25 / @rem;
+            box-sizing: border-box;
+
+            .content-bg {
+                background-color: #fff;
+                border-radius: 8/@rem;
+
+                li {
+                    font-size: 26/@rem;
+                    padding: 34/@rem 23/@rem;
+                    border-bottom: 1px solid #e2e2e2;
+                    display: flex;
+                    // align-items: center;
+
+                    &:nth-child(3) {
+                        padding: 20/@rem 23/@rem;
+                        align-items: flex-start;
+
+                    }
+
+                    label {
+                        width: 104/@rem;
+                        margin-right: 39/@rem;
+                        color: #666666;
+                    }
+
+                    .ipt-box-addr {
+                        display: flex;
+                        flex-direction: column;
+                        width: 450/@rem;
+
+                        div {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            width: 100%;
+                            height: 55/@rem;
+                            padding: 0 20/@rem;
+                            box-sizing: border-box;
+                            border: 1px solid #1175d2;
+                            border-radius: 55/@rem;
+                            margin-bottom: 30/@rem;
+
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+
+                            select {
+                                width: 450/@rem;
+                                padding-left: 24/@rem;
+                                box-sizing: border-box;
+                                height: 100%;
+                                font-size: 24/@rem ;
+                                color: #999999;
+                                border: none;
+                            }
+
+                            img {
+                                width: 24/@rem;
+                                height: 19/@rem;
+                            }
+                        }
+                    }
+
+                    input {
+                        color: #333333;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        width: 450/@rem;
+                    }
+                }
+            }
+
+            .sub-btn {
+                margin-top: 70/@rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                >div {
+                    width: 400/@rem;
+                    height: 64/@rem;
+                    line-height: 64/@rem;
+                    font-size: 24/@rem;
+                    text-align: center;
+                    border-radius: 8/@rem;
+                }
+
+                .preserve {
+                    border: 1px #1175d2 solid;
+                    background-color: #1175d2;
+                    color: #fff;
+                }
+
+                .cancel {
+                    margin-top: 45/@rem;
+                    border: 1px #e53636 solid;
+                    color: #e53636;
+                }
+            }
+        }
+    }
+
+    .address-add .content-box .sub-btn .cancel {
+        border: 1px #1175d2 solid;
+        color: #333333;
+    }
+
+    //新增收货地址与修改收货地址 结束
+
+    //收货地址列表 开始
+    .address-list {
+        .list-box {
+            border-radius: 8/@rem;
+            margin-top: 50/@rem;
+            padding: 0 / @rem 25 / @rem 15/@rem 25 / @rem;
+            box-sizing: border-box;
+
+            .content-bg {
+                background-color: #fff;
+                border-radius: 8/@rem;
+
+                li {
+                    position: relative;
+                    border-radius: 8/@rem;
+                    padding: 33/@rem 0 0 23/@rem;
+                    font-size: 25/@rem;
+                    display: flex;
+                    flex-direction: column;
+
+                    .border-bottom-box {
+                        border-bottom: 1px #e2e2e2 solid;
+                        padding-bottom: 33/@rem;
+                    }
+
+                    &:last-of-type {
+                        .border-bottom-box {
+                            border-bottom: 1px #fff solid;
+                        }
+                    }
+
+                    .address-name {
+                        display: flex;
+                        color: #333333;
+
+                        span:nth-child(1) {
+                            max-width: 150/@rem;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+
+                        }
+
+                        .phone {
+                            margin-left: 60/@rem;
+                        }
+                    }
+
+                    .address-position {
+                        padding-top: 32/@rem;
+                        display: flex;
+                        justify-content: space-between;
+                        flex-wrap: nowrap;
+
+                        span {
+                            &.message {
+                                word-wrap: break-word;
+                                color: #727272;
+                                padding-right: 165/@rem;
+                                line-height: 36/@rem;
+                            }
+                        }
+                    }
+
+                    .edit-box {
+                        position: absolute;
+                        right: 40/@rem;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        color: #1175d2;
+                    }
+                }
+            }
+
+            .sub-btn {
+                margin-top: 70/@rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                >div {
+                    width: 400/@rem;
+                    height: 64/@rem;
+                    line-height: 64/@rem;
+                    font-size: 24/@rem;
+                    text-align: center;
+                    border-radius: 8/@rem;
+                }
+
+                .preserve {
+                    border: 1px #1175d2 solid;
+                    background-color: #1175d2;
+                    color: #fff;
+                }
+
+                .cancel {
+                    margin-top: 45/@rem;
+                    border: 1px #1175d2 solid;
+                    color: #1175d2;
+                }
+            }
+        }
+    }
+
+    //收货地址列表 结束
+
+    //修改手机号码,邮箱,账号 开始
+    .phone-revise,
+    .postbox-revise,
+    .account-revise {
+        .headbox {
+            .right-text {
+                color: #b7b8b8;
+            }
+        }
+
+        .phone-number-box {
+            padding: 40/@rem 45/@rem 0;
+
+            .cur-number {
+                color: #666666;
+                font-size: 22/@rem;
+            }
+
+            .new-phone {
+                margin-top: 15/@rem;
+                padding: 23/@rem 30/@rem;
+                background-color: #fff;
+                border-radius: 8/@rem;
+                display: flex;
+                align-items: center;
+
+                input {
+                    width: 100%;
+                    font-size: 25/@rem;
+                    color: #333333;
+
+                    &::placeholder {
+                        color: #333333;
+                    }
+                }
+            }
+
+            .proving-code {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 19/@rem;
+
+                .proving-phone {
+                    padding: 23/@rem 30/@rem;
+                    background-color: #ecedee;
+                    border-radius: 8/@rem;
+                    box-sizing: border-box;
+                    width: 393/@rem;
+                    display: flex;
+                    align-items: center;
+
+                    input {
+                        width: 100%;
+                        font-size: 25/@rem;
+                        color: #333333;
+                    }
+                }
+
+                .send-prov {
+                    width: 250/@rem;
+                    padding: 23/@rem 0;
+                    background-color: #1175d2;
+                    color: #fff;
+                    text-align: center;
+                    font-size: 24/@rem;
+                    box-sizing: border-box;
+                    border-radius: 8/@rem;
+                }
+            }
+
+        }
+    }
+
+    //修改手机号码 结束
+
+    // 员工账户详情 开始
+    .employeee-information {
+        width: 100%;
+        height: 100%;
+        background-color: #dfe0e2;
+        // padding: 0 25 / @rem 0;
+        box-sizing: border-box;
+
+        // 返回按钮
+        .return-rutton {
+            width: 52 / @rem;
+            height: 52 / @rem;
+            padding-top: 13 / @rem;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        // 员工信息
+        .employee-information-list {
+            padding: 33 / @rem 0 0 22 / @rem;
+
+            p {
+                font-size: 23 / @rem;
+                color: #1175d2;
+            }
+        }
+
+        // 员工信息账号
+        .employee-number {
+            margin-top: 29 / @rem;
+            width: 100%;
+            background-color: #fff;
+            border-radius: 10 / @rem;
+            padding: 38 / @rem 54 / @rem 58 / @rem 23 / @rem;
+            box-sizing: border-box;
+
+            li {
+                display: flex;
+                justify-content: space-between;
+
+                span {
+                    font-size: 23 / @rem;
+                    color: #333333;
+                }
+
+                span:nth-child(2) {
+                    flex: 0 0 85%;
+                    text-align: right;
+                    color: #666666;
+                }
+            }
+
+            li:nth-child(2) {
+                padding: 68 / @rem 0;
+            }
+        }
+
+        // 员工信息
+        .account-permissions {
+            padding: 55 / @rem 0 0 22 / @rem;
+
+            p {
+                font-size: 23 / @rem;
+                color: #1175d2;
+            }
+        }
+
+        // 当前账户权限
+        .account-permissions-text {
+            margin-top: 28 / @rem;
+            background-color: #fff;
+            width: 100%;
+            border-radius: 10 / @rem;
+            padding: 42 / @rem 42 / @rem 66 / @rem 22 / @rem;
+            box-sizing: border-box;
+
+            h2 {
+                font-weight: 400;
+                font-size: 26 / @rem;
+                font-size: #333333;
+            }
+
+            div {
+                p {
+                    font-size: 22 / @rem;
+                    color: #666666;
+                    margin-top: 37 / @rem;
+                }
+
+                p:last-child {
+                    font-size: 22 / @rem;
+                    color: #666666;
+                    margin-top: 30 / @rem;
+                }
+            }
+
+
+            >p {
+                font-size: 21 / @rem;
+                color: #b1b1b1;
+                margin-top: 103 / @rem;
+            }
+        }
+
+        // 修改信息
+        .modify-information {
+            width: 400 / @rem;
+            height: 66 / @rem;
+            border-radius: 5 / @rem;
+            border: 1px solid #1175d2;
+            background-color: #1175d2;
+            text-align: center;
+            line-height: 66 / @rem;
+            margin: 58 / @rem auto 45 / @rem;
+
+            p {
+                font-size: 23 / @rem;
+                color: #fff;
+            }
+        }
+
+        // 注销账号
+        .modify-cancel {
+            width: 400 / @rem;
+            height: 66 / @rem;
+            border-radius: 5 / @rem;
+            border: 1px solid #1175d2;
+            text-align: center;
+            line-height: 66 / @rem;
+            margin: 0 auto;
+
+            p {
+                font-size: 23 / @rem;
+                color: #333333;
+            }
+        }
+    }
+
+    // 员工账户详情 结束
+    // 新建/修改账户 开始
+    .create-new-account {
+
+        // padding: 0 25 / @rem 0;
+        // 返回按钮
+        .return-account-rutton {
+            width: 52 / @rem;
+            height: 52 / @rem;
+            padding-top: 13 / @rem;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        // 员工信息
+        .employee-information-account {
+            padding: 33 / @rem 0 0 22 / @rem;
+
+            p {
+                font-size: 23 / @rem;
+                color: #1175d2;
+            }
+        }
+
+        // 账号列表
+        .account-number-list {
+            width: 100%;
+            border-radius: 10 / @rem;
+            background-color: #fff;
+            margin-top: 27 / @rem;
+
+            li {
+                padding: 0 20/@rem;
+                box-sizing: border-box;
+
+            }
+
+            li:nth-child(-n + 4) {
+                display: flex;
+                align-items: center;
+
+                width: 100%;
+                height: 100 / @rem;
+                border-bottom: 1px solid #ebebeb;
+
+                p {
+                    font-size: 26 / @rem;
+                    color: #666666;
+                    padding-left: 22 / @rem;
+                    margin-right: 50/@rem;
+                }
+
+                .right-arrow {
+                    width: 11/@rem;
+                    height: 22/@rem;
+                }
+
+                .text-xm {
+                    width: 480/@rem;
+                    color: #333333;
+                    font-size: 26 / @rem;
+                    padding-right: 22 / @rem;
+                    box-sizing: border-box;
+
+                    &::-webkit-input-placeholder {
+                        color: #333333;
+                    }
+                }
+            }
+
+            li:nth-child(4) {
+                flex-direction: column;
+                height: auto;
+                border-bottom: 1px solid #ffffff;
+
+                div {
+                    width: 100%;
+                    display: flex;
+                }
+
+                .account-title {
+                    height: 100/@rem;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 10/@rem;
+                    color: #333333;
+                }
+
+                .account-jurisdiction {
+                    flex-direction: column;
+
+                    p {
+                        color: #333333;
+                        margin-bottom: 40/@rem;
+                    }
+
+                    margin-bottom: 40/@rem;
+                }
+            }
+
+            li:nth-child(5) {
+                font-size: 22 / @rem;
+                color: #999999;
+                padding: 0 22 / @rem 45 / @rem;
+            }
+        }
+
+        // 保存
+        .modify-keep {
+            width: 400 / @rem;
+            height: 66 / @rem;
+            border-radius: 5 / @rem;
+            border: 1px solid #1175d2;
+            background-color: #1175d2;
+            text-align: center;
+            line-height: 66 / @rem;
+            margin: 58 / @rem auto 45 / @rem;
+
+            p {
+                font-size: 23 / @rem;
+                color: #fff;
+            }
+        }
+
+        // 取消
+        .modify-cancel {
+            width: 400 / @rem;
+            height: 66 / @rem;
+            border-radius: 5 / @rem;
+            border: 1px solid #1175d2;
+            text-align: center;
+            line-height: 66 / @rem;
+            margin: 0 auto;
+
+            p {
+                font-size: 23 / @rem;
+                color: #333333;
+            }
+        }
+
+    }
+
+    // 新建/修改账户 结束
+    // 注销账号 开始
+    .cancel-number {
+        // padding: 0 23 / @rem 0;
+        box-sizing: border-box;
+
+        // 返回按钮
+        .return-account-cancel {
+            width: 52 / @rem;
+            height: 52 / @rem;
+            padding-top: 13 / @rem;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        // 注销账户
+        .employee-information-cancel {
+            padding: 33 / @rem 0 0 22 / @rem;
+
+            p {
+                font-size: 23 / @rem;
+                color: #1175d2;
+
+                em {
+                    color: #666666;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        // 删除账号
+        .delete-account-number {
+            display: block;
+            width: 100%;
+            height: 107 / @rem;
+            background-color: #fff;
+            border-radius: 10 / @rem;
+            margin-top: 28 / @rem;
+            font-size: 25 / @rem;
+            box-sizing: border-box;
+            padding: 0 22 / @rem 0;
+        }
+
+        // 提示
+        .cancel-prompt {
+            margin-top: 25 / @rem;
+
+            p {
+                color: #f13a3a;
+                font-size: 22 / @rem;
+            }
+        }
+
+        // 确认
+        .cancel-keep-confirm {
+            width: 400 / @rem;
+            height: 66 / @rem;
+            border-radius: 5 / @rem;
+            border: 1px solid #1175d2;
+            background-color: #1175d2;
+            text-align: center;
+            line-height: 66 / @rem;
+            margin: 65 / @rem auto 45 / @rem;
+
+            p {
+                font-size: 23 / @rem;
+                color: #ffff;
+            }
+        }
+
+        // 取消
+        .cancel-cancel {
+            width: 400 / @rem;
+            height: 66 / @rem;
+            border-radius: 5 / @rem;
+            border: 1px solid #1175d2;
+            text-align: center;
+            line-height: 66 / @rem;
+            margin: 0 auto;
+
+            p {
+                font-size: 23 / @rem;
+                color: #333333;
+            }
+        }
+
+    }
+
+    // 注销账号 结束
+}
+
+//个人中心 结束
+
+/* 个人中心弹层 开始 */
+.layer .layer-inner .layer-inner-box {
+    padding: 0 28 / @rem;
+
+    /* 修改姓名弹层 start */
+    .ipt-box-one {
+        height: 57 / @rem;
+        line-height: 57 / @rem;
+        margin: 35 / @rem 46 / @rem 73 / @rem 46 / @rem;
+
+        input {
+            width: 100%;
+            color: #333333;
+            font-size: 24 / @rem;
+            padding: 10/@rem 0;
+            border-bottom: 4 / @rem solid #1175D2;
+
+            &::placeholder {
+                font-size: 24 / @rem;
+                color: #333333;
+            }
+        }
+    }
+
+    /* 修改姓名弹层 end */
+
+    /* 需要提醒的病例弹层 start */
+    .ipt-box-two {
+        margin: 55 / @rem 40 / @rem 58 / @rem;
+        display: flex;
+        justify-content: space-between;
+
+        div {
+            width: 260 / @rem;
+            height: 56 / @rem;
+            border: 1px solid #1175D2;
+            box-sizing: border-box;
+            text-align: center;
+            line-height: 56 / @rem;
+            border-radius: 28 / @rem;
+            font-size: 24 / @rem;
+        }
+
+        .chioce {
+            color: #000;
+        }
+    }
+
+    /* 需要提醒的病例弹层 end */
+
+    /* 收到的提醒内容弹层 start */
+    .ipt-box-three {
+        // margin: 55 / @rem 28 / @rem 58 / @rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .sd {
+            margin: 52 / @rem 0 33 / @rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .lis {
+                width: 45%;
+                box-sizing: border-box;
+                height: 56 / @rem;
+                border: 1px solid #1175D2;
+                box-sizing: border-box;
+                text-align: center;
+                line-height: 56 / @rem;
+                border-radius: 28 / @rem;
+                font-size: 24 / @rem;
+                color: #000;
+                margin-bottom: 37 / @rem ;
+            }
+
+            // .list {
+            //     margin: 37 / @rem 0;
+            // }
+        }
+
+    }
+
+    /* 收到的提醒内容弹层 end */
+
+    /* 状态提醒弹层 strat */
+    .ipt-box-four {
+        padding: 0 135 / @rem;
+        display: flex;
+        justify-content: space-between;
+        margin: 55 / @rem 0 58 / @rem;
+
+        div {
+            border-radius: 28 / @rem;
+            width: 160 / @rem;
+            height: 55 / @rem;
+            border: 1px solid #1175D2;
+            text-align: center;
+            line-height: 55 / @rem;
+            font-size: 24 / @rem;
+        }
+
+    }
+
+    /* 状态提醒弹层 end */
+
+    /* 输入手机账号弹层 start */
+    .ipt-box-five {
+        height: 57 / @rem;
+        line-height: 57 / @rem;
+        margin: 35 / @rem 46 / @rem 73 / @rem 46 / @rem;
+
+        input {
+            width: 100%;
+            color: #333333;
+            font-size: 24 / @rem;
+            padding: 10/@rem 0;
+            border-bottom: 4 / @rem solid #1175D2;
+
+            &::placeholder {
+                font-size: 24 / @rem;
+                color: #333333;
+            }
+        }
+
+    }
+
+    /* 输入手机账号弹层 end */
+
+    /* 输入邮箱弹层 start */
+    .ipt-box-sex {
+        height: 57 / @rem;
+        line-height: 57 / @rem;
+        margin: 35 / @rem 46 / @rem 73 / @rem 46 / @rem;
+
+        input {
+            width: 100%;
+            color: #333333;
+            font-size: 24 / @rem;
+            padding: 10/@rem 0;
+            border-bottom: 4 / @rem solid #1175D2;
+
+            &::placeholder {
+                font-size: 24 / @rem;
+                color: #333333;
+            }
+        }
+
+    }
+
+    /* 输入邮箱弹层 end */
+
+
+    /* 选择地址弹窗 开始 */
+    .ipt-box-addr {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 40/@rem 0 70/@rem;
+
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 200/@rem;
+            height: 55/@rem;
+            padding: 0 20/@rem;
+            box-sizing: border-box;
+            border: 1px solid #1678d3;
+            border-radius: 5/@rem;
+
+            select {
+                width: 150/@rem;
+                height: 100%;
+                font-size: 24/@rem ;
+                color: #999999;
+                border: none;
+            }
+
+            img {
+                width: 24/@rem;
+                height: 19/@rem;
+            }
+        }
+    }
+
+    /* 选择地址弹窗 结束 */
+
+    /* 权限弹窗 开始 */
+    .limint-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 48/@rem 0;
+
+        li {
+            width: 300/@rem;
+            height: 55/@rem;
+            border: 1px solid #4593db;
+            border-radius: 55/@rem;
+            text-align: center;
+            line-height: 55/@rem;
+            color: #333333;
+            font-size: 24/@rem;
+            margin-bottom: 40/@rem;
+
+        }
+    }
+
+    /* 权限弹窗 结束 */
+
+    /* 选择后的背景颜色 */
+    .active {
+        background-color: #1175D2;
+        color: #fff !important;
+    }
+
+    /* 选择后的背景颜色 */
+
+}
+
+
+.hide {
+    opacity: 0 !important;
+}
+
+/* 个人中心弹层 结束 */

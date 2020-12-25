@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=750,target-densitydpi=device-dpi,user-scalable=no"> -->
+    <!-- <meta name="viewport" content="width=device-width,target-densitydpi=device-dpi,user-scalable=no"> -->
+    <meta name="viewport"
+        content="width=device-width,target-densitydpi=device-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>医生矫治偏好</title>
+    <!-- 手机设备适配 -->
+    <link rel="stylesheet" media="only screen and (min-width:750px)" href="css/common-pad.css?v=t82">
+    <link rel="stylesheet" media="only screen and (min-width:750px)" href="css/clinic-pad.css?v=t82">
+    <!-- pad设备适配 -->
+    <link rel="stylesheet" media="only screen and (max-width:750px)" href="css/common.css?v=t82">
+    <link rel="stylesheet" media="only screen and (max-width:750px)" href="css/clinic.css?v=t82">
+
+</head>
+
+<body>
+    <!-- 导航栏 开始 -->
+    <div class="nav">
+        <!-- logo -->
+        <div class="logo">
+            <img src="img/LOGO.png" class="logo">
+        </div>
+        <!-- 菜单按钮 -->
+        <div class="menu">
+            <img src="img/menu.png" class="menu-img">
+        </div>
+        <div class="menu-box">
+            <ul class="menu-list">
+                <li>
+                    <a href="management.html">病例管理</a>
+                </li>
+                <li>
+                    <a href="center.html">个人中心</a>
+                </li>
+                <li>
+                    <a href="help.html">帮助中心</a>
+                </li>
+                <li>
+                    <a href="clinic.html">临床偏好</a>
+                </li>
+                <li>
+                    <a href="modification.html">修改密码</a>
+                </li>
+                <li>
+                    <a href="index.html">退出登录</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 导航栏 结束 -->
+    <!-- 临床内容盒子 -->
+    <div class="clinical-box">
+        <div class="title">- 医生矫治偏好 -</div>
+        <div class="clinical-bd">
+            <ul>
+                <li class="subject1">
+                    <div class="subject-hd">
+                        <span>1.临床牙位表示法</span>
+                        <p></p>
+                        <a href="javascript:;">了解详情</a>
+                    </div>
+                    <div class="subject-bd">
+                        <ul>
+                            <li class="active">
+                                <div class="radio"></div>
+                                <p>Universal牙位标记法 (#1-#32)</p>
+                            </li>
+                            <li>
+                                <div class="radio"></div>
+                                <p>Palmer牙标记法 (UR8-LR8)</p>
+                            </li>
+                            <li>
+                                <div class="radio"></div>
+                                <p>FDI牙位标记法 (1.8-4.8)</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="learnMore">
+                        三种常用的牙位表示法中可选择一种应用于治疗过程中。
+                    </div>
+                </li>
+                <li class="subject2">
+                    <div class="subject-hd">
+                        <span>2.上下颌治疗</span>
+                        <p></p>
+                        <a href="javascript:;">了解详情</a>
+                    </div>
+                    <div class="subject-bd">
+                        <ul>
+                            <li class="active">
+                                <div class="radio"></div>
+                                <p>默认设置</p>
+                            </li>
+                            <li>
+                                <div class="radio"></div>
+                                <p>上下颌同时开始</p>
+                            </li>
+                            <li>
+                                <div class="radio"></div>
+                                <p>上下颌同时结束</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="learnMore">
+                        这个选项确定上下颌治疗步骤该如何安排。                   
+                    </div>
+                </li>
+                <li class="subject3">
+                    <div class="subject-hd">
+                        <span>3.单颌保持矫治器</span>
+                        <p></p>
+                        <a href="javascript:;">了解详情</a>
+                    </div>
+                    <div class="subject-bd">
+                        <ul>
+                            <li class="active">
+                                <div class="radio"></div>
+                                <p>是，请增加单颌保持矫治器以匹配更多步数的对颌</p>
+                            </li>
+                            <li>
+                                <div class="radio"></div>
+                                <p>不需要，上下颌步骤统一</p>
+                            </li>
+                            <!-- <li>
+                                <div class="radio"></div>
+                                <p>以上选项均不是</p>
+                            </li> -->
+                        </ul>
+                    </div>
+                    <div class="learnMore">
+                        这个选项确认您是否需要单颌保持矫治器。                    </div>
+                </li>
+                <li class="subject4">
+                    <div class="subject-hd">
+                        <span>4.首次矫治方案是否接受片切</span>
+                        <p></p>
+                        <a href="javascript:;">了解详情</a>
+                    </div>
+                    <div class="subject-bd">
+                        <ul>
+                            <li class="active">
+                                <div class="radio"></div>
+                                <p>是</p>
+                            </li>
+                            <li>
+                                <div class="radio"></div>
+                                <p>否</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="learnMore">
+                        这个选项确认您是否接受方案中使用片切。                    </div>
+                </li>
+                <li class="subject5">
+                    <div class="subject-hd">
+                        <span>5.IPR的阶段选择</span>
+                        <p></p>
+                        <a href="javascript:;">了解详情</a>
+                    </div>
+                    <p></p>
+                    <div class="subject-bd">
+                        <p>默认设置</p>
+                        <ul>
+                            <li class="active">
+                                <div class="radio"></div>
+                                <p>默认方案</p>
+                            </li>
+                            <li>
+                                <div class="radio"></div>
+                                <p>推迟到第<input type="tel" value="0">步</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="learnMore">
+                        系统默认片切最早可以在第一步，这个选项确认需要推迟片切的阶段。
+                    </div>
+                </li>
+                <li class="subject6">
+                    <div class="subject-hd">
+                        <span>6.附件黏贴的阶段选择</span>
+                        <p></p>
+                        <a href="javascript:;">了解详情</a>
+                    </div>
+                    <p></p>
+                    <div class="subject-bd">
+                        <p>默认设置</p>
+                        <ul>
+                            <li class="active">
+                                <div class="radio"></div>
+                                <p>默认方案</p>
+                            </li>
+                            <li>
+                                <div class="radio"></div>
+                                <p>推迟到第<input type="tel" value="0">步</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="learnMore">
+                        系统默认附件最早可以在第一步，这个选项确认需要推迟附件添加的阶段。
+                    </div>
+                </li>
+                <li class="subject7">
+                    <div class="subject-hd">
+                        <span>7.拔牙步数的阶段选择</span>
+                        <p></p>
+                        <a href="javascript:;">了解详情</a>
+                    </div>
+                    <p></p>
+                    <div class="subject-bd">
+                        <p>默认设置</p>
+                        <ul>
+                            <li class="active">
+                                <div class="radio"></div>
+                                <p>默认方案</p>
+                            </li>
+                            <li>
+                                <div class="radio"></div>
+                                <p>推迟到第<input type="tel" value="0">步</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="learnMore">
+                        系统默认拔牙最早可以在第一步，这个选项确认需要推迟拔牙的阶段。
+                    </div>
+                </li>
+                <li class="subject8">
+                    <div class="subject-hd">
+                        <span>8.缺失牙替代物</span>
+                        <p></p>
+                        <a href="javascript:;">了解详情</a>
+                        <!-- <a class="gray" href="javascript:;">了解详情</a> -->
+                    </div>
+                    <div class="subject-bd">
+                        <ul>
+                            <li class="active">
+                                <div class="radio"></div>
+                                <p>对于超过3.5mm的间隙,将默认放置假牙空泡。若间隙减小，假牙空泡将自动,假牙空泡将自动调整宽度。</p>
+                            </li>
+                            <li>
+                                <div class="radio"></div>
+                                <div class="content">
+                                    <p>其他：请选择以下一个或多个选项</p>
+                                    <div>
+                                        <div class="checkbox"></div>拔牙治疗方案不添加
+                                    </div>
+                                    <div>
+                                        <div class="checkbox"></div>有后牙间隙则不添加
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="learnMore">
+                        这个选项应用于拔牙病例以及牙体缺失的病例。 
+                    </div> 
+                </li>
+                <li class="subject9">
+                    <div class="subject-hd">
+                        <span>9.扩弓选择</span>
+                        <p></p>
+                        <a href="javascript:;">了解详情</a>
+                        <!-- <a class="gray" href="javascript:;">了解详情</a> -->
+                    </div>
+                    <div class="subject-bd">
+                        <ul>
+                            <li class="active">
+                                <div class="radio"></div>
+                                <p>尖牙、前磨牙及磨牙区域扩弓</p>
+                            </li>
+                            <li>
+                                <div class="radio"></div>
+                                <p>只在尖牙及前磨牙区域扩弓</p>
+                            </li>
+                            <li>
+                                <div class="radio"></div>
+                                <p>只在前磨牙及磨牙区域扩弓</p>
+                            </li>
+                            <li>
+                                <div class="radio"></div>
+                                <p>不扩弓</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="learnMore">
+                        这个选项确定需要扩弓的区域。                </li>
+                <li class="subject10">
+                    <div class="subject-hd">
+                        <span>10.扩弓量的选择</span>
+                        <p></p>
+                        <a href="javascript:;">了解详情</a>
+                    </div>
+                    <div class="subject-bd">
+                        <ul>
+                            <li class="active">
+                                <div class="radio"></div>
+                                <p>&lt;=2毫米</p>
+                            </li>
+                            <li>
+                                <div class="radio"></div>
+                                <p>大于2毫米</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="learnMore">
+                        这个选项确定需要扩弓量的大小。                    </div> 
+                        
+                </li> 
+                            
+                <li class="subject11">
+                            <div class="subject-hd">
+                                <span>11.侧切牙为过小牙的间隙选择</span>
+                                <p></p>
+                                <a href="javascript:;">了解详情</a>
+                            </div>
+                            <div class="subject-bd">
+                                <ul>
+                                    <li class="active">
+                                        <div class="radio"></div>
+                                        <p>远中预留间隙</p>
+                                    </li>
+                                    <li>
+                                        <div class="radio"></div>
+                                        <p>远中预留间隙</p>
+                                    </li>
+                                    <li>
+                                        <div class="radio"></div>
+                                        <p>关闭间隙（可片切对𬌗牙）</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="learnMore">
+                                这个选项确定需要如何处理过小牙的问题。
+                            </div>
+                </li>
+                <li class="subject12">
+                    <div class="subject-hd">
+                        <span>12.中切牙与侧切牙的排齐方式选择</span>
+                        <p></p>
+                        <a href="javascript:;">了解详情</a>
+                    </div>
+                    <div class="subject-bd">
+                        <ul>
+                            <li class="active">
+                                <div class="radio"></div>
+                                <div class="content">
+                                    <p> 其他：以下可多选 </p>
+                                    <div class="current">
+                                        <div class="checkbox"></div>中切牙与侧切牙切端排齐
+                                    </div>
+                                    <div class="current">
+                                        <div class="checkbox"></div>
+                                        中切牙比侧切牙切端长0.5mm
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="radio"></div>
+                                <p>按切牙龈缘排齐</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="learnMore">
+                        这个选项确定需要的上切牙排齐方式。
+                    </div>
+                </li>
+                <li class="subject13">
+                    <div class="subject-hd">
+                        <span>13.矫治器边缘处理方式选择</span>
+                        <p></p>
+                        <a href="javascript:;">了解详情</a>
+                    </div>
+                    <p></p>
+                    <div class="subject-bd">
+                        <p>针对牙周条件较差患者</p>
+                        <ul>
+                            <li class="active">
+                                <div class="radio"></div>
+                                <p>矫治器边缘在釉牙骨质界至龈缘1/2处</p>
+                            </li>
+                            <li>
+                                <div class="radio"></div>
+                                <p>矫治器切边缘到釉牙骨质界</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="learnMore">
+                        患者牙周情况不好时，矫治器边缘如何切割。
+                    </div>
+                </li>
+                <!-- <li class="subject14">
+                    <div class="subject-hd">
+                        <span>14.针对间隙关闭,应用虚拟C-Chain</span>
+                        <p></p>
+                        <a href="javascript:;">了解详情</a>
+                    </div>
+                    <p></p>
+                    <div class="subject-bd">
+                        <p>针对间隙关闭的过矫正矫治器</p>
+                        <ul>
+                            <li class="active">
+                                <div class="radio"></div>
+                                <p>是</p>
+                            </li>
+                            <li>
+                                <div class="radio"></div>
+                                <p>否</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="learnMore">
+                        该临床偏好允许您要求使用虚拟C-Chain进行间隙关闭的过矫正。虚拟C-Chain是一种在矫治器上模拟弓丝托槽治疗中弹性C-Chain的过矫正方法。
+                    </div>
+                </li> -->
+                <li class="subject15">
+                    <div class="subject-hd">
+                        <span>14.印模或口扫中出现磨牙末端变形情况</span>
+                        <p></p>
+                        <a href="javascript:;">了解详情</a>
+                    </div>
+                    <p></p>
+                    <div class="subject-bd">
+                        <p>(印模或扫描中出现末端磨牙变形)</p>
+                        <ul>
+                            <li class="active">
+                                <div class="radio"></div>
+                                <div class="content">
+                                    <p>通过虚拟移除末端磨牙的远中部分来移除变形。矫治器将包裹末端磨牙近中部分来避免过度萌出。</p>
+                                    <div class="current">
+                                        <div class="checkbox"></div>
+                                        矫治器不包裹变形部分
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="radio"></div>
+                                <p>尽可能修整变形部分（可能会导致矫治器不贴合的问题）</p>
+                            </li>
+                            <li>
+                                <div class="radio"></div>
+                                <p>重新提供印膜或口扫</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="learnMore">
+                        新病例中模型及口扫若有末端变形的情况，医生希望正丽科技如何处理。
+                    </div>
+                </li>
+                <li class="subject16">
+                    <div class="subject-hd">
+                        <span>15.附件的选择</span>
+                        <p></p>
+                        <a href="javascript:;">了解详情</a>
+                    </div>
+                    <p></p>
+                    <div class="subject-bd">
+                        <a href="javascript:;">查看附件页面 <img src="img/blue_ltou.png" alt=""></a>
+                    </div>
+                    <div class="learnMore">
+                        可以根据医生喜好选择需要使用的附件。
+                    </div>
+                </li>
+                <li class="subject17">
+                    <div class="subject-hd">
+                        <span>16.优化附件尺寸的选择</span>
+                        <p></p>
+                        <a href="javascript:;">了解详情</a>
+                    </div>
+                    <div class="subject-bd">
+                        <ul>
+                            <li>
+                                <p>(1)前牙</p>
+                                <ul class="anteriorTeeth">
+                                    <li class="active">
+                                        <div class="radio"></div>
+                                        <p>默认尺寸</p>
+                                    </li>
+                                    <li>
+                                        <div class="radio"></div>
+                                        <p>相应牙齿的最大尺寸</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>(2)后牙</p>
+                                <ul class="posteriorTeeth">
+                                    <li class="active">
+                                        <div class="radio"></div>
+                                        <p>默认尺寸</p>
+                                    </li>
+                                    <li>
+                                        <div class="radio"></div>
+                                        <p>相应牙齿的最大尺寸</p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="learnMore">
+                        正丽科技默认使用常规尺寸附件，您可以选择更大尺寸附件。
+                    </div>
+                </li>
+                <li class="subject18">
+                    <div class="subject-hd">
+                        <span>17.切割与附件</span>
+                        <p></p>
+                        <a href="javascript:;">了解详情</a>
+                    </div>
+                    <p></p>
+                    <div class="subject-bd">
+                        <p></p>
+                        <ul>
+                            <!-- <li class="active">
+                                <div class="radio"></div>
+                                <div class="content">
+                                    <p>只保留优化附件</p>
+                                    <div class="current">
+                                        <div class="checkbox"></div>
+                                        需要的话,将开窗改为牵引钩,保留优化附件
+                                    </div>
+                                </div>
+                            </li> -->
+                            <li class="active">
+                                <div class="radio"></div>
+                                <p>切割界面只要牵引钩和开窗</p>
+                            </li>
+                            <li>
+                                <div class="radio"></div>
+                                <p>切割界面上牵引钩、开窗和附件都要</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="learnMore">
+                        有牵引钩、开窗时您可选择是否放置附件。正丽科技默认空间足够时会同时放置牵引钩、开窗和附件。
+                    </div>
+                </li>
+                <li class="subject19">
+                    <div class="subject-hd">
+                        <span>18.开始牵引的阶段选择</span>
+                        <p></p>
+                        <a href="javascript:;">了解详情</a>
+                    </div>
+                    <p></p>
+                    <div class="subject-bd">
+                        <div class="boxs">
+                            <span>从第 </span> <input type="tel" value="0"> <span> 步开始</span>
+                        </div>
+                    </div>
+                    <div class="learnMore">
+                        这个选项确定您需要使用牵引的步骤。正丽科技默认从第1步开始。
+                    </div>
+                </li>
+            </ul>
+            <div class="demand">
+                <h3>附加说明</h3>
+                <p>( 这项临床偏好可供您输入在以上临床偏好中没有涉及到的其他的临床偏好说明。)</p>
+                <textarea maxlength="400"></textarea>
+            </div>
+        </div>
+        <div class="clinical-fd">
+            <!-- <p>*黑色加粗字体</p> -->
+            <div class="btns">
+                <div class="cancel" id="returnCancel">取消</div>
+                <div class="alter active">提交修改</div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 矫治要求 开始 -->
+    <div class="appliance appliance-box dn">
+        <div class="return">
+            <img src="img/fh.png">
+        </div>
+        <h2>15.附件页面</h2>
+        <div class="gain">
+            <div class="options">
+                <p class="p-one">
+                    <a href="javascript:;" class="active" data-id="1">旋转</a>
+                    <a href="javascript:;" data-id="2">保持</a>
+                    <a href="javascript:;" data-id="3">伸长</a>
+                </p>
+                <p class="p-two">
+                    <a href="javascript:;" class="active" data-id="1">颊侧</a>
+                    <a href="javascript:;" data-id="2">舌侧</a>
+                </p>
+            </div>
+            <div class="teeth-fj">
+                <div class="gray-box"></div> <span>优化附件</span>
+            </div>
+            <div class="teeth">
+                <p class="right">右</p>
+                <div class="teethbox">
+                    <ul class="up">
+                        <li>
+                            <p></p>
+                            <img src="img/18.png">
+                            <a href="javascript:;">18</a>
+                        </li>
+                        <li>
+                            <p></p>
+                            <img src="img/17.png">
+                            <a href="javascript:;">17</a>
+                        </li>
+                        <li>
+                            <p></p>
+                            <img src="img/16.png">
+                            <a href="javascript:;">16</a>
+                        </li>
+                        <li>
+                            <p></p>
+                            <img src="img/15.png">
+                            <a href="javascript:;">15</a>
+                        </li>
+                        <li>
+                            <p></p>
+                            <img src="img/14.png">
+                            <a href="javascript:;">14</a>
+                        </li>
+                        <li>
+                            <p></p>
+                            <img src="img/13.png">
+                            <a href="javascript:;">13</a>
+                        </li>
+                        <li>
+                            <p></p>
+                            <img src="img/12.png">
+                            <a href="javascript:;">12</a>
+                        </li>
+                        <li>
+                            <p></p>
+                            <img src="img/11.png">
+                            <a href="javascript:;">11</a>
+                        </li>
+                        <li>
+                            <p></p>
+                            <img src="img/21.png">
+                            <a href="javascript:;">21</a>
+                        </li>
+                        <li>
+                            <p></p>
+                            <img src="img/22.png">
+                            <a href="javascript:;">22</a>
+                        </li>
+                        <li>
+                            <p></p>
+                            <img src="img/23.png">
+                            <a href="javascript:;">23</a>
+                        </li>
+                        <li>
+                            <p></p>
+                            <img src="img/24.png">
+                            <a href="javascript:;">24</a>
+                        </li>
+                        <li>
+                            <p></p>
+                            <img src="img/25.png">
+                            <a href="javascript:;">25</a>
+                        </li>
+                        <li>
+                            <p></p>
+                            <img src="img/26.png">
+                            <a href="javascript:;">26</a>
+                        </li>
+                        <li>
+                            <p></p>
+                            <img src="img/27.png">
+                            <a href="javascript:;">27</a>
+                        </li>
+                        <li>
+                            <p></p>
+                            <img src="img/28.png">
+                            <a href="javascript:;">28</a>
+                        </li>
+                    </ul>
+                    <ul class="down">
+                        <li>
+                            <a href="javascript:;">48</a>
+                            <img src="img/48.png">
+                            <p></p>
+                        </li>
+                        <li>
+                            <a href="javascript:;">47</a>
+                            <img src="img/47.png">
+                            <p></p>
+                        </li>
+                        <li>
+                            <a href="javascript:;">46</a>
+                            <img src="img/46.png">
+                            <p></p>
+                        </li>
+                        <li>
+                            <a href="javascript:;">45</a>
+                            <img src="img/45.png">
+                            <p></p>
+                        </li>
+                        <li>
+                            <a href="javascript:;">44</a>
+                            <img src="img/44.png">
+                            <p></p>
+                        </li>
+                        <li>
+                            <a href="javascript:;">43</a>
+                            <img src="img/43.png">
+                            <p></p>
+                        </li>
+                        <li>
+                            <a href="javascript:;">42</a>
+                            <img src="img/42.png">
+                            <p></p>
+                        </li>
+                        <li>
+                            <a href="javascript:;">41</a>
+                            <img src="img/41.png">
+                            <p></p>
+                        </li>
+                        <li>
+                            <a href="javascript:;">31</a>
+                            <img src="img/31.png">
+                            <p></p>
+                        </li>
+                        <li>
+                            <a href="javascript:;">32</a>
+                            <img src="img/32.png">
+                            <p></p>
+                        </li>
+                        <li>
+                            <a href="javascript:;">33</a>
+                            <img src="img/33.png">
+                            <p></p>
+                        </li>
+                        <li>
+                            <a href="javascript:;">34</a>
+                            <img src="img/34.png">
+                            <p></p>
+                        </li>
+                        <li>
+                            <a href="javascript:;">35</a>
+                            <img src="img/35.png">
+                            <p></p>
+                        </li>
+                        <li>
+                            <a href="javascript:;">36</a>
+                            <img src="img/36.png">
+                            <p></p>
+                        </li>
+                        <li>
+                            <a href="javascript:;">37</a>
+                            <img src="img/37.png">
+                            <p></p>
+                        </li>
+                        <li>
+                            <a href="javascript:;">38</a>
+                            <img src="img/38.png">
+                            <p></p>
+                        </li>
+                    </ul>
+                    <div class="vertical"></div>
+                    <div class="level"></div>
+                </div>
+                <p class="left">左</p>
+            </div>
+            <p class="lsgo">*左右滑动选择更多牙位</p>
+        </div>
+        <div class="button">
+            <div class="last-step">保存</div>
+            <div class="next-step">重置</div>
+        </div>
+    </div>
+    <!-- 矫治要求 结束 -->
+
+    <!-- 图形弹窗 开始 -->
+    <div class="layer-big dn" id="graphical">
+        <div class="layer">
+            <div class="layer-inner">
+                <div class="layer-inner-box molar-classify">
+                    <p>特殊要求</p>
+                    <ul>
+                        <li data-id="1"> <img src="img/graphical_3.png" class="graphical_3"></li>
+                        <li data-id="2"> <img src="img/graphical_4.png" class="graphical_4"></li>
+                        <li data-id="3"> <img src="img/graphical_1.png" class="graphical_1"></li>
+                        <li data-id="4"> <img src="img/graphical_2.png" class="graphical_2"></li>
+                    </ul>
+                    <div class="graphical">
+                        <ul class="uls-two">
+                            <li data-id="5"> <img src="img/graphical_5.png" class="graphical_5"></li>
+                            <li data-id="6"> <img src="img/graphical_6.png" class="graphical_6 "></li>
+                            <li data-id="7"> <img src="img/graphical_7.png" class="graphical_7 "></li>
+                        </ul>
+                        <div class="clear-wz">清除</div>
+                    </div>
+                </div>
+                <div class="layer-btn">
+                    <div class="cancel">取消</div>
+                    <div class="save">保存</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 图形弹窗 结束 -->
+
+
+
+
+
+    <!-- 临床内容盒子 end -->
+    <!-- 屏幕旋转提示 -->
+    <script src="js/LandscapeTip.js"></script>
+    <script src="js/layer.js"></script>
+    <script src="js/jquery.min.3.5.1.js"></script>
+    <script src="js/vconsole.min.js"></script>
+    <script src="js/common.js?v=t82"></script>
+    <script src="js/clinic.js?v=t82"></script>
+</body>
+
+</html>

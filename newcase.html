@@ -1,0 +1,1498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,target-densitydpi=device-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>病例管理</title>
+
+    <link rel="stylesheet" href="css/ruidate.css">
+    <link rel="stylesheet" href="css/common.css">
+    <!-- 手机设备适配 -->
+    <link rel="stylesheet" media="only screen and (min-width:750px)" href="css/common-pad.css?v=t174">
+    <link rel="stylesheet" media="only screen and (min-width:750px)" href="css/manage-pad.css?v=t174">
+    <link rel="stylesheet" media="only screen and (min-width:750px)" href="css/managementnew-pad.css?v=t174">
+    <!-- pad设备适配 -->
+    <link rel="stylesheet" media="only screen and (max-width:750px)" href="css/common.css?v=t174">
+    <link rel="stylesheet" media="only screen and (max-width:750px)" href="css/manage.css?v=t174">
+    <link rel="stylesheet" media="only screen and (max-width:750px)" href="css/managementnew.css?v=t174">
+    <!-- <link rel="stylesheet" href="css/viewer.css"> -->
+    <!-- 引入放大插件 -->
+    <link rel="stylesheet" href="css/viewer.css">
+    <style>
+        .management-box .teeth-phone ul{padding-top:4.2vw}
+        .management-box .teeth-phone ul .phone{padding: 3vw 6.66666667vw 4vw 3.2vw;}
+        .management-box .teeth-phone ul .x-ray-film{padding-top: 3vw}
+        .management-box .teeth-phone ul .phone li .front, .management-box .teeth-phone ul .phone li .smile, .management-box .teeth-phone ul .phone li .side, .management-box .teeth-phone ul .phone li .top, .management-box .teeth-phone ul .phone li .bottom, .management-box .teeth-phone ul .phone li .left, .management-box .teeth-phone ul .phone li .centent, .management-box .teeth-phone ul .phone li .right ,.management-box .teeth-phone ul .x-ray-film li .panorama, .management-box .teeth-phone ul .x-ray-film li .smile, .management-box .teeth-phone ul .x-ray-film li .side{height: 23vw;}
+        .management-box .teeth-phone ul .phone li ,.management-box .teeth-phone ul .x-ray-film li{margin-bottom:2.5vw;}
+        .management-box .teeth-phone .star{margin-top: 0;}
+        .management-box .teeth-phone .button{margin-top: 10px;}
+        .management-box .teeth-phone .re{margin-bottom: 4.06666667vw;}
+    </style>
+</head>
+
+<body style="height:auto !important;overflow-y:auto;">
+    <!-- 导航栏 开始 -->
+    <div class="nav">
+        <!-- logo -->
+        <div class="logo">
+            <img src="img/LOGO.png" class="logo">
+        </div>
+        <!-- 菜单按钮 -->
+        <div class="menu">
+            <img src="img/menu.png" class="menu-img">
+        </div>
+        <div class="menu-box">
+            <ul class="menu-list">
+                <li>
+                    <a href="management.html">病例管理</a>
+                </li>
+                <li>
+                    <a href="center.html">个人中心</a>
+                </li>
+                <li>
+                    <a href="help.html">帮助中心</a>
+                </li>
+                <li>
+                    <a href="clinic.html">临床偏好</a>
+                </li>
+                <li>
+                    <a href="modification.html">修改密码</a>
+                </li>
+                <li>
+                    <a href="index.html">退出登录</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 导航栏 结束 -->
+
+    <!-- ============================================== 新建病例 页面 ====================================================== -->
+    <!-- 新建病例 开始 -->
+    <div class="management-box">
+        <!-- 品牌开始 -->
+        <div class="brand">
+            <div class="return">
+                <img src="img/fh.png">
+            </div>
+            <h2>新建病例</h2>
+            <ul>
+                <!-- <li>
+                        <div class="select">
+                            <img src="img/unselected.png" class="unselected">
+                            <img src="img/pitch-on.png" class="pitch-on">
+                        </div>
+                        <div class="ma">
+                            <img src="img/MA.png">
+                            <p>正丽科技自主创立品牌</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="select">
+                            <img src="img/unselected.png" class="unselected">
+                            <img src="img/pitch-on.png" class="pitch-on">
+                        </div>
+                        <div class="sm">
+                            <img src="img/SM.png">
+                            <p>正丽科技与士卓曼联合打造</p>
+                        </div>
+                    </li> -->
+            </ul>
+            <div class="button">
+                <div class="last-step">
+                    <span>上一步</span>
+                </div>
+                <div class="next-step">
+                    <span>下一步</span>
+                </div>
+            </div>
+        </div>
+        <!-- 品牌结束 -->
+        <!-- 基本信息开始 -->
+        <div class="basic-information dn">
+            <div class="return">
+                <img src="img/fh.png">
+            </div>
+            <h2>基本信息</h2>
+            <ul>
+                <li>
+                    <p>患者姓名<img src="img/star2.png"></p>
+                    <input type="text" maxlength="400" placeholder="请输入患者姓名" class="user-name">
+                </li>
+                <li>
+                    <p>
+                        <span>性别</span>
+                        <img src="img/star2.png" alt="">
+                    </p>
+                    <div class="patient-sex">
+                        <div>
+                            <p class="active" data-id="1">
+                                <span></span>
+                            </p>
+                            男
+                        </div>
+                        <div>
+                            <p data-id="2">
+                                <span></span>
+                            </p>
+                            女
+                        </div>
+                    </div>
+                </li>
+                <li class="hospital">
+                    <p>就诊医院<img src="img/star2.png"></p>
+                    <div>
+                        <div class="hospital-site">请选择就诊医院</div>
+                        <div class="amend">
+                            <img src="img/right-arrow.png" class="right">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <p>出生日期<img src="img/star2.png"></p>
+                    <div class="date_input">
+                        <input id="demo1" type="text" data-toid-date="date" name="input_date" placeholder="2020-09-07"
+                            data-type="1" data-date="2020-09-07" disabled=true>
+                        <input type="hidden" id="date" name="date">
+                    </div>
+                </li>
+                <li class="delivery-address">
+                    <p>收货地址<img src="img/star2.png"></p>
+                    <div>
+                        <div class="message" id="messageReceiver">
+                            <div class="user">
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <span></span>
+                        </div>
+                        <div class="amend">
+                            <img src="img/right-arrow.png" class="right">
+                        </div>
+                    </div>
+
+                </li>
+            </ul>
+            <div class="button">
+                <div class="last-step">上一步</div>
+                <div class="next-step">下一步</div>
+            </div>
+        </div>
+        <!-- 基本信息结束 -->
+        <!-- 诊断开始 -->
+        <div class="teeth-condition dn">
+            <div class="return">
+                <img src="img/fh.png">
+            </div>
+            <h2>诊断</h2>
+            <ul>
+                <li class="list-colum bruxism">
+                    <p>磨牙关系<img src="img/star2.png"></p>
+                    <div class="molar">
+                        <div class="molar-left">
+                            <span>左侧</span>
+                            <div class="left-content">|类</div>
+                        </div>
+                        <div class="molar-right">
+                            <span>右侧</span>
+                            <div class="right-content">|类</div>
+                        </div>
+                        <div class="right-arrow">
+                            <img src="img/right-arrow.png">
+                        </div>
+                    </div>
+                </li>
+                <li class="list-colum cynodontes">
+                    <p> 尖牙关系<img src="img/star2.png"></p>
+                    <div class="molar">
+                        <div class="molar-left">
+                            <span>上颌</span>
+                            <div class="left-content">中性</div>
+                        </div>
+                        <div class="molar-right">
+                            <span>下颌</span>
+                            <div class="right-content">中性</div>
+                        </div>
+                        <div class="right-arrow">
+                            <img src="img/right-arrow.png">
+                        </div>
+                    </div>
+                </li>
+                <li class="case">
+                    <p>病例分类<img src="img/star2.png"></p>
+                    <div class="case-classification public">
+                        <span>拥挤</span>
+                        <div class="right-arrow">
+                            <img src="img/right-arrow.png">
+                        </div>
+                    </div>
+
+                </li>
+            </ul>
+            <div class="button">
+                <div class="last-step">上一步</div>
+                <div class="next-step">下一步</div>
+            </div>
+        </div>
+        <!-- 诊断结束 -->
+        <!-- 矫治目标开始 -->
+        <div class="correct-target dn">
+            <div class="return">
+                <img src="img/fh.png">
+            </div>
+            <h2>矫治目标1</h2>
+            <ul>
+                <li class="correctional-tooth">
+                    <p>矫治牙列<img src="img/star2.png"></p>
+                    <div class="correct public">
+                        <span>上颌</span>
+                        <div class="right-arrow">
+                            <img src="img/right-arrow.png">
+                        </div>
+                    </div>
+
+                </li>
+                <li class="covering-jaw-box">
+                    <p>覆<span>颌</span><img src="img/star2.png"></p>
+                    <div class="covering-jaw public">
+                        <span>保持</span>
+                        <div class="right-arrow">
+                            <img src="img/right-arrow.png">
+                        </div>
+                    </div>
+                </li>
+                <li class="overlay">
+                    <p>覆<span>盖</span><img src="img/star2.png"></p>
+                    <div class="coverage public">
+                        <span>保持</span>
+                        <div class="right-arrow">
+                            <img src="img/right-arrow.png">
+                        </div>
+                    </div>
+
+                </li>
+                <li class="list-colum bruxism2">
+                    <p>磨牙关系<span>(上颌第一磨牙相对下颌第一磨牙的位置关系)</span><img src="img/star2.png"></p>
+                    <div class="molar">
+                        <div class="molar-left">
+                            <span>左侧</span>
+                            <div class="left-content">保持</div>
+                        </div>
+                        <div class="molar-right">
+                            <span>右侧</span>
+                            <div class="right-content">保持</div>
+                        </div>
+                        <div class="right-arrow">
+                            <img src="img/right-arrow.png">
+                        </div>
+                    </div>
+                </li>
+                <li class="list-colum cynodontes2">
+                    <p>尖牙关系<span>(上颌尖牙相对下颌尖牙的位置关系)</span><img src="img/star2.png"></p>
+                    <div class="molar">
+                        <div class="molar-left">
+                            <span>左侧</span>
+                            <div class="left-content">保持</div>
+                        </div>
+                        <div class="molar-right">
+                            <span>右侧</span>
+                            <div class="right-content">保持</div>
+                        </div>
+                        <div class="right-arrow">
+                            <img src="img/right-arrow.png">
+                        </div>
+                    </div>
+                </li>
+                <li class="backteeth">
+                    <p>后牙反颌</p>
+                    <div class="lock-jaw-teeth public">
+                        <span></span>
+                        <div class="right-arrow">
+                            <img src="img/right-arrow.png">
+                        </div>
+                    </div>
+
+                </li>
+            </ul>
+            <div class="button">
+                <div class="last-step">上一步</div>
+                <div class="next-step">下一步</div>
+            </div>
+        </div>
+        <!-- 矫治目标结束 -->
+
+        <!-- 间隙获得开始 -->
+        <div class="interval dn">
+            <div class="return">
+                <img src="img/fh.png">
+            </div>
+            <h2>矫治目标2</h2>
+            <div class="gain">
+                <p>请在相应的牙位处填写相应的标记</p>
+                <div class="options">
+                    <p>
+                        <a href="javascript:;"><span>EX</span>拔牙</a>
+                        <a href="javascript:;"><span>EXP</span>扩弓</a>
+                        <a href="javascript:;"><span>DM</span>远移磨牙</a>
+                    </p>
+                    <p>
+                        <a href="javascript:;"><span>IPR</span>可邻面去釉牙齿</a>
+                    </p>
+                </div>
+                <div class="teeth w">
+                    <p class="right">右</p>
+                    <div class="teethbox teeth-w">
+                        <ul class="up">
+                            <li>
+                                <p></p>
+                                <img src="img/18.png">
+                                <a href="javascript:;">18</a>
+                            </li>
+                            <li>
+                                <p></p>
+                                <img src="img/17.png">
+                                <a href="javascript:;">17</a>
+                            </li>
+                            <li>
+                                <p></p>
+                                <img src="img/16.png">
+                                <a href="javascript:;">16</a>
+                            </li>
+                            <li>
+                                <p></p>
+                                <img src="img/15.png">
+                                <a href="javascript:;">15</a>
+                            </li>
+                            <li>
+                                <p></p>
+                                <img src="img/14.png">
+                                <a href="javascript:;">14</a>
+                            </li>
+                            <li>
+                                <p></p>
+                                <img src="img/13.png">
+                                <a href="javascript:;">13</a>
+                            </li>
+                            <li>
+                                <p></p>
+                                <img src="img/12.png">
+                                <a href="javascript:;">12</a>
+                            </li>
+                            <li>
+                                <p></p>
+                                <img src="img/11.png">
+                                <a href="javascript:;">11</a>
+                            </li>
+                            <li>
+                                <p></p>
+                                <img src="img/21.png">
+                                <a href="javascript:;">21</a>
+                            </li>
+                            <li>
+                                <p></p>
+                                <img src="img/22.png">
+                                <a href="javascript:;">22</a>
+                            </li>
+                            <li>
+                                <p></p>
+                                <img src="img/23.png">
+                                <a href="javascript:;">23</a>
+                            </li>
+                            <li>
+                                <p></p>
+                                <img src="img/24.png">
+                                <a href="javascript:;">24</a>
+                            </li>
+                            <li>
+                                <p></p>
+                                <img src="img/25.png">
+                                <a href="javascript:;">25</a>
+                            </li>
+                            <li>
+                                <p></p>
+                                <img src="img/26.png">
+                                <a href="javascript:;">26</a>
+                            </li>
+                            <li>
+                                <p></p>
+                                <img src="img/27.png">
+                                <a href="javascript:;">27</a>
+                            </li>
+                            <li>
+                                <p></p>
+                                <img src="img/28.png">
+                                <a href="javascript:;">28</a>
+                            </li>
+                        </ul>
+                        <div class="vertical"></div>
+                        <ul class="down">
+                            <li>
+                                <a href="javascript:;">48</a>
+                                <img src="img/48.png">
+                                <p></p>
+                            </li>
+                            <li>
+                                <a href="javascript:;">47</a>
+                                <img src="img/47.png">
+                                <p></p>
+                            </li>
+                            <li>
+                                <a href="javascript:;">46</a>
+                                <img src="img/46.png">
+                                <p></p>
+                            </li>
+                            <li>
+                                <a href="javascript:;">45</a>
+                                <img src="img/45.png">
+                                <p></p>
+                            </li>
+                            <li>
+                                <a href="javascript:;">44</a>
+                                <img src="img/44.png">
+                                <p></p>
+                            </li>
+                            <li>
+                                <a href="javascript:;">43</a>
+                                <img src="img/43.png">
+                                <p></p>
+                            </li>
+                            <li>
+                                <a href="javascript:;">42</a>
+                                <img src="img/42.png">
+                                <p></p>
+                            </li>
+                            <li>
+                                <a href="javascript:;">41</a>
+                                <img src="img/41.png">
+                                <p></p>
+                            </li>
+                            <li>
+                                <a href="javascript:;">31</a>
+                                <img src="img/31.png">
+                                <p></p>
+                            </li>
+                            <li>
+                                <a href="javascript:;">32</a>
+                                <img src="img/32.png">
+                                <p></p>
+                            </li>
+                            <li>
+                                <a href="javascript:;">33</a>
+                                <img src="img/33.png">
+                                <p></p>
+                            </li>
+                            <li>
+                                <a href="javascript:;">34</a>
+                                <img src="img/34.png">
+                                <p></p>
+                            </li>
+                            <li>
+                                <a href="javascript:;">35</a>
+                                <img src="img/35.png">
+                                <p></p>
+                            </li>
+                            <li>
+                                <a href="javascript:;">36</a>
+                                <img src="img/36.png">
+                                <p></p>
+                            </li>
+                            <li>
+                                <a href="javascript:;">37</a>
+                                <img src="img/37.png">
+                                <p></p>
+                            </li>
+                            <li>
+                                <a href="javascript:;">38</a>
+                                <img src="img/38.png">
+                                <p></p>
+                            </li>
+                        </ul>
+                        <div class="level"></div>
+                    </div>
+                    <p class="left">左</p>
+                </div>
+                <p>*左右滑动选择更多牙位</p>
+            </div>
+            <div class="button">
+                <div class="last-step">上一步</div>
+                <div class="next-step">下一步</div>
+            </div>
+        </div>
+        <!-- 间隙获得 结束 -->
+        <!-- 特殊要求 开始 -->
+        <div class="special dn">
+            <div class="return">
+                <img src="img/fh.png">
+            </div>
+            <h2>矫治目标3</h2>
+            <div class="gain">
+                <p>请在相应的牙位处填写相应的标记</p>
+                <div class="options">
+                    <p>
+                        <a href="javascript:;"><span>Nm</span>不可移动牙齿</a>
+                        <a href="javascript:;"><span>Na</span>无附件</a>
+                        <a href="javascript:;"><span>M</span>缺失牙</a>
+                    </p>
+                </div>
+                <div class="teeth w">
+                    <p class="right">右</p>
+                    <div class="teethbox teeth-w">
+                        <ul class="up">
+                            <li>
+                                <p></p>
+                                <img src="img/18.png">
+                                <a href="javascript:;">18</a>
+                            </li>
+                            <li>
+                                <p></p>
+                                <img src="img/17.png">
+                                <a href="javascript:;">17</a>
+                            </li>
+                            <li>
+                                <p></p>
+                                <img src="img/16.png">
+                                <a href="javascript:;">16</a>
+                            </li>
+                            <li>
+                                <p></p>
+                                <img src="img/15.png">
+                                <a href="javascript:;">15</a>
+                            </li>
+                            <li>
+                                <p></p>
+                                <img src="img/14.png">
+                                <a href="javascript:;">14</a>
+                            </li>
+                            <li>
+                                <p></p>
+                                <img src="img/13.png">
+                                <a href="javascript:;">13</a>
+                            </li>
+                            <li>
+                                <p></p>
+                                <img src="img/12.png">
+                                <a href="javascript:;">12</a>
+                            </li>
+                            <li>
+                                <p></p>
+                                <img src="img/11.png">
+                                <a href="javascript:;">11</a>
+                            </li>
+                            <li>
+                                <p></p>
+                                <img src="img/21.png">
+                                <a href="javascript:;">21</a>
+                            </li>
+                            <li>
+                                <p></p>
+                                <img src="img/22.png">
+                                <a href="javascript:;">22</a>
+                            </li>
+                            <li>
+                                <p></p>
+                                <img src="img/23.png">
+                                <a href="javascript:;">23</a>
+                            </li>
+                            <li>
+                                <p></p>
+                                <img src="img/24.png">
+                                <a href="javascript:;">24</a>
+                            </li>
+                            <li>
+                                <p></p>
+                                <img src="img/25.png">
+                                <a href="javascript:;">25</a>
+                            </li>
+                            <li>
+                                <p></p>
+                                <img src="img/26.png">
+                                <a href="javascript:;">26</a>
+                            </li>
+                            <li>
+                                <p></p>
+                                <img src="img/27.png">
+                                <a href="javascript:;">27</a>
+                            </li>
+                            <li>
+                                <p></p>
+                                <img src="img/28.png">
+                                <a href="javascript:;">28</a>
+                            </li>
+                        </ul>
+                        <div class="vertical"></div>
+                        <ul class="down">
+                            <li>
+                                <a href="javascript:;">48</a>
+                                <img src="img/48.png">
+                                <p></p>
+                            </li>
+                            <li>
+                                <a href="javascript:;">47</a>
+                                <img src="img/47.png">
+                                <p></p>
+                            </li>
+                            <li>
+                                <a href="javascript:;">46</a>
+                                <img src="img/46.png">
+                                <p></p>
+                            </li>
+                            <li>
+                                <a href="javascript:;">45</a>
+                                <img src="img/45.png">
+                                <p></p>
+                            </li>
+                            <li>
+                                <a href="javascript:;">44</a>
+                                <img src="img/44.png">
+                                <p></p>
+                            </li>
+                            <li>
+                                <a href="javascript:;">43</a>
+                                <img src="img/43.png">
+                                <p></p>
+                            </li>
+                            <li>
+                                <a href="javascript:;">42</a>
+                                <img src="img/42.png">
+                                <p></p>
+                            </li>
+                            <li>
+                                <a href="javascript:;">41</a>
+                                <img src="img/41.png">
+                                <p></p>
+                            </li>
+                            <li>
+                                <a href="javascript:;">31</a>
+                                <img src="img/31.png">
+                                <p></p>
+                            </li>
+                            <li>
+                                <a href="javascript:;">32</a>
+                                <img src="img/32.png">
+                                <p></p>
+                            </li>
+                            <li>
+                                <a href="javascript:;">33</a>
+                                <img src="img/33.png">
+                                <p></p>
+                            </li>
+                            <li>
+                                <a href="javascript:;">34</a>
+                                <img src="img/34.png">
+                                <p></p>
+                            </li>
+                            <li>
+                                <a href="javascript:;">35</a>
+                                <img src="img/35.png">
+                                <p></p>
+                            </li>
+                            <li>
+                                <a href="javascript:;">36</a>
+                                <img src="img/36.png">
+                                <p></p>
+                            </li>
+                            <li>
+                                <a href="javascript:;">37</a>
+                                <img src="img/37.png">
+                                <p></p>
+                            </li>
+                            <li>
+                                <a href="javascript:;">38</a>
+                                <img src="img/38.png">
+                                <p></p>
+                            </li>
+                        </ul>
+                        <div class="level"></div>
+                    </div>
+                    <p class="left">左</p>
+                </div>
+                <p>*左右滑动选择更多牙位</p>
+            </div>
+            <div class="button">
+                <div class="last-step">上一步</div>
+                <div class="next-step">下一步</div>
+            </div>
+        </div>
+        <!-- 特殊要求 结束 -->
+        <!-- 矫治目标2 开始 -->
+        <div class="correct-target2 dn">
+            <div class="return">
+                <img src="img/fh.png">
+            </div>
+            <h2>矫治目标4</h2>
+            <ul>
+                <li class="list-colum">
+                    <p>中线关系<img src="img/star2.png"></p>
+                    <div class="molar">
+                        <div class="molar-left">
+                            <span>上颌</span>
+                            <div class="left-content">保持</div>
+                        </div>
+                        <div class="molar-right">
+                            <span>下颌</span>
+                            <div class="right-content">保持</div>
+                        </div>
+                        <div class="right-arrow">
+                            <img src="img/right-arrow.png">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <p>牙列间隙</p>
+                    <div class="teeth-clearance public">全部关闭</div>
+                    <div class="right-arrow">
+                        <img src="img/right-arrow.png">
+                    </div>
+                </li>
+                <li>
+                    <p>附加说明</p>
+                    <div class="objective">
+                        <textarea maxlength="400" placeholder="请输入附加说明"></textarea>
+                    </div>
+                </li>
+            </ul>
+            <div class="button">
+                <div class="last-step">上一步</div>
+                <div class="next-step">下一步</div>
+            </div>
+        </div>
+        <!-- 矫治目标2 结束 -->
+        <!-- 矫治目标2 结束 -->
+        <!-- 牙况照片 开始 -->
+        <div class="teeth-phone dn" style="height:auto !important;overflow-y:auto; position: inherit; left: auto; top: auto;">
+            <div class="return">
+                <img src="img/fh.png">
+            </div>
+            <h2>牙况照片</h2>
+            <ul>
+                <li>
+                    <p>口内照（点击选择上传相应照片）</p>
+                    <ul class="phone">
+                        <!-- tbea修改上传 -->
+                        <li>
+                            <div data-index="1" class="front">
+                                <img src="img/front.png" alt="">
+                                <input type="file" accept="image/gif,image/jpeg,image/jpg,image/png,image/svg">
+                                <img src="" alt="">
+                                <!-- <div class="phone-close"><img src="img/del.png"></div> -->
+                            </div>
+                            <div data-index="2" class="smile">
+                                <img src="img/management-smile.png" alt="">
+                                <input type="file" accept="image/gif,image/jpeg,image/jpg,image/png,image/svg">
+                                <img src="" alt="">
+                                <!-- <div class="phone-close"><img src="img/del.png"></div> -->
+                            </div>
+                            <div data-index="3" class="side">
+                                <img src="img/management-side.png" alt="">
+                                <input type="file" accept="image/gif,image/jpeg,image/jpg,image/png,image/svg">
+                                <img src="" alt="">
+                                <!-- <div class="phone-close"><img src="img/del.png"></div> -->
+                            </div>
+                        </li>
+                        <li>
+                            <div data-index="4" class="top">
+                                <img src="img/top.png" alt="">
+                                <input type="file" accept="image/gif,image/jpeg,image/jpg,image/png,image/svg">
+                                <img src="" alt="">
+                                <!-- <div class="phone-close"><img src="img/del.png"></div> -->
+                            </div>
+                            <div data-index="5" class="bottom">
+                                <img src="img/bottom.png" alt="">
+                                <input type="file" accept="image/gif,image/jpeg,image/jpg,image/png,image/svg">
+                                <img src="" alt="">
+                                <!-- <div class="phone-close"><img src="img/del.png"></div> -->
+                            </div>
+                        </li>
+                        <li>
+                            <div data-index="6" class="left">
+                                <img src="img/left.png" alt="">
+                                <input type="file" accept="image/gif,image/jpeg,image/jpg,image/png,image/svg">
+                                <img src="" alt="">
+                                <!-- <div class="phone-close"><img src="img/del.png"></div> -->
+                            </div>
+                            <div data-index="7" class="centent">
+                                <img src="img/centent.png" alt="">
+                                <input type="file" accept="image/gif,image/jpeg,image/jpg,image/png,image/svg">
+                                <img src="" alt="">
+                                <!-- <div class="phone-close"><img src="img/del.png"></div> -->
+                            </div>
+                            <div data-index="8" class="right">
+                                <img src="img/right.png" alt="">
+                                <input type="file" accept="image/gif,image/jpeg,image/jpg,image/png,image/svg">
+                                <img src="" alt="">
+                                <!-- <div class="phone-close"><img src="img/del.png"></div> -->
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p>X光片（点击选择上传相应照片)</p>
+                    <ul class="x-ray-film">
+                        <li>
+                            <div data-index="9" class="panorama">
+                                <img src="img/panorama.png" alt="">
+                                <input type="file" accept="image/gif,image/jpeg,image/jpg,image/png,image/svg">
+                                <img src="" alt="">
+                                <!-- <div class="phone-close"><img src="img/del.png"></div> -->
+                            </div>
+                            <div data-index="10" class="smile">
+                                <img src="img/head-front.png" alt="">
+                                <input type="file" accept="image/gif,image/jpeg,image/jpg,image/png,image/svg">
+                                <img src="" alt="">
+                                <!-- <div class="phone-close"><img src="img/del.png"></div> -->
+                            </div>
+                            <div data-index="11" class="side">
+                                <img src="img/head-side.png" alt="">
+                                <input type="file" accept="image/gif,image/jpeg,image/jpg,image/png,image/svg">
+                                <img src="" alt="">
+                                <!-- <div class="phone-close"><img src="img/del.png"></div> -->
+                            </div>
+                        </li>
+                    </ul>
+                    <p class="star"><img src="img/star2.png">请至少上传一张照片</p>
+                </li>
+                
+            </ul>
+            <div class="button">
+                <div class="last-step">上一步</div>
+                <div class="next-step">下一步</div>
+            </div>
+            
+        </div>
+        <!-- 牙况照片 结束 -->
+        <!-- 上传文件 开始 -->
+        <div class="uploading dn">
+            <div class="return">
+                <img src="img/fh.png">
+            </div>
+            <h2>上传文件</h2>
+            <div class="gain">
+                <p>点击框选区域上传口扫文件</p>
+                <p>文件限制:最大100M，支持rar.zip格式</p>
+                <div data-index="12" class="file">
+                    <div class="add-file-tips"><img src="img/file-no.png" alt="">
+                        <p>点击上传口扫文件</p>
+                    </div>
+                    <div class="del-file-tips dn"><img src="img/file.png" alt="">
+                        <p></p>
+                    </div>
+                    <!-- <input type="file" accept=".zip,.rar"> -->
+                    <input type="file">
+                </div>
+                <p class="del-tips dn">点击可删除上传文件</p>
+            </div>
+            <div class="button">
+                <div class="last-step">上一步</div>
+                <div class="next-step">下一步</div>
+            </div>
+            <div class="stockpile">
+                <div class="save">保存</div>
+                <div class="cancel">取消</div>
+            </div>
+        </div>
+        <!-- 上传文件结束 -->
+    </div>
+    <!-- 新建病例 结束 -->
+
+
+    <!-- ============================================== 收货地址 页面 ====================================================== -->
+    <!-- 医院地址列表  开始 -->
+    <div class="appliance address-list dn" id="hospital-address-list">
+        <div class="headbox">
+            <div class="left-arrow">
+                <img src="img/left-arrow.png" alt="">
+            </div>
+            <span class="centre-text">就诊医院</span>
+            <span class="right-text"></span>
+        </div>
+        <div class="content-box list-box">
+            <ul class="content-bg">
+            </ul>
+            <div class="sub-btn">
+                <div class="preserve">
+                    新建医院地址
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 医院地址列表 结束 -->
+    <!-- 修改就诊医院开始 -->
+    <div class="modification-hospital dn" id="modification-hospital">
+        <div class="headbox">
+            <div class="left-arrow">
+                <img src="img/left-arrow.png" alt="">
+            </div>
+            <span class="centre-text">修改就诊医院</span>
+        </div>
+        <div class="hospital-address">
+            <ul>
+                <li>
+                    <div class="edit-csq">
+                        <p>地址</p>
+                        <div class="ipt-box-addr">
+                            <div class="contruy">
+                                <select class="countryList">
+                                    <option value="国家">国家</option>
+                                </select>
+                                <img src="./img/management-jt-x.png" alt="">
+                            </div>
+                            <div class="province">
+                                <select class="provinceList">
+                                    <option value="省">省</option>
+                                </select>
+                                <img src="./img/management-jt-x.png" alt="">
+                            </div>
+                            <div class="city">
+                                <select class="cityList">
+                                    <option value="市">市</option>
+                                </select>
+                                <img src="./img/management-jt-x.png" alt="">
+                            </div>
+                            <div class="area">
+                                <select class="areaList">
+                                    <option value="区">区/县</option>
+                                </select>
+                                <img src="./img/management-jt-x.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="address" id="hospitalAddrnew">
+                        <p>地区</p>
+                        <input type="text" maxlength="400" class="name">
+                    </div>
+                </li>
+                <li id="designationnew">
+                    <p>名称</p>
+                    <input type="text" maxlength="400" class="name">
+                </li>
+            </ul>
+            <div class="click">
+                <div class="save">保存</div>
+                <div class="delete">删除</div>
+            </div>
+        </div>
+    </div>
+    <!-- 修改就诊医院结束 -->
+    <!-- 收货地址列表 开始 -->
+    <div class="appliance address-list dn" id="address-list">
+        <div class="headbox">
+            <div class="left-arrow">
+                <img src="img/left-arrow.png" alt="">
+            </div>
+            <span class="centre-text">收货地址</span>
+            <span class="right-text"></span>
+        </div>
+        <div class="content-box list-box">
+            <ul class="content-bg">
+            </ul>
+            <div class="sub-btn">
+                <div class="preserve">
+                    新建收货地址
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 收货地址列表 结束 -->
+    <!-- 修改收货地址 开始 -->
+    <div class="appliance address-revise dn" id="address-revise">
+        <div class="headbox">
+            <div class="modifTwiceBack left-arrow">
+                <img src="img/left-arrow.png" alt="">
+            </div>
+            <span class="centre-text">修改收货地址</span>
+            <span class="right-text"></span>
+        </div>
+        <div class="content-box">
+            <ul class="content-bg">
+                <li>
+                    <label for="receiver">收货人</label>
+                    <input type="text" maxlength="400" id="receiverName">
+                </li>
+                <li>
+                    <label for="receiver">手机号</label>
+                    <input type="tel" oninput="value=value.replace(/[^\d]/g,'')" maxlength="11" id="receiverTel">
+                </li>
+                <li>
+                    <label for="receiver">所在地区</label>
+                    <!-- <input disabled=true type="text" id="receiverAddr"> -->
+                    <div class="ipt-box-addr">
+                        <div class="contruy">
+                            <select class="countryList">
+                                <option value="国家">国家</option>
+                            </select>
+                            <img src="./img/management-jt-x.png" alt="">
+                        </div>
+                        <div class="province">
+                            <select class="provinceList">
+                                <option value="省">省</option>
+                            </select>
+                            <img src="./img/management-jt-x.png" alt="">
+                        </div>
+                        <div class="city">
+                            <select class="cityList">
+                                <option value="市">市</option>
+                            </select>
+                            <img src="./img/management-jt-x.png" alt="">
+                        </div>
+                        <div class="area">
+                            <select class="areaList">
+                                <option value="区">区/县</option>
+                            </select>
+                            <img src="./img/management-jt-x.png" alt="">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <label for="receiver">详细地址</label>
+                    <input type="text" maxlength="400" id="receiverDetail">
+                </li>
+            </ul>
+            <div class="sub-btn">
+                <div class="preserve">
+                    保存
+                </div>
+                <div class="cancel">
+                    删除
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 修改收货地址 结束 -->
+
+    <!-- ============================================================= 新建病例所需 弹窗============================================================= -->
+    <!-- 诊断弹窗-磨牙关系 开始 -->
+    <div class="layer-big dn" id="newStep3Molar">
+        <div class="layer">
+            <div class="layer-inner w">
+                <div class="layer-inner-box molar-classify">
+                    <p>磨牙关系</p>
+                    <div class="molar-box">
+                        <span class="left-side">-左侧-</span>
+                        <ul class="classify classify-left">
+                            <li class="active">|类</li>
+                            <li>||类</li>
+                            <li>|||类</li>
+                        </ul>
+                        <span class="right-side">-右侧-</span>
+                        <ul class="classify classify-right">
+                            <li class="active">|类</li>
+                            <li>||类</li>
+                            <li>|||类</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="layer-btn">
+                    <div class="cancel">取消</div>
+                    <div class="save">保存</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 诊断弹窗-磨牙关系 结束 -->
+
+    <!-- 诊断弹窗-尖牙关系 开始 -->
+    <div class="layer-big dn" id="newStep3Fangs">
+        <div class="layer">
+            <div class="layer-inner w">
+                <div class="layer-inner-box fangs-classify">
+                    <p>尖牙关系</p>
+                    <div class="fangs-box">
+                        <div class="fangs-list">
+                            <p class="left-side">-左侧-</p>
+                            <ul class="classify classify-left">
+                                <li class="active">中性</li>
+                                <li>近中</li>
+                                <li>远中</li>
+                            </ul>
+                        </div>
+                        <div class="fangs-list">
+                            <p class="right-side">-右侧-</p>
+                            <ul class="classify classify-right">
+                                <li class="active">中性</li>
+                                <li>近中</li>
+                                <li>远中</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="layer-btn">
+                    <div class="cancel">取消</div>
+                    <div class="save">保存</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 诊断弹窗-尖牙关系 结束 -->
+
+    <!-- 诊断弹窗-病例分类 开始 -->
+    <div class="layer-big dn" id="newStep3Case">
+        <div class="layer">
+            <div class="layer-inner w">
+                <div class="layer-inner-box teeth-classify">
+                    <p>病例分类</p>
+                    <ul class="classify">
+                        <li class="active">拥挤</li>
+                        <li>牙列间隙</li>
+                        <li>前突</li>
+                        <li>前牙反𬌗</li>
+                        <li>开𬌗</li>
+                        <li>深覆𬌗</li>
+                        <li>深覆盖</li>
+                        <li>后牙锁𬌗</li>
+                        <li>后牙反𬌗</li>
+                    </ul>
+                </div>
+                <div class="layer-btn">
+                    <div class="cancel">取消</div>
+                    <div class="save">保存</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 诊断弹窗-病例分类 结束 -->
+
+    <!-- 矫治目标弹窗-矫治牙列 开始 -->
+    <div class="layer-big dn" id="newStep4correctional">
+        <div class="layer">
+            <div class="layer-inner w">
+                <div class="layer-inner-box is-one-classify">
+                    <p>矫治牙列</p>
+                    <ul class="classify">
+                        <li class="active">上颌</li>
+                        <li>下颌</li>
+                        <li>全颌</li>
+                    </ul>
+                </div>
+                <div class="layer-btn">
+                    <div class="cancel">取消</div>
+                    <div class="save">保存</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 矫治目标弹窗-矫治牙列 结束 -->
+
+    <!-- 矫治目标弹窗-覆盖 开始 -->
+    <div class="layer-big dn" id="newStep4coating">
+        <div class="layer">
+            <div class="layer-inner w">
+                <div class="layer-inner-box cover-classify2">
+                    <p>覆盖</p>
+                    <ul class="classify">
+                        <li class="active">保持</li>
+                        <li>改善</li>
+                    </ul>
+                    <div class="millimeter">
+                        <input type="text" maxlength="4" oninput="replaceDotNumber(value)" disabled=true>
+                        <span>mm</span>
+                    </div>
+                </div>
+                <div class="layer-btn">
+                    <div class="cancel">取消</div>
+                    <div class="save">保存</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 矫治目标弹窗-覆盖 结束 -->
+
+    <!-- 矫治目标弹窗-覆颌 开始 -->
+    <div class="layer-big dn" id="newStep4jawPopup">
+        <div class="layer">
+            <div class="layer-inner w">
+                <div class="layer-inner-box cover-classify2">
+                    <p>覆颌</p>
+                    <ul class="classify">
+                        <li class="active">保持</li>
+                        <li>改善</li>
+                    </ul>
+                    <div class="millimeter">
+                        <input type="text" disabled="true" maxlength="4" oninput="replaceDotNumber(value)">
+                        <span>mm</span>
+                    </div>
+                </div>
+                <div class="layer-btn">
+                    <div class="cancel">取消</div>
+                    <div class="save">保存</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 矫治目标弹窗-覆颌 结束 -->
+
+    <!-- 矫治目标弹窗-磨牙关系2 开始 -->
+    <div class="layer-big dn" id="newStep4Molar">
+        <div class="layer">
+            <div class="layer-inner w">
+                <div class="layer-inner-box molar-classify">
+                    <p>磨牙关系</p>
+                    <div class="molar-box-left">
+                        <p class="left-side">-左侧-</p>
+                        <ul class="classify">
+                            <li class="active">保持</li>
+                            <li>理想</li>
+                            <li>改善</li>
+                        </ul>
+                        <ul class="millimeter">
+                            <li>
+                                近中<span>(+)</span><input maxlength="4" oninput="replaceDotNumber(value)" type="text"
+                                    disabled="true">mm
+                            </li>
+                            <li>
+                                远中<span>(-)</span><input maxlength="4" oninput="replaceDotNumber(value)" type="text"
+                                    disabled="true">mm
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="molar-box-right">
+                        <p class="right-side">-右侧-</p>
+                        <ul class="classify" id="classify-right">
+                            <li class="active">保持</li>
+                            <li>理想</li>
+                            <li>改善</li>
+                        </ul>
+                        <ul class="millimeter">
+                            <li>
+                                近中<span>(+)</span><input maxlength="4" oninput="replaceDotNumber(value)" type="text"
+                                    disabled="true">mm
+                            </li>
+                            <li>
+                                远中<span>(-)</span><input maxlength="4" oninput="replaceDotNumber(value)" type="text"
+                                    disabled="true">mm
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="layer-btn">
+                    <div class="cancel">取消</div>
+                    <div class="save">保存</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 矫治目标弹窗-磨牙关系2 结束 -->
+
+    <!-- 矫治目标弹窗-尖牙关系2 开始 -->
+    <div class="layer-big dn" id="newStep4Fangs">
+        <div class="layer">
+            <div class="layer-inner w">
+                <div class="layer-inner-box molar-classify">
+                    <p>尖牙关系</p>
+                    <div class="molar-box-left">
+                        <p class="left-side">-左侧-</p>
+                        <ul class="classify" id="classify-left">
+                            <li class="active">保持</li>
+                            <li>理想</li>
+                            <li>改善</li>
+                        </ul>
+                        <ul class="millimeter">
+                            <li>
+                                近中<span>(+)</span><input type="text" maxlength="4" oninput="replaceDotNumber(value)"
+                                    disabled="true">mm
+                            </li>
+                            <li>
+                                远中<span>(-)</span><input type="text" maxlength="4" oninput="replaceDotNumber(value)"
+                                    disabled="true">mm
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="molar-box-right">
+                        <p class="right-side">-右侧-</p>
+                        <ul class="classify" id="classify-right">
+                            <li class="active">保持</li>
+                            <li>理想</li>
+                            <li>改善</li>
+                        </ul>
+                        <ul class="millimeter">
+                            <li>
+                                近中<span>(+)</span><input type="text" maxlength="4" oninput="replaceDotNumber(value)"
+                                    disabled="true">mm
+                            </li>
+                            <li>
+                                远中<span>(-)</span><input type="text" maxlength="4" oninput="replaceDotNumber(value)"
+                                    disabled="true">mm
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="layer-btn">
+                    <div class="cancel">取消</div>
+                    <div class="save">保存</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 矫治目标弹窗-磨牙关系2 结束 -->
+
+    <!-- 矫治目标弹窗-后牙反颌 开始 -->
+    <div class="layer-big dn" id="newStep4Backteeth">
+        <div class="layer">
+            <div class="layer-inner w">
+                <div class="layer-inner-box cover-classify">
+                    <p>后牙反颌</p>
+                    <ul class="classify">
+                        <li class="active">保持</li>
+                        <li>纠正</li>
+                    </ul>
+                </div>
+                <div class="layer-btn">
+                    <div class="cancel">取消</div>
+                    <div class="save">保存</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 矫治目标弹窗-后牙锁颌 结束 -->
+
+    <!-- 间隙获得弹窗-间隙获得 开始 -->
+    <div class="layer-big dn" id="newStep5Interstice">
+        <div class="layer">
+            <div class="layer-inner w">
+                <div class="layer-inner-box backteeth-classify">
+                    <p>间隙获得</p>
+                    <ul class="classify">
+                        <li data-text="EX">拔牙</li>
+                        <li data-text="EXP">扩弓</li>
+                        <li data-text="DM">远移磨牙</li>
+                        <li data-text="IPR" class="big-li">可邻面去釉牙齿</li>
+                        <li class="reset">重置</li>
+                    </ul>
+                </div>
+                <div class="layer-btn">
+                    <div class="cancel">取消</div>
+                    <div class="save">保存</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 间隙获得弹窗-间隙获得 结束 -->
+
+    <!-- 特殊要求弹窗-特殊要求 开始 -->
+    <div class="layer-big dn" id="newStep6special">
+        <div class="layer">
+            <div class="layer-inner w">
+                <div class="layer-inner-box backteeth-classify" id="backteeth2">
+                    <p>间隙获得</p>
+                    <ul class="classify">
+                        <li data-text="Nm">不可移动牙齿</li>
+                        <li data-text="Na">无附件</li>
+                        <li data-text="M">缺失牙</li>
+                        <li class="reset">重置</li>
+                    </ul>
+                </div>
+                <div class="layer-btn">
+                    <div class="cancel">取消</div>
+                    <div class="save">保存</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 特殊要求弹窗-特殊要求 结束 -->
+
+    <!-- 牙齿状况弹窗-牙列间隙 开始 -->
+    <div class="layer-big dn" id="newStep7denture">
+        <div class="layer">
+            <div class="layer-inner w">
+                <div class="layer-inner-box cover-classify">
+                    <p>牙列间隙</p>
+                    <ul class="classify">
+                        <li class="active">全部关闭</li>
+                        <li>保持间隙</li>
+                    </ul>
+                </div>
+                <div class="layer-btn">
+                    <div class="cancel">取消</div>
+                    <div class="save">保存</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 牙齿状况弹窗-牙列间隙 结束 -->
+
+    <!-- 牙齿状况弹窗-中线关系 开始 -->
+    <!-- newStep7Center -->
+    <div class="layer-big dn" id="newStep7Center">
+        <div class="layer">
+            <div class="layer-inner w">
+                <div class="layer-inner-box molar-classify">
+                    <p>中线关系</p>
+                    <div class="molar-box-left">
+                        <p class="left-side">-上颌-</p>
+                        <ul class="classify" id="classify-left">
+                            <li class="active">保持</li>
+                            <li>左</li>
+                            <li>右</li>
+                        </ul>
+                        <ul class="millimeter">
+                            <li>
+                                左<span>(+)</span><input type="text" maxlength="4" oninput="replaceDotNumber(value)"
+                                    disabled="true">mm
+                            </li>
+                            <li>
+                                右<span>(-)</span><input type="text" maxlength="4" oninput="replaceDotNumber(value)"
+                                    disabled="true">mm
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="molar-box-right">
+                        <p class="right-side">-下颌-</p>
+                        <ul class="classify" id="classify-right">
+                            <li class="active">保持</li>
+                            <li>左</li>
+                            <li>右</li>
+                        </ul>
+                        <ul class="millimeter">
+                            <li>
+                                左<span>(+)</span><input type="text" maxlength="4" oninput="replaceDotNumber(value)"
+                                    disabled="true">mm
+                            </li>
+                            <li>
+                                右<span>(-)</span><input type="text" maxlength="4" oninput="replaceDotNumber(value)"
+                                    disabled="true">mm
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="layer-btn">
+                    <div class="cancel">取消</div>
+                    <div class="save">保存</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 牙齿状况弹窗-中线关系 结束 -->
+    <!-- 牙齿状况弹窗-上传照片弹窗 开始-->
+    <div class="layer-big dn" id="deletePhotos">
+        <div class="layer">
+            <div class="layer-inner w">
+                <div class="layer-inner-box1">
+                    <p>替换照片</p>
+                    <input type="file" accept="image/gif,image/jpeg,image/jpg,image/png,image/svg">
+                </div>
+                <div id="create-del" class="layer-inner-box1">
+                    <p>删除照片</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 牙齿状况弹窗-上传照片弹窗 结束 -->
+
+
+    <!-- 幕旋转提示 -->
+    <script src="js/LandscapeTip.js"></script>
+    <script src="js/jquery.min.3.5.1.js"></script>
+    <script src="js/CensoredWord-0.0.1.js"></script>
+    <script src="js/chooseDate.js"></script>
+    <script src="js/ruidate.js"></script>
+    <script src="js/html2canvas.min.js"></script>
+    <script src="js/layer.js"></script>
+    <script src="js/viewer.js"></script>
+    <script src="js/vconsole.min.js"></script>
+    <script src="js/lrz/lrz.all.bundle.js"></script>
+    <script src="js/common.js?v=t173"></script>
+    <script src="js/managementnew.js?v=t173"></script>
+</body>
+
+</html>

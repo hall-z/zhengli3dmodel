@@ -1,0 +1,222 @@
+/* 设计稿宽 1324 */
+body,
+html {
+  overflow-x: hidden;
+  background-color: #dfe0e2;
+  min-height: 100%;
+}
+/* 切换按钮栏 start */
+.tab {
+  display: flex;
+  width: 100%;
+  height: 12.00906344vw;
+  align-items: flex-end;
+  padding: 0 1.96374622vw;
+  background-color: #565759;
+}
+.tab ul {
+  display: flex;
+}
+.tab ul li {
+  width: 12.08459215vw;
+  height: 4.53172205vw;
+  text-align: center;
+  line-height: 4.53172205vw;
+  color: #ffffff;
+  border-radius: 0.52870091vw 0.52870091vw 0 0;
+  font-size: 1.73716012vw;
+}
+.tab ul .active {
+  color: #1175d2;
+  background-color: #f9f9f9;
+}
+/* 切换按钮栏 end */
+/* 内容部分 start */
+.message {
+  height: auto;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2.87009063vw 1.88821752vw 9.81873112vw;
+}
+.message ul {
+  border-radius: 0.75528701vw;
+  overflow: hidden;
+  background: #f9f9f9;
+}
+.message ul li {
+  overflow: hidden;
+}
+.message ul li .file-title {
+  height: 3.39879154vw;
+  line-height: 3.39879154vw;
+  margin-top: 3.39879154vw;
+  border-left: 0.75528701vw solid #1175d2;
+  text-indent: 1.13293051vw;
+  font-size: 1.96374622vw;
+  font-weight: 600;
+  color: #666666;
+}
+.message ul li .file-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1.96374622vw;
+  height: 4.22960725vw;
+  margin-top: 3.47432024vw;
+  line-height: 4.22960725vw;
+  font-size: 1.96374622vw;
+}
+.message ul li .file-box .file-name {
+  color: #1175d2;
+}
+.message ul li .file-box .file-name img {
+  width: 14.72809668vw;
+  height: 3.09667674vw;
+  vertical-align: middle;
+}
+.message ul li .file-box .file-btn {
+  width: 14.12386707vw;
+  height: 4.22960725vw;
+  background: url("../img/download.png") no-repeat;
+  background-size: 100% 100%;
+}
+.message ul li .file-title-two {
+  height: 3.39879154vw;
+  line-height: 3.39879154vw;
+  margin-top: 6.64652568vw;
+  border-left: 0.75528701vw solid #1175d2;
+  text-indent: 1.13293051vw;
+  font-size: 1.96374622vw;
+  font-weight: 600;
+  color: #666666;
+}
+.message ul li .file-box-two {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1.96374622vw;
+  height: 4.22960725vw;
+  margin-top: 3.70090634vw;
+  line-height: 4.22960725vw;
+  font-size: 1.96374622vw;
+}
+.message ul li .file-box-two .file-name {
+  color: #1175d2;
+}
+.message ul li .file-box-two .file-name img {
+  width: 15.33232628vw;
+  height: 2.56797583vw;
+  vertical-align: middle;
+}
+.message ul li .file-box-two .file-btn {
+  width: 14.12386707vw;
+  height: 4.22960725vw;
+  background: url("../img/download.png") no-repeat;
+  background-size: 100% 100%;
+}
+.message ul li > p:nth-of-type(1) {
+  padding: 0 2.19033233vw;
+  margin-top: 4.07854985vw;
+  line-height: 2.41691843vw;
+  font-size: 1.88821752vw;
+}
+.message ul li .text {
+  padding: 0 2.19033233vw;
+  margin-top: 2.94561934vw;
+  margin-bottom: 6.49546828vw;
+  font-size: 1.73716012vw;
+  line-height: 2.26586103vw;
+  color: #999999;
+}
+.message ul li .text2 {
+  padding: 0 2.19033233vw;
+  margin-top: 3.32326284vw;
+  margin-bottom: 4.98489426vw;
+  font-size: 1.73716012vw;
+  line-height: 2.41691843vw;
+  color: #999999;
+}
+.message ul li .connection {
+  padding-left: 2.11480363vw;
+}
+.message ul li .connection h3 {
+  float: left;
+  font-size: 1.81268882vw;
+  font-weight: 700;
+  color: #333333;
+  margin-right: 3.39879154vw;
+}
+.message ul li .connection div {
+  display: flex;
+  flex-direction: column;
+  height: 180;
+  justify-content: space-between;
+}
+.message ul li .connection div p {
+  font-size: 1.81268882vw;
+  color: #666666;
+}
+.message ul li .connection div p span {
+  margin-left: 1.73716012vw;
+  color: #1175d2;
+}
+.message ul li .worktime {
+  margin-top: 3.77643505vw;
+  padding-left: 2.11480363vw;
+}
+.message ul li .worktime h3 {
+  float: left;
+  font-size: 1.81268882vw;
+  font-weight: 700;
+  color: #333333;
+  margin-right: 3.39879154vw;
+}
+.message ul li .worktime div {
+  display: flex;
+}
+.message ul li .worktime div p {
+  font-size: 1.81268882vw;
+  color: #666666;
+}
+.message ul li .address {
+  margin-top: 2.03927492vw;
+  padding-left: 2.11480363vw;
+}
+.message ul li .address h3 {
+  float: left;
+  font-size: 1.81268882vw;
+  font-weight: 700;
+  color: #333333;
+  margin-right: 3.39879154vw;
+  line-height: 3.62537764vw;
+}
+.message ul li .address h3::first-letter {
+  margin-right: 3.62537764vw;
+}
+.message ul li .address div {
+  display: flex;
+  flex-direction: column;
+}
+.message ul li .address div p {
+  font-size: 1.73716012vw;
+  color: #666666;
+  line-height: 3.62537764vw;
+}
+.message ul li .clinical {
+  margin-top: 3.77643505vw;
+  margin-bottom: 6.41993958vw;
+  padding-left: 2.11480363vw;
+}
+.message ul li .clinical h3 {
+  float: left;
+  font-size: 1.81268882vw;
+  font-weight: 700;
+  color: #333333;
+  margin-right: 3.39879154vw;
+}
+.message ul li .clinical div {
+  display: flex;
+}
+.message ul li .clinical div p {
+  font-size: 1.81268882vw;
+  color: #666666;
+}
+/* 内容部分 end */

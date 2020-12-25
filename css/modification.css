@@ -1,0 +1,62 @@
+/* 设计稿宽 750 */
+body,
+html {
+  background-color: #B3B3B4;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.appliance {
+  height: 100%;
+}
+.appliance .headbox .right-text {
+  color: #ffffff;
+  background: #1175D2;
+  padding: 0.66666667vw 2vw;
+  border-radius: 0.66666667vw;
+}
+.form-big-box {
+  padding: 6vw 6vw 0;
+}
+.form-big-box .form-box {
+  width: 100%;
+}
+.form-big-box .form-box input {
+  width: 100%;
+  height: 9.73333333vw;
+  background-color: white;
+  border-radius: 0.66666667vw;
+  margin-bottom: 2.4vw;
+  font-size: 3.2vw;
+  text-indent: 4vw;
+  color: #000;
+}
+.form-big-box .form-box input::placeholder {
+  color: #A1A1A1;
+  font-size: 3.2vw;
+}
+.form-big-box .form-box .form-msg {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.form-big-box .form-box .form-msg .old-psd {
+  flex: 1;
+  margin-right: 2vw;
+  height: 9.73333333vw;
+}
+.form-big-box .form-box .form-msg .go {
+  font-size: 3.2vw;
+  width: 33.33333333vw;
+  height: 9.73333333vw;
+  text-align: center;
+  line-height: 9.73333333vw;
+  color: #fff;
+  background-color: #1175D2;
+  border-radius: 1.33333333vw;
+}
+.form-big-box .form-box .form-tel {
+  margin-top: 1.33333333vw;
+  font-size: 2.93333333vw;
+  color: #9C9D9E;
+}

@@ -1,0 +1,224 @@
+/* 设计稿宽 750 */
+body,
+html {
+  overflow-x: hidden;
+  background-color: #dfe0e2;
+  min-height: 100%;
+}
+/* 切换按钮栏 start */
+.tab {
+  display: flex;
+  width: 100%;
+  height: 21.2vw;
+  align-items: flex-end;
+  padding: 0 3.46666667vw;
+  background-color: #565759;
+}
+.tab ul {
+  display: flex;
+}
+.tab ul li {
+  width: 21.33333333vw;
+  height: 8vw;
+  text-align: center;
+  line-height: 8vw;
+  color: #ffffff;
+  border-radius: 0.93333333vw 0.93333333vw 0 0;
+  font-size: 3.06666667vw;
+}
+.tab ul .active {
+  color: #1175d2;
+  background-color: #f9f9f9;
+}
+/* 切换按钮栏 end */
+/* 内容部分 start */
+.message {
+  height: auto;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5.06666667vw 3.33333333vw 17.33333333vw;
+}
+.message ul {
+  border-radius: 1.33333333vw;
+  overflow: hidden;
+  background: #f9f9f9;
+}
+.message ul li {
+  overflow: hidden;
+}
+.message ul li .file-title {
+  height: 6vw;
+  line-height: 6vw;
+  margin-top: 6vw;
+  border-left: 1.33333333vw solid #1175d2;
+  text-indent: 2vw;
+  font-size: 3.46666667vw;
+  font-weight: 600;
+  color: #666666;
+}
+.message ul li .file-box {
+  display: flex;
+  justify-content: start;
+  padding: 0 3.46666667vw;
+  height: 7.46666667vw;
+  margin-top: 6.13333333vw;
+  line-height: 7.46666667vw;
+  font-size: 3.46666667vw;
+}
+.message ul li .file-box .file-name {
+  color: #1175d2;
+}
+.message ul li .file-box .file-name img {
+  width: 26vw;
+  height: 5.46666667vw;
+  vertical-align: middle;
+}
+.message ul li .file-box .file-btn {
+  width: 24.93333333vw;
+  height: 7.46666667vw;
+  background: url("../img/download.png") no-repeat;
+  background-size: 100% 100%;
+  margin-left: 35.6vw;
+}
+.message ul li .file-title-two {
+  height: 6vw;
+  line-height: 6vw;
+  margin-top: 11.73333333vw;
+  border-left: 1.33333333vw solid #1175d2;
+  text-indent: 2vw;
+  font-size: 3.46666667vw;
+  font-weight: 600;
+  color: #666666;
+}
+.message ul li .file-box-two {
+  display: flex;
+  justify-content: start;
+  padding: 0 3.46666667vw;
+  height: 7.46666667vw;
+  margin-top: 6.53333333vw;
+  line-height: 7.46666667vw;
+  font-size: 3.46666667vw;
+}
+.message ul li .file-box-two .file-name {
+  color: #1175d2;
+}
+.message ul li .file-box-two .file-name img {
+  width: 27.06666667vw;
+  height: 4.53333333vw;
+  vertical-align: middle;
+}
+.message ul li .file-box-two .file-btn {
+  width: 24.93333333vw;
+  height: 7.46666667vw;
+  background: url("../img/download.png") no-repeat;
+  background-size: 100% 100%;
+  margin-left: 35.6vw;
+}
+.message ul li > p:nth-of-type(1) {
+  padding: 0 3.86666667vw;
+  margin-top: 7.2vw;
+  line-height: 4.26666667vw;
+  font-size: 3.33333333vw;
+}
+.message ul li .text {
+  padding: 0 3.86666667vw;
+  margin-top: 5.2vw;
+  margin-bottom: 11.46666667vw;
+  font-size: 3.06666667vw;
+  line-height: 4vw;
+  color: #999999;
+}
+.message ul li .text2 {
+  padding: 0 3.86666667vw;
+  margin-top: 5.86666667vw;
+  margin-bottom: 8.8vw;
+  font-size: 3.06666667vw;
+  line-height: 4.26666667vw;
+  color: #999999;
+}
+.message ul li .connection {
+  padding-left: 3.73333333vw;
+}
+.message ul li .connection h3 {
+  float: left;
+  font-size: 3.2vw;
+  font-weight: 700;
+  color: #333333;
+  margin-right: 6vw;
+}
+.message ul li .connection div {
+  display: flex;
+  flex-direction: column;
+  height: 180;
+  justify-content: space-between;
+}
+.message ul li .connection div p {
+  font-size: 3.2vw;
+  color: #666666;
+}
+.message ul li .connection div p span {
+  margin-left: 3.06666667vw;
+  color: #1175d2;
+}
+.message ul li .worktime {
+  margin-top: 6.66666667vw;
+  padding-left: 3.73333333vw;
+}
+.message ul li .worktime h3 {
+  float: left;
+  font-size: 3.2vw;
+  font-weight: 700;
+  color: #333333;
+  margin-right: 6vw;
+}
+.message ul li .worktime div {
+  display: flex;
+}
+.message ul li .worktime div p {
+  font-size: 3.2vw;
+  color: #666666;
+}
+.message ul li .address {
+  margin-top: 3.6vw;
+  padding-left: 3.73333333vw;
+}
+.message ul li .address h3 {
+  float: left;
+  font-size: 3.2vw;
+  font-weight: 700;
+  color: #333333;
+  margin-right: 6vw;
+  line-height: 6.4vw;
+}
+.message ul li .address h3::first-letter {
+  margin-right: 6.4vw;
+}
+.message ul li .address div {
+  display: flex;
+  flex-direction: column;
+}
+.message ul li .address div p {
+  font-size: 3.06666667vw;
+  color: #666666;
+  line-height: 6.4vw;
+}
+.message ul li .clinical {
+  margin-top: 6.66666667vw;
+  margin-bottom: 11.33333333vw;
+  padding-left: 3.73333333vw;
+}
+.message ul li .clinical h3 {
+  float: left;
+  font-size: 3.2vw;
+  font-weight: 700;
+  color: #333333;
+  margin-right: 6vw;
+}
+.message ul li .clinical div {
+  display: flex;
+}
+.message ul li .clinical div p {
+  font-size: 3.2vw;
+  color: #666666;
+}
+/* 内容部分 end */
