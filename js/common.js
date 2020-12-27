@@ -38,7 +38,7 @@ window.app = {
             changeMargin();
         };
 
-        function changeMargin() {
+        function changeMargin () {
             //获取网页可见区域宽度
             if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
                 // console.log(navigator.userAgent);
@@ -60,7 +60,7 @@ window.app = {
                 }
             } else {
                 //pc
-                window.location.replace("http://magicalign.h5.yscase.com")
+                // window.location.replace("http://magicalign.h5.yscase.com")
             }
         };
 
@@ -124,7 +124,7 @@ window.app = {
         // }
 
         // 转换为base4的主要方法
-        function getBase64Image(img, width, height) {
+        function getBase64Image (img, width, height) {
             let canvas = document.createElement('canvas');
             canvas.width = width || img.width;
             canvas.height = height || img.height;
@@ -135,7 +135,7 @@ window.app = {
         }
 
         //转文件对象
-        function convertBase64ToBlob(base64) {
+        function convertBase64ToBlob (base64) {
             var base64Arr = base64.split(',');
             var imgtype = '';
             var base64String = '';
@@ -349,7 +349,7 @@ $(".nav .logo").on("click", function () {
 ;
 (function (window) {
     /* 设置 cookie 储存 */
-    function setCookie(cname, cvalue, exdays) {
+    function setCookie (cname, cvalue, exdays) {
         var d = new Date();
         d.setTime(d.getTime() + (exdays * 60 * 1000));
         var expires = "expires=" + d.toUTCString();
@@ -357,7 +357,7 @@ $(".nav .logo").on("click", function () {
     }
 
     /* 获取 cookie 储存 */
-    function getCookie(cname) {
+    function getCookie (cname) {
         var name = cname + "=";
         var decodedCookie = decodeURIComponent(document.cookie);
         var ca = decodedCookie.split(';');

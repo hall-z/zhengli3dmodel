@@ -1951,7 +1951,6 @@
                             <img src="img/title.png" alt="">
                         </div>
                     </div>
-                    <!-- zxl 修改开始 -->
                     <div class="date">
                         <span>起始日期</span>
                         <!-- <input type="text" readonly data-toid-date="date" data-date="2020-7-31" placeholder="选择日期" id="onsetDate"> -->
@@ -1974,7 +1973,6 @@
                         <input type="tel" maxlength="11" oninput="value=value.replace(/[^\d]/g,'')">
                         <span>(例如:14)</span>
                     </div>
-                    <!-- zxl 修改结束 -->
                     <!-- <ul>
                         <li>
                             <div>矫治器副数</div>
@@ -2060,135 +2058,541 @@
 
     <!-- ============================================== 方案信息 页面 ====================================================== -->
     <!-- 方案信息 开始 -->
-    <!-- 1.3D方案 开始-->
+    <!-- 1.3D方案 开始 zxl修改开始-->
     <div class="scheme dn" id="threeDimensional">
-        <div class="scheme-top">
-            <div class="scheme-left">
-                <img src="img/plan-prev-btn.png">
-                <img src="img/plan-prev-btn.png">
-            </div>
-            <ul>
-                <li class="active">
-                    <div><img src="img/plan-double.png?v=t222" alt=""></div>
-                    <p>双颌</p>
-                </li>
-                <li>
-                    <div><img src="img/plan-sigle.png?v=t222" alt=""></div>
-                    <p>单颌</p>
-                </li>
-                <li>
-                    <div>
-                        <img src="img/plan-offside.png?v=t222" alt="" class="scheme-bj">
+        <div class="model3d">
+            <div class="model3d-top">
+                <div class="model3d-logo">
+                    <div class="model3d-logoBox">
+                        <a href="javaScript:;">
+                            <img src="img/img/logo1.png">
+                        </a>
                     </div>
-                    <p>左侧</p>
-                </li>
-                <li>
-                    <div><img src="img/plan-face.png?v=t222" alt=""></div>
-                    <p>正面</p>
-                </li>
-                <li>
-                    <div><img src="img/plan-nearside.png?v=t222" alt=""></div>
-                    <p>右侧</p>
-                </li>
-                <li>
-                    <div><img src="img/plan-submaxill.png?v=t222" alt=""></div>
-                    <p>下颌</p>
-                </li>
-                <li>
-                    <div><img src="img/plan-maxillary.png?v=t222" alt=""></div>
-                    <p>上颌</p>
-                </li>
-            </ul>
-            <div class="scheme-right">
-                <img src="img/right-arrow.png">
-                <img src="img/right-arrow.png">
+                    <div class="model3d-back">
+                        <img src="img/img/back.png">返回
+                    </div>
+                </div>
+                <div class="model3d-msg">
+                    <div>
+                        <span>
+                            患者：
+                        </span>
+                        <span class="model3d-name">
+                            李琦
+                        </span>
+                    </div>
+                    <div>
+                        <span>
+                            病例编号：
+                        </span>
+                        <span class="model3d-num">
+                            MA2055874
+                        </span>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="base">
-            <div class="base-top">
-                <div class="back">
-                    <img src="img/fh.png" alt="">
-                </div>
-                <div class="base-tips">
-                    <p>当前：<span>方案一</span><span class="base-tips-blue">切换</span></p>
-                </div>
-                <div class="base-3d"><img src="img/plan-3d.png"></div>
-                <div class="base-operation">
+            <div class="model3d-nav">
+                <ul></ul>
+                <div class="modelchoice">
+                    <span>切换方案：</span>
                     <ul>
-                        <li class="w_46">
-                            <img src="img/plan-back.png?v=t222">
+                        <li class="xuanz">
+                            方案一
+                            <div>
+                                <img src="img/img/jiantou.png">
+                            </div>
                         </li>
-                        <li class="w_37">
-                            <img src="img/plan-prev.png?v=t222">
+                        <li>方案一</li>
+                        <li>方案二</li>
+                        <li>方案三</li>
+                    </ul>
+                </div>
+                <div class="model3dratify">
+                    批准
+                </div>
+            </div>
+            <div class="model3d-toothBox">
+                <div class="model3d-tooth">
+                    <ul>
+                        <li class="active">旋转</li>
+                        <li>平移</li>
+                    </ul>
+                    <div class="mmodel3d-tooth-img">
+                        <img src="img/img/yc.png">
+                    </div>
+                </div>
+                <ul class="model3d-toothNav">
+                    <li>
+                        <img src="img/img/123.png">
+                        <span>修改</span>
+                    </li>
+                    <li>
+                        <img src="img/img/122.png">
+                        <span>附件菜单</span>
+                    </li>
+                    <li>
+                        <img src="img/img/125.png">
+                        <span>精密切割菜单</span>
+                    </li>
+                    <li>
+                        <img src="img/img/126.png">
+                        <span>照片</span>
+                    </li>
+                    <li>
+                        <img src="img/img/124.png">
+                        <span>分步</span>
+                    </li>
+                    <li>
+                        <img src="img/img/121.png">
+                        <span>概况</span>
+                    </li>
+                    <li>
+                        <img src="img/img/feedback.png">
+                        <span>反馈</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="model3d-step">
+                <div class="model3d-step-start">
+                    <div>
+                        <img src="img/img/retreat.png">
+                    </div>
+                    <div>
+                        <img src="img/img/retreatOne.png">
+                    </div>
+                    <div>
+                        <img src="img/img/suspend1.png">
+                        <img src="img/img/suspend.png" class="dn">
+                    </div>
+                    <div>
+                        <img src="img/img/advanceOne.png">
+                    </div>
+                    <div>
+                        <img src="img/img/advance.png">
+                    </div>
+                </div>
+                <div class="model3d-stepNum">
+
+                </div>
+            </div>
+            <!--  ts 3d移动量弹窗 -->
+            <div class="amount dn">
+                <div class="header">
+                <span>移动量</span>
+                <div>
+                    <img src="img/guanbi.png">
+                </div>
+                </div>
+                <div class="content">
+                <div class="content-top">
+                    <div class="dental-arch">
+                    <span>牙弓:</span>
+                    <ul>
+                        <li>
+                        <div class="photo">
+                            <img src="img/img1.png">
+                            <img src="img/img.png">
+                        </div>
+                        <span>上颌</span>
                         </li>
-                        <li class="w_32">
-                            <img src="img/plan-pause.png?v=t222">
-                        </li>
-                        <li class="w_37">
-                            <img src="img/plan-next.png?v=t222">
-                        </li>
-                        <li class="w_46">
-                            <img src="img/plan-go.png?v=t222">
+                        <li>
+                        <div class="photo">
+                            <img src="img/img1.png">
+                            <img src="img/img.png">
+                        </div>
+                        <span>下颌</span>
                         </li>
                     </ul>
-                    <p>0.75x</p>
+                    </div>
+                    <div class="pars-basilaris">
+                    <span>牙齿基底部:</span><ul>
+                        <li>
+                        <div class="photo">
+                            <img src="img/img1.png">
+                            <img src="img/img.png">
+                        </div>
+                        <span>冠</span>
+                        </li>
+                        <li>
+                        <div class="photo">
+                            <img src="img/img1.png">
+                            <img src="img/img.png">
+                        </div>
+                        <span>根部</span>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+                <ul class="mark">
+                    <li>18</li>
+                    <li>17</li>
+                    <li>16</li>
+                    <li>15</li>
+                    <li>14</li>
+                    <li>13</li>
+                    <li>12</li>
+                    <li>11</li>
+                    <li>21</li>
+                    <li>22</li>
+                    <li>23</li>
+                    <li>24</li>
+                    <li>25</li>
+                    <li>26</li>
+                    <li>27</li>
+                    <li>28</li>
+                </ul>
+                <table>
+                    <tr>
+                    <td>近中（+）/远中（—）mm</td>
+                    <td>0.3°</td>
+                    <td>12.1°</td>
+                    <td>20.2°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    </tr>
+                    <tr>
+                    <td>颊向（+）/舌向（—）mm</td>
+                    <td>0.3°</td>
+                    <td>12.1°</td>
+                    <td>20.2°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    </tr>
+                    <tr>
+                    <td>拉伸（+）/压低（—）mm</td>
+                    <td>0.3°</td>
+                    <td>12.1°</td>
+                    <td>20.2°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    </tr>
+                    <tr>
+                    <td>冠转矩 颊侧（+）/舌侧（—）mm</td>
+                    <td>0.3°</td>
+                    <td>12.1°</td>
+                    <td>20.2°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    </tr>
+                    <tr>
+                    <td>冠轴倾 近中（+）/远中（—）mm</td>
+                    <td>0.3°</td>
+                    <td>12.1°</td>
+                    <td>20.2°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    </tr>
+                    <tr>
+                    <td>扭转  近中（+）/远中（—）mm</td>
+                    <td>0.3°</td>
+                    <td>12.1°</td>
+                    <td>20.2°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    <td>1.1°</td>
+                    </tr> 
+                </table>
                 </div>
             </div>
-            <div class="base-btm">
-                <div class="base-btm-line">
-                    <!-- <div class="base-line-top top-event">
-                        <ul>
-                            <li class="init">
-                                <div>
-                                    <img src="img/line-pre.png" class="line-pre">
-                                    <span>0</span>
-                                </div>
-                            </li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                        <div class="b-l-num"><span>10</span>/<span>10</span></div>
+            <!-- ts 3dBolton分析 -->
+            <div class="analyse dn">
+                <div class="header">
+                <span>Bolton分析</span>
+                <div>
+                    <img src="img/guanbi.png">
+                </div>
+                </div>
+                <div class="content">
+                <div class="top">
+                    <div class="exceed">
+                    <p>超过</p>
+                    <p>下颌多于<span>3-3</span></p>
+                    <p>下颌多于<span>6-6</span></p>
                     </div>
-                    <div class="base-line-top">
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                        <div class="b-l-num"><span>10</span>/<span>10</span></div>
+                    <div class="price"> 
+                    <p>值</p>
+                    <p><span>0.34</span>毫米</p>
+                    <p><span>0.72</span>毫米 </p>
                     </div>
-                    <div class="base-line-btm">
-                        <ul>
-                            <li>0</li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li>5</li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li>10</li>
+                </div>
+                <div class="center">
+                    <div class="right">
+                    <p>上颌右侧</p>
+                    <div class="box">
+                        <ul class="left-box">
+                        <li>牙位识别码</li>
+                        <li>8</li>
+                        <li>7</li>
+                        <li>6</li>
+                        <li>5</li>
+                        <li>4</li>
+                        <li>3</li>
                         </ul>
-                    </div> -->
+                        <ul class="right-box">
+                        <li>宽度</li>
+                        <li><span>7.65</span>毫米</li>
+                        <li><span>6.15</span>毫米</li>
+                        <li><span>9.23</span>毫米</li>
+                        <li><span>8.36</span>毫米</li>
+                        <li><span>9.14</span>毫米</li>
+                        <li><span>6.28</span>毫米</li>
+                        </ul>
+                    </div>
+                    </div>
+                    <div class="left"> 
+                    <p>上颌左侧</p>
+                    <div class="box">
+                        <ul class="left-box">
+                        <li>牙位识别码</li>
+                        <li>9</li>
+                        <li>10</li>
+                        <li>11</li>
+                        <li>12</li>
+                        <li>13</li>
+                        <li>14</li>
+                        </ul>
+                        <ul class="right-box">
+                        <li>宽度</li>
+                        <li><span>2.65</span>毫米</li>
+                        <li><span>6.34</span>毫米</li>
+                        <li><span>8.35</span>毫米</li>
+                        <li><span>8.74</span>毫米</li>
+                        <li><span>9.34</span>毫米</li>
+                        <li><span>7.75</span>毫米</li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="right">
+                    <p>下颌右侧</p>
+                    <div class="box">
+                        <ul class="left-box">
+                        <li>牙位识别码</li>
+                        <li>25</li>
+                        <li>26</li>
+                        <li>27</li>
+                        <li>28</li>
+                        <li>29</li>
+                        <li>30</li>
+                        </ul>
+                        <ul class="right-box">
+                        <li>宽度</li>
+                        <li><span>7.65</span>毫米</li>
+                        <li><span>6.15</span>毫米</li>
+                        <li><span>9.23</span>毫米</li>
+                        <li><span>8.36</span>毫米</li>
+                        <li><span>9.14</span>毫米</li>
+                        <li><span>6.28</span>毫米</li>
+                        </ul>
+                    </div>
+                    </div>
+                    <div class="left"> 
+                    <p>下颌左侧</p>
+                    <div class="box">
+                        <ul class="left-box">
+                        <li>牙位识别码</li>
+                        <li>24</li>
+                        <li>23</li>
+                        <li>22</li>
+                        <li>21</li>
+                        <li>20</li>
+                        <li>19</li>
+                        </ul>
+                        <ul class="right-box">
+                        <li>宽度</li>
+                        <li><span>2.65</span>毫米</li>
+                        <li><span>6.34</span>毫米</li>
+                        <li><span>8.35</span>毫米</li>
+                        <li><span>8.74</span>毫米</li>
+                        <li><span>9.34</span>毫米</li>
+                        <li><span>7.75</span>毫米</li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- ts 3d偏好 -->
+            <div class="preference dn">
+                <div class="header">
+                <span>偏好</span>
+                <div>
+                    <img src="img/guanbi.png">
+                </div>
+                </div>
+                <div class="content">
+                <div class="color">
+                    <p>颜色设置</p>
+                    <div class="background">
+                    <div class="left">
+                        <span>背景色 :</span>
+                        <div class="select">
+                        <div class="background-color"></div>
+                        <div class="arrow">
+                            <img src="img/upward-pull.png">
+                            <img src="img/pull-up.png">
+                        </div>
+                        <ul class="color-selection dn">
+                            <li :key="idx" v-for="(item,idx) in colorList" :style="{ backgroundColor: item }" :class="idx == bgColorOne ?'active' : ''" @click="reviseColor(idx,1)"></li>
+                        </ul>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <span>附件色 :</span>
+                        <div class="select">
+                        <div class="background-color"></div>
+                        <div class="arrow">
+                            <img src="img/upward-pull.png">
+                            <img src="img/pull-up.png">
+                        </div>
+                        <ul class="color-selection dn" ref="selectColorTwo">
+                            <li :key="idx" v-for="(item,idx) in colorList" :style="{ backgroundColor: item }" :class="idx == bgColorTwo ?'active' : ''" @click="reviseColor(idx,2)"></li>
+                        </ul>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="bite">
+                    <div class="left">
+                        <span>咬合色 :</span>
+                        <div class="select">
+                        <div class="background-color"></div>
+                        <div class="arrow">
+                            <img src="img/upward-pull.png">
+                            <img src="img/pull-up.png">
+                        </div>
+                        <ul class="color-selection dn" ref="selectColorThree">
+                            <li :key="idx" v-for="(item,idx) in colorList" :style="{ backgroundColor: item }" :class="idx == bgColorThree ?'active' : ''" @click="reviseColor(idx,3)"></li>
+                        </ul>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="interface">
+                    <p>界面设置</p>
+                    <div class="rotate">
+                    <p>旋转模式:</p>
+                    <ul>
+                        <li>
+                        <div class="photo">
+                            <img src="img/img1.png">
+                            <img src="img/img.png">
+                        </div>
+                        <span>自由模式</span>
+                        </li>
+                        <li>
+                        <div class="photo">
+                            <img src="img/img1.png">
+                            <img src="img/img.png">
+                        </div>
+                        <span>简洁</span>
+                        </li>
+                        <li>
+                        <div class="photo">
+                            <img src="img/img1.png">
+                            <img src="img/img.png">
+                        </div>
+                        <span>精确</span>
+                        </li>
+                    </ul>
+                    </div>
+                    <div class="patient">
+                    <p>患者信息:</p>
+                    <ul>
+                        <li>
+                        <div class="photo">
+                            <img src="img/img1.png">
+                            <img src="img/img.png">
+                        </div>
+                        <span>显示</span>
+                        </li>
+                        <li>
+                        <div class="photo">
+                            <img src="img/img1.png">
+                            <img src="img/img.png">
+                        </div>
+                        <span>不显示</span>
+                        </li>
+                    </ul>
+                    </div>
+                    <div class="select">
+                    <div class="choice">
+                        <img src="img/unselect.png">
+                    </div>
+                        <span>牙齿移动时包含咬合矫正数值</span>
+                    </div>
+                </div>
                 </div>
             </div>
         </div>
+        
     </div>
+    <!-- zxl修改结束 -->
 
     <div class="layer-big dn" id="threeDimensionalLayer">
         <div class="layer">

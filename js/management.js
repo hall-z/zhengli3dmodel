@@ -17,7 +17,7 @@ $(function () {
     var date1 = new ruiDatepicker().init("#beginDate");
     var date2 = new ruiDatepicker().init("#finishDate");
     var date3 = new ruiDatepicker().init("#datumDate");
-    var date4 = new ruiDatepicker().init("#onsetDate");//zxl 修改
+    var date4 = new ruiDatepicker().init("#onsetDate");
     /* 判断是医生还是员工身份 设置员工权限*/
     if (isDoctorType == 2) {
         $(".menu-box .menu-list li").eq(1).hide();
@@ -91,7 +91,7 @@ $(function () {
     let shippingAddress = [];
 
     /* 处理时间戳转为年月日的方法 */
-    function timestampToTime(timestamp) {
+    function timestampToTime (timestamp) {
         var date = new Date(timestamp); //时间戳为10位需*1000，时间戳为13位的话不需乘1000
         let Y = date.getFullYear() + '/';
 
@@ -158,10 +158,10 @@ $(function () {
     let searchText = document.querySelector(".search-text");
     /* 获取文字盒子 */
     // let hint = document.querySelector(".hint-box");
-    /* 通过form表单的submit事件 监测到回车按钮点击 zxl修改*/
+    /* 通过form表单的submit事件 监测到回车按钮点击 */
     var oForm = document.getElementsByTagName("form")[0];
     oForm.onsubmit = function () {
-        if(listTotal <= 0){
+        if (listTotal <= 0) {
             //提示
             $(".search-text").val("");
             layer.open({
@@ -965,7 +965,7 @@ $(function () {
         finishDateVal = finishDateVal.slice(0, finishDateVal.length - 2);
         let startTime = new Date(beginDateVal).getTime();
         let endTime = new Date(finishDateVal + " 23:59:59").getTime();
-    
+
         if (startTime > endTime) {
             layer.open({
                 content: "请选择正确的时间",
@@ -979,7 +979,6 @@ $(function () {
             type: "POST",
             url: app.apiUrl + "/caseInfo/screen",
             contentType: "application/json;charset=UTF-8",
-            /* zxl 修改 */
             data: JSON.stringify({
                 type: listType,
                 sex: sexIndex,
@@ -992,7 +991,7 @@ $(function () {
                 xhr.setRequestHeader("Authorization", token);
             },
 
-            /* 成功的回调 zxl修改*/
+            /* 成功的回调 */
             success: function (res) {
                 if (res.code == 200) {
                     console.log(res)
@@ -1016,7 +1015,6 @@ $(function () {
                         } else {
                             imgSrc = "img/xin.png";
                         }
-                        /* zxl修改 */
                         let stateImg;
                         if (item.statusType == 2) {
                             stateImg = `<img src="img/gather.png">`
@@ -1134,7 +1132,7 @@ $(function () {
     });
     // presentStageName,presentStageCount
     /*  通过ajax请求动态渲染保质矫治器列表 */
-    function getSupplementMaintainList() {
+    function getSupplementMaintainList () {
         $.ajax({
             type: "POST",
             contentType: "application/json;charset=UTF-8",
@@ -1154,7 +1152,6 @@ $(function () {
                     let liArr = [];
                     if (standby.length > 0) {
                         standby.forEach(item => {
-                            /* zxl修改 */
                             if (item.state == 2) {
                                 src = "img/toothed-gear.png"
                                 productionText = "未批准"
@@ -1243,7 +1240,7 @@ $(function () {
         getAddrList();
     });
 
-    function startBdLayerData() {
+    function startBdLayerData () {
         /* 渲染设计说明和双颌弹层数据 */
         $.ajax({
             //请求方式
@@ -1390,7 +1387,7 @@ $(function () {
                             $("#maintainStartRecords .list-number").eq(1).children("p").text(data.downArchCount);
                         }
 
-                        /* 渲染设计说明数据 zxl修改*/
+                        /* 渲染设计说明数据 */
                         let zhengLiDesignsUpArr = [];
                         let zhengLiDesignsDownArr = [];
                         if (data.zhengLiDesigns.length > 0) {
@@ -1522,6 +1519,8 @@ $(function () {
     })
 
     /* 3d方案 开始 */
+
+    
     /* 控制进度条灰色 1 代表灰色 0代表蓝色 */
     let planArrayObj = {
         up: [
@@ -1591,6 +1590,132 @@ $(function () {
 
     // let threeCase = ["方案修改中", "方案待确认", "方案已确认", "方案需修改"];
     let threeCase = ['方案修改中', '方案需修改', '方案待确认', '方案已确认'];
+    /* 导航栏信息 开始 */
+    let modelNavList = [
+        {
+            url: "../img/img/WEB-OrthoPlus_25.png",
+            str: "上颌"
+        }, {
+            url: "../img/img/WEB-OrthoPlus_27.png",
+            str: "下颌"
+        }, {
+            url: "../img/img/WEB-OrthoPlus_29.png",
+            str: "上颌"
+        }, {
+            url: "../img/img/WEB-OrthoPlus_31.png",
+            str: "下颌"
+        }, {
+            url: "../img/img/WEB-OrthoPlus_33.png",
+            str: "右侧"
+        }, {
+            url: "../img/img/WEB-OrthoPlus_35.png",
+            str: "正面"
+        }, {
+            url: "../img/img/WEB-OrthoPlus_37.png",
+            str: "左侧"
+        }, {
+            url: "../img/img/1yc.png",
+            str: "附件"
+        }, {
+            url: "../img/img/2lb.png",
+            str: "编号"
+        }, {
+            url: "../img/img/3IPR.png",
+            str: "IPR"
+        }, {
+            url: "../img/img/4sy.png",
+            str: "牙弓宽度"
+        }
+        , {
+            url: "../img/img/5bc.png",
+            str: "测量"
+        }
+        , {
+            url: "../img/img/6wg.png",
+            str: "网格"
+        }, {
+            url: "../img/img/7qy.png",
+            str: "叠加"
+        }, {
+            url: "../img/img/8zb.png",
+            str: "咬合面"
+        }, {
+            url: "../img/img/WEB-OrthoPlus_19.png",
+            str: "移动量"
+        }, {
+            url: "../img/img/WEB-OrthoPlus_21.png",
+            str: "Bolton"
+        }, {
+            url: "../img/img/WEB-OrthoPlus_23.png",
+            str: "偏好"
+        }
+    ]
+    let modelNavListS = "";
+    modelNavList.forEach((item, index) => {
+        modelNavListS += `
+        <li>
+            <img src="${item.url}">
+            <span>${item.str}</span>
+        </li>`;
+    })
+    document.querySelector(".model3d-nav>ul").innerHTML = modelNavListS;
+    /* 点击显示弹层开始 */
+    $(".model3d-nav>ul>li").click((e) => {
+        console.log(12545)
+        $(e.currentTarget).addClass("active").siblings().removeClass("active");
+        $(".amount").hide();
+        $(".analyse").hide();
+        $(".preference").hide();
+        if ($(e.currentTarget).index() == 15) {
+            $(".amount").show();
+        } else if ($(e.currentTarget).index() == 16) {
+            $(".analyse").show();
+        } else if ($(e.currentTarget).index() == 17) {
+            $(".preference").show();
+        }
+    })
+    /* 点击显示弹层结束 */
+
+
+    /* 导航栏信息 结束 */
+    /* 分步信息 开始 */
+    let stepMsgList = [
+        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53
+    ]
+    let stepMsgListS = "";
+    let stepNum = 0;
+    stepMsgList.forEach((item, index) => {
+        stepMsgListS += `
+            <li data-index="${item}"></li>
+        `;
+    })
+    document.querySelector(".model3d-stepNum").innerHTML = `
+    <div>
+        <div class="stepBiao">
+            <img src="img/img/progress.png">
+            <span>${stepNum}</span>
+        </div>
+        <div>
+            <ul>
+                ${stepMsgListS}
+            </ul>
+            <div>
+                ${stepNum}/${stepMsgList.length}
+            </div>
+        </div>
+        <div>
+            <ul>
+                ${stepMsgListS}
+            </ul>
+            <div>
+                0/${stepMsgList.length}
+            </div>
+        </div>
+    </div>
+    `
+    /* 分步信息 结束 */
+
+
 
     /* 记录3d路径 */
     let threeUrl = null;
@@ -1600,67 +1725,76 @@ $(function () {
     let upFlag = true;
     /* 点击3D方案按钮 3D方案页面显示 */
     $("#schemePrecept").on("click", function () {
+        //zxl修改 暂时注释开始
 
-        $.ajax({
-            //请求方式
-            type: "get",
-            //请求地址
-            url: app.apiUrl + "/caseInfo/plans",
-            //数据，json字符串
-            data: {
-                caseId: presentCaseId,
-            },
-            beforeSend: function (xhr) {
-                //不携带这个会报错
-                xhr.setRequestHeader("Authorization", token);
-            },
-            //请求成功
-            success: function (res) {
-                if (res.code == 200) {
-                    if (!res.data) {
-                        layer.open({
-                            content: "暂无数据",
-                            skin: "msg",
-                            time: 2 //2秒自动关闭
-                        });
-                        return false;
-                    };
-                    $("#threeDimensional").show();
-                    $(".case-particulars").hide();
-                    threeInitDom();
-                    let data = JSON.parse(res.data);
-                    $(".base-tips span").eq(0).text(threeCase[data[0].status]);
-                    threeUrl = data[0].url;
-                    /* 渲染方案列表 */
-                    let caseArr = [];
-                    data.forEach((item, idx) => {
-                        caseArr.push(`<li data-url="${item.url}" class="${idx == 0 ? "active" : ""}">${item.planNo}.${threeCase[item.status]}</li>`);
-                    });
+        // $.ajax({
+        //     //请求方式
+        //     type: "get",
+        //     //请求地址
+        //     url: app.apiUrl + "/caseInfo/plans",
+        //     //数据，json字符串
+        //     data: {
+        //         caseId: presentCaseId,
+        //     },
+        //     beforeSend: function (xhr) {
+        //         //不携带这个会报错
+        //         xhr.setRequestHeader("Authorization", token);
+        //     },
+        //     //请求成功
+        //     success: function (res) {
+        //         if (res.code == 200) {
+        //             if (!res.data) {
+        //                 layer.open({
+        //                     content: "暂无数据",
+        //                     skin: "msg",
+        //                     time: 2 //2秒自动关闭
+        //                 });
+        //                 return false;
+        //             };
+        // $("#threeDimensional").show();
+        // $(".case-particulars").hide();
 
-                    $(".threed").html(caseArr.join(""));
-                } else {
-                    layer.open({
-                        content: res.msg,
-                        skin: "msg",
-                        time: 2 //2秒自动关闭
-                    })
-                }
-            },
-            //请求失败，包含具体的错误信息
-            error: function (e) {
-                layer.open({
-                    content: e.responseJSON.message,
-                    skin: "msg",
-                    time: 2 //2秒自动关闭
-                })
+        //             threeInitDom();
+        //             let data = JSON.parse(res.data);
+        //             $(".base-tips span").eq(0).text(threeCase[data[0].status]);
+        //             threeUrl = data[0].url;
+        //             /* 渲染方案列表 */
+        //             let caseArr = [];
+        //             data.forEach((item, idx) => {
+        //                 caseArr.push(`<li data-url="${item.url}" class="${idx == 0 ? "active" : ""}">${item.planNo}.${threeCase[item.status]}</li>`);
+        //             });
 
-            }
-        });
+        //             $(".threed").html(caseArr.join(""));
+        //         } else {
+        //             layer.open({
+        //                 content: res.msg,
+        //                 skin: "msg",
+        //                 time: 2 //2秒自动关闭
+        //             })
+        //         }
+        //     },
+        //     //请求失败，包含具体的错误信息
+        //     error: function (e) {
+        //         layer.open({
+        //             content: e.responseJSON.message,
+        //             skin: "msg",
+        //             time: 2 //2秒自动关闭
+        //         })
+
+        //     }
+        // });
+
+
+        $("#threeDimensional").show();
+        $(".case-particulars").hide();
+        $(".nav").hide();
+        $("body").css("overflowX", "auto");
+        //zxl修改结束
 
     });
 
     /* 渲染3d方案的dom */
-    function threeInitDom(curIndex) {
+    function threeInitDom (curIndex) {
         let strUpArr = [];
         let strDownArr = [];
         let strNumArr = [];
@@ -1822,7 +1956,7 @@ $(function () {
                 layer.close(index);
                 if (res.code == 200) {
                     let data = JSON.parse(res.data);
-                 
+
                     $("#surveyPage .overview-b iframe").attr("src", `${'pdf/web/viewer.html?file=' + app.imgUrl + data.url}`);
                     $("#surveyPage .section-download").hide();
                     $("#surveyPage").show();
@@ -2049,7 +2183,6 @@ $(function () {
                     if (attachmentList.length > 0) {
                         attachmentList.forEach(item => {
                             // console.log(item)
-                            /* zxl修改 */
                             if (item.state == 2) {
                                 src = "img/toothed-gear.png"
                                 stateText = "未批准"
@@ -2112,7 +2245,7 @@ $(function () {
     /* 附件模版和保持器中记录双颌 1 上颌 2 下颌 3 变量 */
     let checkedJudgment = 1;
     let allAddrListId = null;
-    /* 点击附件模板中的申请发货 新建附件模板页面显示 通过ajax请求获取到地址列表 zxl修改*/
+    /* 点击附件模板中的申请发货 新建附件模板页面显示 通过ajax请求获取到地址列表*/
     $("#adjunct .text-c").on("click", function () {
         $("#newAttachment").show();
         $("#adjunct").hide();
@@ -2336,7 +2469,7 @@ $(function () {
                     let upStr = [];
                     let downStr = [];
                     /* 处理上下颌数据 */
-                    /* 处理上下颌数据 zxl修改 可能有其他问题*/
+                    /* 处理上下颌数据 可能有其他问题*/
                     console.log(typeof data.attachmentDesigns)
                     data.attachmentDesigns.forEach(item => {
                         upStr.push(`<p>${item.explain}</p>`);
@@ -2695,7 +2828,7 @@ $(function () {
             //请求的媒体类型
             contentType: "application/json;charset=UTF-8",
             //请求地址
-            async: false,//zxl修改
+            async: false,
             url: app.apiUrl + "/attachmentTemplate/createAttachmentTemplate",
             data: JSON.stringify(saveAddress),
             //请求成功
@@ -2772,7 +2905,7 @@ $(function () {
                     // console.log(attachmentList)
                     let liArr = [];
                     attachmentList.forEach(item => {
-                        /* zxl修改 */
+
                         if (item.state == 2) {
                             src = "img/toothed-gear.png"
                             stateText = "未批准"
@@ -2888,7 +3021,6 @@ $(function () {
                     let liArr = [];
                     if (production.length > 0) {
                         production.forEach(item => {
-                            /* zxl修改 */
                             if (item.productionState == 2) {
                                 src = "img/toothed-gear.png"
                                 productionText = "未批准"
@@ -3127,7 +3259,6 @@ $(function () {
                     // console.log(production)
                     let liArr = [];
                     production.forEach(item => {
-                        /* zxl修改 */
                         if (item.productionState == 2) {
                             src = "img/toothed-gear.png"
                             productionText = "未批准"
@@ -3193,12 +3324,12 @@ $(function () {
             //请求地址
             url: app.apiUrl + "/deliveryAddress/getAddressList?t=" + app.random,
             //请求成功
-            async: false,//zxl修改
+            async: false,
             success: function (res) {
                 if (res.code == 200) {
                     let productionSite = JSON.parse(res.data);
                     // console.log(productionSite)
-                    /* zxl修改 */
+
                     if (allAddrList[0]) {
                         allAddrListId = allAddrList[0].id;
                         editAddrInfo = allAddrList[0];
@@ -3375,7 +3506,7 @@ $(function () {
 
     /*  通过ajax请求动态渲染保质矫治器列表 */
     // presentStageName,presentStageCount
-    function getSupplementCorrectList() {
+    function getSupplementCorrectList () {
         $.ajax({
             type: "POST",
             contentType: "application/json;charset=UTF-8",
@@ -3991,7 +4122,7 @@ $(function () {
                     } else if (entrust.prescpMolarRight == 3) {
                         entrust.prescpMolarRight = "改善";
                         prescpMolarRightStr = "改善" + entrust.prescpMolarRightData + "mm";
-                        
+
                         if (entrust.prescpMolarRightData > 0) {
                             entrust.prescpMolarRightData = "近中(+)" + entrust.prescpMolarRightData;
                             prescpMolarRightStr = "改善" + entrust.prescpMolarRightData + "mm";
@@ -4000,7 +4131,7 @@ $(function () {
                             prescpMolarRightStr = "改善" + entrust.prescpMolarRightData + "mm";
                         }
                     }
-              
+
                     /* 磨牙关系2 左侧*/
                     let prescpMolarLeftStr = "保持";
                     if (entrust.prescpMolarLeft == 1) {
@@ -4109,7 +4240,7 @@ $(function () {
                     });
 
                     console.log(prescpMolarRightStr);
-                    
+
 
                     strFour = strFour.substr(0, strFour.length - 1);
                     var entrustArr = [`
@@ -5035,7 +5166,7 @@ $(function () {
     $(".case-tab-box").children("li").eq(0).children("span").text(cureNum);
     // }
     /* 将渲染病例列表的ajax请求封装为函数 方便复用 */
-    function applyList() {
+    function applyList () {
         $.ajax({
             type: "POST",
             async: false,
@@ -5068,7 +5199,6 @@ $(function () {
                             } else {
                                 imgSrc = "img/xin.png";
                             }
-                            /* zxl修改 */
                             let stateImg;
                             if (item.statusType == 2) {
                                 stateImg = `<img src="img/gather.png">`
@@ -5139,7 +5269,7 @@ $(function () {
     };
     getApplyNum();
     /* 获取首页列表数量 */
-    function getApplyNum() {
+    function getApplyNum () {
         $.ajax({
             type: "get",
             async: false,
@@ -5257,7 +5387,7 @@ $(function () {
     });
     update($(".case-message ul").eq(0));
     /* 上拉刷新 开始 */
-    function update(element) {
+    function update (element) {
         var start = 0,
             end = 0,
             ele = $(element)[0];//DOM对象转化为jQuery对象
@@ -5274,12 +5404,12 @@ $(function () {
         }
 
 
-        function touchstart(ev) {
+        function touchstart (ev) {
             var touch = ev.targetTouches[0];
             start = touch.pageY;
         }
 
-        function touchmove(ev) {
+        function touchmove (ev) {
             if (searchText.value.trim() != "" || isFiltra) {
                 return false;
             }
@@ -5296,7 +5426,7 @@ $(function () {
                 }
             }
         }
-        function touchend(ev) {
+        function touchend (ev) {
             if (searchText.value.trim() != "" || isFiltra) {
                 return false;
             }
@@ -5380,7 +5510,7 @@ $(function () {
 
     /* 失去焦点事件，当用户输入完最后一个天数后表格自动填充完整 */
     $('.create-table').on('click', () => {
-        function dateToStr(data) {
+        function dateToStr (data) {
             let y = data.getFullYear();
             let m = data.getMonth() + 1;
             m = m < 10 ? '0' + m : m;
@@ -5390,7 +5520,7 @@ $(function () {
             let str = y.toString() + "年" + m + "月" + d + "日";
             return str;
         }
-        function disposeDate(date, day) {
+        function disposeDate (date, day) {
 
             date = date.replace("-", "/").replace("-", "/");
             let fnDate = new Date(date);
@@ -5407,7 +5537,7 @@ $(function () {
         if (!date) {
             return false;
         }
-        for (let i = start, k = 0; k < length; i++ , k++) {
+        for (let i = start, k = 0; k < length; i++, k++) {
             str += `<tr><td>${Number(i)}</td><td>${disposeDate(date, k * day)}</td></tr>`
         }
         $('.flow-box .flow-inner table tbody').html('');
@@ -5436,7 +5566,7 @@ $(function () {
         editInfoUser = true;
         postEightFlag = 1;
 
-        var infoPerson = new Promise(function(resolve){
+        var infoPerson = new Promise(function (resolve) {
             $.ajax({
                 type: "get",
                 url: app.apiUrl + "/caseInfo/getStepTwo?t=" + app.random,
@@ -5454,12 +5584,12 @@ $(function () {
                         // sex: 1
                         datumDate = timestampToTime(parseInt(data.birthday));
                         datumDate = datumDate.replace("/", "-").replace("/", "-");
-                    
+
                         // $(".modification-box ul .birth-date").attr("data-date", datumDate);
                         // $(".modification-box ul .birth-date").val(datumDate);
                         $("#datumDate").attr("data-date", datumDate);
                         $("#datumDate").val(datumDate);
-    
+
                         resolve(data);
                         getEightStepData();
                     } else {
@@ -5479,7 +5609,7 @@ $(function () {
                 }
             });
         })
-        infoPerson.then((addId)=>{
+        infoPerson.then((addId) => {
             $.ajax({
                 async: false,
                 //请求方式
@@ -5490,13 +5620,13 @@ $(function () {
                 success: function (res) {
                     if (res.code == 200) {
                         site1 = JSON.parse(res.data);
-                        
+
                         datumSiteId = site1.findIndex(item => {
                             return item.id == addId.addressId;
                         });
 
                         siteId = addId.addressId;
-                        
+
                         $(".modification-info").show();
                         $(".case-particulars").hide();
                     } else {
@@ -5536,7 +5666,7 @@ $(function () {
                             女
                         </div>
                 `
-    
+
             } else if (datumSex == 2) {
                 sexBox = `
                 
@@ -5565,7 +5695,7 @@ $(function () {
             $(".modification-box ul .patient-name").val(datumName);
             $(".modification-box ul .patient-sex").html(sexBox);
             $(".modification-box ul .hospital-name").children("p").text(datumHosName);
-    
+
             $(".modification-box ul .consignee-name").html(siteName);
             preserveAddressId = siteId;
             $(".modification-box ul .consignee").children("span").attr("id", siteId);
@@ -5574,7 +5704,7 @@ $(function () {
         });
     });
 
-    
+
     /* 编辑资料性别排他 */
     $(".modification-box ul").on("click", ".patient-sex div", function () {
         $(".modification-box .patient-sex p").removeClass("active");
@@ -5671,7 +5801,7 @@ $(function () {
     let updateHospitalData1 = {};
     let preserveHospitalId;
     /* 获取医院数据 */
-    function showHospitalData(id) {
+    function showHospitalData (id) {
         $.ajax({
             async: false,
             //请求方式
@@ -5680,19 +5810,19 @@ $(function () {
             url: app.apiUrl + "/hospital/hospitalList?t=" + app.random,
             //请求成功
             success: function (res) {
-                
+
                 if (res.code == 200) {
                     var data = JSON.parse(res.data);
                     preserveHospitalId = JSON.parse(res.data)[0].id;
                     // getHospitalInfo();
-                     /* 记录医院地址列表 */
-                     hospitalData = data;
+                    /* 记录医院地址列表 */
+                    hospitalData = data;
                     //  console.log(data);
-                   var index =  data.findIndex(item => {
+                    var index = data.findIndex(item => {
                         return item.id == id;
                     });
                     console.log(hospitalData[index]);
-                     showHospitalDefault(hospitalData[index],id);
+                    showHospitalDefault(hospitalData[index], id);
 
                 } else {
                     layer.open({
@@ -5871,7 +6001,7 @@ $(function () {
 
 
     /* 修改医院地址 */
-    function updateHospital(data) {
+    function updateHospital (data) {
         $.ajax({
             type: "POST",
             url: app.apiUrl + "/hospital/updateHospital?t=" + app.random,
@@ -5965,7 +6095,7 @@ $(function () {
 
 
     /* 获取就诊医院 */
-    function getHospitalInfo() {
+    function getHospitalInfo () {
         $.ajax({
             //请求方式
             type: "get",
@@ -6022,7 +6152,7 @@ $(function () {
     }
 
     /* 渲染医院第一条地址 */
-    function showHospitalDefault(options) {
+    function showHospitalDefault (options) {
         if (options) {
             // console.log(options)
             $(".modification-info .hospital-name p").html(options.country + options.province + options.city + options.area + options.address + options.hospitalName);
@@ -6111,7 +6241,6 @@ $(function () {
     })
     /* 地址列表点击确认为哪条 */
     $("#addressExpressage .content-bg").on("click", "li", function (e) {
-        /* zxl修改 */
         allAddrListId = $(this).attr("data-id")
         e.stopPropagation();
         /* 显示选中的地址 */
@@ -6531,7 +6660,7 @@ $(function () {
     let editAddrInfo;
     /* 获取地址列表 */
     // getAddrList();
-    function getAddrList() {
+    function getAddrList () {
         $.ajax({
             type: "get",
             url: app.apiUrl + "/deliveryAddress/getAddressList?t=" + app.random,
@@ -6547,7 +6676,6 @@ $(function () {
                     if (allAddrList.length > 0) allAddrList.forEach((value) => {
                         lis.push(`<li data-id="${value.id}"><div class="border-bottom-box"><div class="address-name"><span>${value.deliveryName}</span><span class="phone">${value.contactNumber}</span></div><div class="address-position"><span class="message">${value.country + value.province + value.city + value.area + value.address}<span></div><div class="edit-box">编辑</div></div></li>`);
                     })
-                    /* zxl修改 */
                     if (allAddrList[0]) {
                         allAddrListId = allAddrList[0].id;
                         editAddrInfo = allAddrList[0];
@@ -6585,7 +6713,7 @@ $(function () {
 
 
     /* 删除图片 */
-    function delImg(data) {
+    function delImg (data) {
         /* 获取保存第一步 */
         console.log(data);
 
@@ -6631,7 +6759,7 @@ $(function () {
         });
     }
     /* 渲染基本信息地址第一条地址 */
-    function showAddrDefault(options) {
+    function showAddrDefault (options) {
         console.log(options);
         if (addressExpressageFlag == 1) {
             $(".consignee-tel span").eq(0).html(options.deliveryName);
@@ -6669,7 +6797,7 @@ $(function () {
     }
 
     /* 设置修改地址的默认选中地址值 */
-    function setAddrDefault(options) {
+    function setAddrDefault (options) {
         // console.log(options.country);
         $("#addressExpressageRevise li:nth-of-type(1)").children("input").val(options.deliveryName);
         $("#addressExpressageRevise li:nth-of-type(2)").children("input").val(options.contactNumber);
@@ -6698,7 +6826,7 @@ $(function () {
     }
 
     /* 删除收获地址 */
-    function removeAddr(id) {
+    function removeAddr (id) {
         $.ajax({
             type: "POST",
             url: app.apiUrl + "/deliveryAddress/delAddress?t=" + app.random,
@@ -6735,7 +6863,7 @@ $(function () {
         })
     }
     /* 修改收获地址 */
-    function modifAddr(data) {
+    function modifAddr (data) {
         allAddrList.forEach((item, idx) => {
             if (item.id == data.id) {
                 allAddrList[idx] = data;
@@ -6776,7 +6904,7 @@ $(function () {
         })
     }
     /* 添加收获地址 */
-    function addAddr(data) {
+    function addAddr (data) {
         // var dataArr = [];
         // dataArr.push(data);
         $.ajax({
@@ -6815,7 +6943,7 @@ $(function () {
 
 
     /* 删除就诊医院地址 */
-    function delHospitalAddr(data) {
+    function delHospitalAddr (data) {
         $.ajax({
             //请求方式
             type: "get",
@@ -6852,7 +6980,7 @@ $(function () {
     }
 
     /* 新增医院地址 */
-    function saveHospital(data) {
+    function saveHospital (data) {
         $.ajax({
             type: "POST",
             url: app.apiUrl + "/hospital/saveHospital?t=" + app.random,
@@ -6888,7 +7016,7 @@ $(function () {
     }
 
     /* 设置地址状态 */
-    function setCurHosptialAddr(options) {
+    function setCurHosptialAddr (options) {
         console.log(options);
         $("#hospitalAddr input").val(options.address);
         $("#designation input").val(options.hospitalName);
@@ -6919,7 +7047,7 @@ $(function () {
         }
     }
     /* 清空地址状态 */
-    function clearCurHosptialAddr() {
+    function clearCurHosptialAddr () {
         $("#caseHospitalPage .countryList").find('option[value="国家"]').prop("selected", true);
         $("#caseHospitalPage .provinceList").html(`<option value="省">省</option>`);
         $("#caseHospitalPage .cityList").html(`<option value="市">市</option>`);
@@ -6927,7 +7055,7 @@ $(function () {
     }
     getCountry()
     /* 省市区三级联动 国家 */
-    function getCountry() {
+    function getCountry () {
         $.ajax({
             type: "GET",
             url: app.apiUrl + "/region/countryList?t=" + app.random,
@@ -6968,7 +7096,7 @@ $(function () {
     }
 
     /* 省市区三级联动 省 */
-    function getProvince(id) {
+    function getProvince (id) {
         $.ajax({
             type: "GET",
             url: app.apiUrl + "/region/provinceList?t=" + app.random,
@@ -7012,7 +7140,7 @@ $(function () {
         })
     }
     /* 省市区三级联动 市 */
-    function getCity(id) {
+    function getCity (id) {
         $.ajax({
             type: "GET",
             url: app.apiUrl + "/region/cityList?t=" + app.random,
@@ -7058,7 +7186,7 @@ $(function () {
         })
     }
     /* 省市区三级联动 区 */
-    function getArea(id) {
+    function getArea (id) {
         $.ajax({
             type: "GET",
             url: app.apiUrl + "/region/areaList?t=" + app.random,
@@ -7143,7 +7271,7 @@ $(function () {
             "left": "50%",
             "transform": "translate(-50%,-50%)",
         });
-        $("body").addClass("beyond");//zxl修改
+        $("body").addClass("beyond");
         var panoramaArr = document.querySelectorAll('#XlightPage div[class ^= "panorama"]');
         panoramaArr.forEach(item => {
             $(item).children(".replace-delete").hide();
@@ -7247,7 +7375,7 @@ $(function () {
     /* 患者照片 上传开始 */
     let eightStep = {};
     /* 获取第8步接口 */
-    function getEightStepData() {
+    function getEightStepData () {
         //loading带文字
         layer.open({
             type: 2,
@@ -7272,13 +7400,13 @@ $(function () {
                         $('#patientPicture li input').prev().show();
                         $('#patientPicture li input').removeClass("no-event");
                     } else if (postEightFlag == 3) {
-                    
+
                         /* x光片 */
                         $('#XlightPage div[class ^= "panorama"]>input').prev().prev().show();
                         $('#XlightPage div[class ^= "panorama"]>input').next().attr("src", "");
                         $('#XlightPage div[class ^= "panorama"]>input').prev().show();
                         $('#XlightPage div[class ^= "panorama"]>input').removeClass("no-event");
-                      
+
                     }
 
 
@@ -7462,7 +7590,7 @@ $(function () {
     })
     /* 上传数据 */
     /* 获取第8步接口 */
-    function postEightStep() {
+    function postEightStep () {
         var eightFormdata = new FormData();
         for (var k in eightStep) {
             eightFormdata.append(k, eightStep[k]);
@@ -7696,7 +7824,7 @@ $(function () {
     })
 
 
-    /* 点击上传患者照片中的关闭按钮  上传患者照片弹层隐藏并且更新头像信息 zxl */
+    /* 点击上传患者照片中的关闭按钮  上传患者照片弹层隐藏并且更新头像信息 */
     $("#patientPicture .clear").on("click", function () {
         $("#patientPicture").hide();
         $(".choose div span").removeClass("circle");
@@ -7881,7 +8009,7 @@ $(function () {
 //  * @param val 需要解密的代码
 //  * @param str 如果需要返回对应的字符串就随便传个STR,如果需要返回索引就不传str
 //  */
-function calculator(val) {
+function calculator (val) {
 
     let result = [];
 
@@ -7898,14 +8026,14 @@ function calculator(val) {
 
     return result;
 }
-function fn(val) {
+function fn (val) {
     var lengthTooth = document.querySelectorAll("#teethbox li");
     for (var i = 0; i < lengthTooth.length; i++) {
         lengthTooth[i].attributes("data-index", i);
     }
 }
 
-function forin(obj) {
+function forin (obj) {
     var str = ""
     for (k in obj) {
         str += (k + '=' + ('"' + obj[k] + '"'))
@@ -7914,7 +8042,7 @@ function forin(obj) {
     return str;
 }
 
-function judge() {
+function judge () {
     $("#tooth li").forEach(value => {
         if (value.getAttribute("") == true) {
 
@@ -7935,7 +8063,7 @@ function judge() {
 }
 
 /* 替换小数点文字 */
-function replaceDotNumber(data) {
+function replaceDotNumber (data) {
     let reg = /^\d{1,4}[\.]?[\d]*$/;
     let res = reg.test(data) ? data : "";
     event.target.value = res;
