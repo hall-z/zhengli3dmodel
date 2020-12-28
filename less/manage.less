@@ -3461,7 +3461,7 @@ html {
         width: 2644 / @rem;
         display: flex;
         flex-direction: column;
-
+        overflow: hidden;
         .model3d-top {
             width: 100%;
             height: 95 / @rem;
@@ -3564,7 +3564,9 @@ html {
                 align-items: center;
                 margin-left: 30 / @rem;
                 min-width: 270 / @rem;
-
+                .xuanzBox {
+                    position: relative;
+                }
                 .xuanz {
                     display: flex;
                     .setwh(150, 48);
@@ -3590,7 +3592,7 @@ html {
                     position: absolute;
                     z-index: 2;
                     top: 50 / @rem;
-                    right: 0;
+                    right: 1/@rem;
                     border: 1px solid #1175d2;
                     background-color: #fff;
                     color: #1175d2;
@@ -3640,6 +3642,7 @@ html {
                     border: 1px solid #1175d2;
                     width: 200 / @rem;
                     height: 40 / @rem;
+                    z-index: 5;
 
                     .active {
                         color: #fff;
@@ -3710,7 +3713,16 @@ html {
                 box-sizing: border-box;
                 border: 1px solid #1175d2;
                 background: #fff;
-
+                .shouq {
+                    position: absolute;
+                    left: -32 / @rem;
+                    top: 30 / @rem;
+                    .setwh(32,107);
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
                 .sidenav-title {
                     position: relative;
                     z-index: 1;
@@ -5301,6 +5313,7 @@ html {
                         align-items: center;
 
                         ul {
+                            position: relative;
                             display: flex;
                             flex: 1;
                             justify-content: space-between;
@@ -5310,8 +5323,14 @@ html {
                                 .setwh(26, 10);
                                 box-sizing: border-box;
                             }
+                            .active {
+                                background-color: #1175d2;
+                            }
                         }
-
+                        .stepNumBox {
+                            width: 80 / @rem;
+                            min-width: 80 / @rem;
+                        }
                         div {
                             margin-left: 18 / @rem;
                             color: #1175d2;
