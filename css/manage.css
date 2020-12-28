@@ -3119,6 +3119,9 @@ html {
   box-sizing: border-box;
   margin-top: 2vw;
   align-items: center;
+  overflow: visible;
+  margin-left: 0;
+  transform: translateX(0);
 }
 .scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths .right {
   flex-shrink: 0;
@@ -3492,6 +3495,9 @@ html {
   box-sizing: border-box;
   margin-top: 2vw;
   align-items: center;
+  overflow: visible;
+  margin-left: 0;
+  transform: translateX(0);
 }
 .scheme .model3d .model3d-toothBox .sidenav .slicing .teeths .right {
   flex-shrink: 0;
