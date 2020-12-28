@@ -1732,7 +1732,9 @@ $(function () {
     $(".model3d-toothNav li").on("click", (e) => {
         $(".sidenav").removeClass("dn").css("animation", "fadeInRight 1s forwards");
         $(".sidenav-bd").children().eq($(e.currentTarget).index()).show();
+        $(".sidenav-title ul").children().eq($(e.currentTarget).index()).addClass("active");
         $(".sidenav-bd").children().eq($(e.currentTarget).index()).siblings().hide();
+        $(".sidenav-title ul").children().eq($(e.currentTarget).index()).siblings().removeClass("active");
     })
     /* 侧边导航栏点击事件 结束 */
 
@@ -1755,6 +1757,18 @@ $(function () {
     })
     /* 侧边栏导航点击切换 结束 */
 
+    /* 点击按钮收起侧边栏 开始 */
+    $(".shouq").on("click", () => {
+        $(".sidenav").css("animation", "fadeOutRight 1s forwards");
+    })
+    /* 点击按钮收起侧边栏 结束 */
+
+    /* 点击切换移动方式 开始 */
+    $(".model3d-tooth ul li").on("click", (e) => {
+        $(e.currentTarget).addClass("active").siblings().removeClass("active");
+    })
+    /* 点击切换移动方式 结束 */
+
     /* 导航栏信息 结束 */
     /* 分步信息 开始 */
     let stepMsgList = [
@@ -1762,6 +1776,7 @@ $(function () {
     ]
     let stepMsgListS = "";
     let stepNum = 0;
+
     stepMsgList.forEach((item, index) => {
         stepMsgListS += `
             <li data-index="${item}"></li>
@@ -1777,7 +1792,7 @@ $(function () {
             <ul>
                 ${stepMsgListS}
             </ul>
-            <div>
+            <div class="stepNumBox">
                 ${stepNum}/${stepMsgList.length}
             </div>
         </div>
@@ -1785,12 +1800,54 @@ $(function () {
             <ul>
                 ${stepMsgListS}
             </ul>
-            <div>
+            <div class="stepNumBox">
                 0/${stepMsgList.length}
             </div>
         </div>
     </div>
-    `
+    `;
+    /* 改变当前步数 开始 */
+    $(".model3d-step-start div").on("click", (e) => {
+        stepNumChange($(e.currentTarget).index());
+    })
+    /* 改变当前步数 结束 */
+    /* 根据改变的步数修改当前页面显示 开始 */
+    function stepNumChange (idx) {
+        if (idx === 0) {
+            stepNum = 0;
+        } else if (idx === 1 && stepNum != 0) {
+            stepNum--;
+        } else if (idx === 3 && stepNum < stepMsgList.length) {
+            stepNum++;
+        } else if (idx === 4) {
+            stepNum = stepMsgList.length;
+        } else if (idx === 2) {
+            // 功能未定
+        }
+
+        [...$(".model3d-stepNum>div>div:nth-of-type(2) li")].filter((item, index) => {
+            return index < stepNum;
+        }).forEach((item, index) => {
+            $(item).addClass("active");
+            $(".model3d-stepNum>div>div:nth-of-type(3) li").eq(index).addClass("active");
+        });
+
+        [...$(".model3d-stepNum>div>div:nth-of-type(2) li")].filter((item, index) => {
+            return index >= stepNum;
+        }).forEach((item, index) => {
+            $(item).removeClass("active");
+            $(".model3d-stepNum>div>div:nth-of-type(3) li").eq(stepMsgList.length - 1 - index).removeClass("active");
+        })
+
+        if (stepNum < stepMsgList.length) {
+            $(".stepBiao").css("left", $(".model3d-stepNum>div>div:nth-of-type(2) li").eq(stepNum).position().left - 9 + "px");
+        } else {
+            $(".stepBiao").css("left", $(".model3d-stepNum>div>div:nth-of-type(2) li").eq(stepNum - 1).position().left + $(".model3d-stepNum>div>div:nth-of-type(2) li").eq(0).width() - 9 + "px");
+        }
+        $(".stepBiao span").text(stepNum);
+        $(".model3d-stepNum .stepNumBox").text(`${stepNum} / ${stepMsgList.length}`)
+    }
+    /* 根据改变的步数修改当前页面显示 结束 */
     /* 分步信息 结束 */
 
 

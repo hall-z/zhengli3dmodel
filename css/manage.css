@@ -2728,6 +2728,7 @@ html {
   width: 352.53333333vw;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 .scheme .model3d .model3d-top {
   width: 100%;
@@ -2816,6 +2817,9 @@ html {
   margin-left: 4vw;
   min-width: 36vw;
 }
+.scheme .model3d .model3d-nav .modelchoice .xuanzBox {
+  position: relative;
+}
 .scheme .model3d .model3d-nav .modelchoice .xuanz {
   display: flex;
   width: 20vw;
@@ -2840,7 +2844,7 @@ html {
   position: absolute;
   z-index: 2;
   top: 6.66666667vw;
-  right: 0;
+  right: 0.13333333vw;
   border: 1px solid #1175d2;
   background-color: #fff;
   color: #1175d2;
@@ -2888,6 +2892,7 @@ html {
   border: 1px solid #1175d2;
   width: 26.66666667vw;
   height: 5.33333333vw;
+  z-index: 5;
 }
 .scheme .model3d .model3d-toothBox .model3d-tooth > ul .active {
   color: #fff;
@@ -2949,6 +2954,17 @@ html {
   border: 1px solid #1175d2;
   background: #fff;
   /* ts 分步 */
+}
+.scheme .model3d .model3d-toothBox .sidenav .shouq {
+  position: absolute;
+  left: -4.26666667vw;
+  top: 4vw;
+  width: 4.26666667vw;
+  height: 14.26666667vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .shouq img {
+  width: 100%;
+  height: 100%;
 }
 .scheme .model3d .model3d-toothBox .sidenav .sidenav-title {
   position: relative;
@@ -4204,6 +4220,7 @@ html {
   align-items: center;
 }
 .scheme .model3d .model3d-step .model3d-stepNum > div div ul {
+  position: relative;
   display: flex;
   flex: 1;
   justify-content: space-between;
@@ -4213,6 +4230,13 @@ html {
   width: 3.46666667vw;
   height: 1.33333333vw;
   box-sizing: border-box;
+}
+.scheme .model3d .model3d-step .model3d-stepNum > div div ul .active {
+  background-color: #1175d2;
+}
+.scheme .model3d .model3d-step .model3d-stepNum > div div .stepNumBox {
+  width: 10.66666667vw;
+  min-width: 10.66666667vw;
 }
 .scheme .model3d .model3d-step .model3d-stepNum > div div div {
   margin-left: 2.4vw;

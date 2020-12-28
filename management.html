@@ -11,13 +11,13 @@
     <link rel="stylesheet" href="css/ruidate.css">
     <link rel="stylesheet" href="css/common.css">
     <!-- 手机设备适配 -->
-    <link rel="stylesheet" media="only screen and (min-width:750px)" href="css/common-pad.css?v=t222">
-    <link rel="stylesheet" media="only screen and (min-width:750px)" href="css/manage-pad.css?v=t222">
-    <link rel="stylesheet" media="only screen and (min-width:750px)" href="css/managementnew-pad.css?v=t222">
+    <link rel="stylesheet" media="only screen and (min-width:750px)" href="css/common-pad.css?v=t223">
+    <link rel="stylesheet" media="only screen and (min-width:750px)" href="css/manage-pad.css?v=t223">
+    <link rel="stylesheet" media="only screen and (min-width:750px)" href="css/managementnew-pad.css?v=t223">
     <!-- pad设备适配 -->
-    <link rel="stylesheet" media="only screen and (max-width:750px)" href="css/common.css?v=t222">
-    <link rel="stylesheet" media="only screen and (max-width:750px)" href="css/manage.css?v=t222">
-    <link rel="stylesheet" media="only screen and (max-width:750px)" href="css/managementnew.css?v=t222">
+    <link rel="stylesheet" media="only screen and (max-width:750px)" href="css/common.css?v=t223">
+    <link rel="stylesheet" media="only screen and (max-width:750px)" href="css/manage.css?v=t223">
+    <link rel="stylesheet" media="only screen and (max-width:750px)" href="css/managementnew.css?v=t223">
     <!-- <link rel="stylesheet" href="css/viewer.css"> -->
     <!-- 引入放大插件 -->
     <link rel="stylesheet" href="css/viewer.css">
@@ -2095,17 +2095,19 @@
                 <ul></ul>
                 <div class="modelchoice">
                     <span>切换方案：</span>
-                    <ul>
-                        <li class="xuanz">
-                            方案一
+                    <div class="xuanzBox">
+                        <div class="xuanz">
+                            <span>方案一</span>
                             <div>
                                 <img src="img/img/jiantou.png">
                             </div>
-                        </li>
-                        <li>方案一</li>
-                        <li>方案二</li>
-                        <li>方案三</li>
-                    </ul>
+                        </div>
+                        <ul>
+                            <li>方案一</li>
+                            <li>方案二</li>
+                            <li>方案三</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="model3dratify">
                     批准
@@ -2152,7 +2154,10 @@
                     </li>
                 </ul>
                 <!-- xzw 侧边导航 -->
-                <div class="sidenav">
+                <div class="sidenav dn">
+                    <div class="shouq">
+                        <img src="img/shouq.png">
+                    </div>
                     <!-- 测导航内容标题 -->
                     <div class="sidenav-title">
                         <ul>
@@ -2160,7 +2165,7 @@
                             <li>附件菜单</li>
                             <li>精密切割菜单</li>
                             <li>照片</li>
-                            <li>分布</li>
+                            <li>分步</li>
                             <li>概况</li>
                             <li>反馈</li>
                         </ul>
@@ -2567,7 +2572,7 @@
                             </div>
                         </div>
                         <!-- ts 侧面 分步 -->
-                        <div class="substep">
+                        <div class="substep dn">
                             <div class="procedure">
                                 <ul class="step">
                                     <li>0</li>
@@ -3123,20 +3128,20 @@
             </div>
             <div class="model3d-step">
                 <div class="model3d-step-start">
-                    <div>
+                    <div class="retreat">
                         <img src="img/img/retreat.png">
                     </div>
-                    <div>
+                    <div class="retreatOne">
                         <img src="img/img/retreatOne.png">
                     </div>
-                    <div>
+                    <div class="suspend">
                         <img src="img/img/suspend1.png">
                         <img src="img/img/suspend.png" class="dn">
                     </div>
-                    <div>
+                    <div class="advanceOne">
                         <img src="img/img/advanceOne.png">
                     </div>
-                    <div>
+                    <div class="advance">
                         <img src="img/img/advance.png">
                     </div>
                 </div>
@@ -5740,8 +5745,8 @@
     <script src="js/vconsole.min.js"></script>
     <!-- <script src="js/ImgUploader-0.0.1.js"></script> -->
     <script src="js/lrz/lrz.all.bundle.js"></script>
-    <script src="js/common.js?v=t222"></script>
-    <script src="js/management.js?v=t222"></script>
+    <script src="js/common.js?v=t223"></script>
+    <script src="js/management.js?v=t223"></script>
 </body>
 
 </html>
