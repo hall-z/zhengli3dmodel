@@ -2953,6 +2953,8 @@ html {
   box-sizing: border-box;
   border: 1px solid #1175d2;
   background: #fff;
+  display: flex;
+  flex-direction: column;
   /* ts 分步 */
 }
 .scheme .model3d .model3d-toothBox .sidenav .shouq {
@@ -2989,18 +2991,15 @@ html {
   border-bottom-color: #1175d2;
 }
 .scheme .model3d .model3d-toothBox .sidenav .sidenav-bd {
-  position: absolute;
-  left: 0vw;
-  top: 0vw;
   width: 100%;
-  height: 100%;
-  padding: 11.86666667vw 0 0 7.33333333vw;
+  flex: 1;
   overflow-x: auto;
   box-sizing: border-box;
 }
 .scheme .model3d .model3d-toothBox .sidenav .modification {
   width: 112.26666667vw;
   margin: auto;
+  height: 100%;
 }
 .scheme .model3d .model3d-toothBox .sidenav .modification .scheme-title {
   display: flex;
@@ -3018,7 +3017,7 @@ html {
 }
 .scheme .model3d .model3d-toothBox .sidenav .modification .scheme-bd {
   width: 113.33333333vw;
-  height: 45.46666667vw;
+  height: 40%;
   margin-top: 2vw;
   border: 1px solid #1175d2;
   border-radius: 2.66666667vw;
@@ -3044,7 +3043,7 @@ html {
 }
 .scheme .model3d .model3d-toothBox .sidenav .modification .operation-bd {
   width: 113.33333333vw;
-  height: 40.26666667vw;
+  height: 35%;
   border: 1px solid #1175d2;
   border-radius: 2.66666667vw;
   margin-top: 1.73333333vw;
@@ -3826,17 +3825,19 @@ html {
   width: 113.33333333vw;
   border: 1px solid #1175d2;
   border-radius: 1.33333333vw;
-  height: 107.86666667vw;
+  height: 85%;
   padding-top: 5.33333333vw;
   margin-top: 5.06666667vw;
 }
 .scheme .model3d .model3d-toothBox .sidenav .feedback {
-  margin-top: 2.93333333vw;
+  height: 100%;
+  padding-top: 2.93333333vw;
+  box-sizing: border-box;
 }
 .scheme .model3d .model3d-toothBox .sidenav .feedback .feedback-bd {
   position: relative;
   width: 113.33333333vw;
-  height: 108vw;
+  height: 98%;
   border: 1px solid #0067ce;
   margin: auto;
 }
@@ -4003,7 +4004,7 @@ html {
 .scheme .model3d .model3d-toothBox .sidenav .substep .procedure {
   position: relative;
   width: 85.6vw;
-  height: 98.66666667vw;
+  height: 86.66666667vw;
   overflow-y: scroll;
 }
 .scheme .model3d .model3d-toothBox .sidenav .substep .procedure .step {
@@ -4045,7 +4046,7 @@ html {
   margin-bottom: 0;
 }
 .scheme .model3d .model3d-toothBox .sidenav .substep .procedure .tooth-bit-b {
-  top: 78vw;
+  top: 79.33333333vw;
 }
 .scheme .model3d .model3d-toothBox .sidenav .substep .procedure .top {
   width: 186.66666667vw;

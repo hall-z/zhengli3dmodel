@@ -1691,6 +1691,14 @@ $(function () {
 
     /* 点击关闭弹窗结束 */
 
+    /* 点击返回 */
+    $(".model3d-back").click(() => {
+        $("#threeDimensional").hide();
+        $(".case-particulars").show();
+        $(".nav").show();
+        $("body").css("overflowY", "auto");
+    })
+
     /* 拖动弹框开始 */
     function monolayerMove (e) {
         console.log(e.currentTarget, e, e.target);
@@ -1699,7 +1707,6 @@ $(function () {
         let startT = el.offsetTop;
         let startY = e.pageY;
         let startX = e.pageX;
-
         // document.querySelector(".moveAmount").onmousemove = (e) => {
         el.ontouchmove = (e) => {
             let moveX = e.pageX - startX + startL;

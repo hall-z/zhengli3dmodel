@@ -3713,6 +3713,8 @@ html {
                 box-sizing: border-box;
                 border: 1px solid #1175d2;
                 background: #fff;
+                display: flex;
+                flex-direction: column;
                 .shouq {
                     position: absolute;
                     left: -32 / @rem;
@@ -3750,10 +3752,8 @@ html {
                 }
 
                 .sidenav-bd {
-                    .lt(0, 0);
                     width: 100%;
-                    height: 100%;
-                    padding: 89 / @rem 0 0 55 / @rem;
+                    flex: 1;
                     overflow-x: auto;
                     box-sizing: border-box;
                 }
@@ -3761,13 +3761,12 @@ html {
                 .modification {
                     width: 842 / @rem;
                     margin: auto;
-
+                    height: 100%;
                     .scheme-title {
                         display: flex;
                         justify-content: space-between;
                         width: 230 / @rem;
                         margin-top: 50 / @rem;
-
                         div:nth-of-type(2) {
                             border-left: 1px solid #1175d2;
                             padding-left: 20 / @rem;
@@ -3780,7 +3779,8 @@ html {
                     }
 
                     .scheme-bd {
-                        .setwh(850, 341);
+                        width: 850 / @rem;
+                        height: 40%;
                         margin-top: 15 / @rem;
                         border: 1px solid #1175d2;
                         border-radius: 20 / @rem;
@@ -3811,7 +3811,8 @@ html {
                     }
 
                     .operation-bd {
-                        .setwh(850, 302);
+                        width: 850 / @rem;
+                        height: 35%;
                         border: 1px solid #1175d2;
                         border-radius: 20 / @rem;
                         margin-top: 13 / @rem;
@@ -4849,17 +4850,19 @@ html {
                     width: 850 / @rem;
                     border: 1px solid #1175d2;
                     border-radius: 10 / @rem;
-                    height: 809 / @rem;
+                    height: 85%;
                     padding-top: 40 / @rem;
                     margin-top: 38 / @rem;
                 }
 
                 .feedback {
-                    margin-top: 22 / @rem;
-
+                    height: 100%;
+                    padding-top: 22 / @rem;
+                    box-sizing: border-box;
                     .feedback-bd {
                         position: relative;
-                        .setwh(850, 810);
+                        width: 850 / @rem;
+                        height: 98%;
                         border: 1px solid #0067ce;
                         margin: auto;
 
@@ -5055,7 +5058,7 @@ html {
                     .procedure {
                         position: relative;
                         width: 642 / @rem;
-                        height: 740 / @rem;
+                        height: 650 / @rem;
                         overflow-y: scroll;
 
                         .step {
@@ -5101,7 +5104,7 @@ html {
                         }
 
                         .tooth-bit-b {
-                            top: 585 / @rem;
+                            top: 595 / @rem;
                         }
 
                         .top {
