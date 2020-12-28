@@ -1661,7 +1661,6 @@ $(function () {
     document.querySelector(".model3d-nav>ul").innerHTML = modelNavListS;
     /* 点击显示弹层开始 */
     $(".model3d-nav>ul>li").click((e) => {
-        console.log(12545)
         $(e.currentTarget).addClass("active").siblings().removeClass("active");
         $(".amount").hide();
         $(".analyse").hide();
