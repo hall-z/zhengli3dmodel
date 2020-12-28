@@ -1520,7 +1520,7 @@ $(function () {
 
     /* 3d方案 开始 */
 
-
+    
     /* 控制进度条灰色 1 代表灰色 0代表蓝色 */
     let planArrayObj = {
         up: [
