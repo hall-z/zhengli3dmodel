@@ -3454,30 +3454,45 @@ html {
                 }
             }
             .modelchoice {
+                position: relative;
                 color: #fff;
                 display: flex;
                 align-items: center;
                 margin-left: 30 / @rem;
-                ul {
+                min-width: 270 / @rem;
+                .xuanz {
+                    display: flex;
                     .setwh(150,48);
-                    overflow: hidden;
+                    align-items: center;
+                    justify-content: center;
                     border: 1px solid #1175d2;
                     background-color: #fff;
-                    color:  #1175d2;
+                    color: #1175d2;
                     border-radius: 8 / @rem;
+                    div {
+                        display: flex;
+                        align-items: center;
+                        margin-left: 35 / @rem;
+                        img {
+                            .setwh(18,13);
+                        }
+                    }
+                }
+                ul {
+                    position: absolute;
+                    z-index: 2;
+                    top: 50 / @rem;
+                    right: 0;
+                    border: 1px solid #1175d2;
+                    background-color: #fff;
+                    color: #1175d2;
+                    border-radius: 8 / @rem;
+                    display: none;
                     li {
                         display: flex;
                         .setwh(150,48);
                         align-items: center;
                         justify-content: center;
-                        div {
-                            display: flex;
-                            align-items: center;
-                            margin-left: 35 / @rem;
-                            img {
-                                .setwh(18,13);
-                            }
-                        }
                     }
                 }
             }
@@ -3492,6 +3507,7 @@ html {
             }
         }
         .model3d-toothBox {
+            position: relative;
             display: flex;
             flex: 1;
             width: 100%;
@@ -3500,6 +3516,7 @@ html {
                 position: relative;
                 flex: 1;
                 height: 100%;
+              
                 >ul {
                     position: absolute;
                     left: 25 / @rem;
@@ -3564,7 +3581,9 @@ html {
             }
             /* xzw 侧边 */
             .sidenav{
-                position: relative;
+                position: absolute;
+                right: 0;
+                top: 0;
                 width: 937 / @rem;
                 height: 100%;
                 padding:46 / @rem 0 0 55 / @rem;
@@ -3572,6 +3591,8 @@ html {
                 border: 1px solid #1175d2;
                 background: #fff;
                 .sidenav-title{
+                    position: relative;
+                    z-index: 1;
                     height: 46 / @rem;
                     line-height: 46 / @rem;
                     width: 770 / @rem;   
