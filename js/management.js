@@ -1520,7 +1520,7 @@ $(function () {
 
     /* 3d方案 开始 */
 
-    
+
     /* 控制进度条灰色 1 代表灰色 0代表蓝色 */
     let planArrayObj = {
         up: [
@@ -1675,6 +1675,59 @@ $(function () {
         }
     })
     /* 点击显示弹层结束 */
+    /* 点击关闭弹窗开始 */
+    $(".model-close").click((e) => {
+        $(e.currentTarget).parent().parent().hide();
+
+    })
+    $(".amount").on("touchstart", (e) => {
+        monolayerMove(e);
+    })
+    $(".analyse").on("touchstart", (e) => {
+        monolayerMove(e);
+    })
+    $(".preference").on("touchstart", (e) => {
+        monolayerMove(e);
+    })
+
+    /* 点击关闭弹窗结束 */
+
+    /* 拖动弹框开始 */
+    function monolayerMove (e) {
+        console.log(e.currentTarget, e, e.target);
+        let el = e.currentTarget;
+        let startL = el.offsetLeft;
+        let startT = el.offsetTop;
+        let startY = e.pageY;
+        let startX = e.pageX;
+
+        // document.querySelector(".moveAmount").onmousemove = (e) => {
+        document.querySelector("body").ontouchmove = (e) => {
+            let moveX = e.pageX - startX + startL;
+            let moveY = e.pageY - startY + startT;
+            if (moveX <= 0) {
+                moveX = 0;
+            } else if (moveX >= document.querySelector(".model3d-toothBox").clientWidth - el.clientWidth) {
+                moveX = document.querySelector(".model3d-toothBox").clientWidth - el.clientWidth;
+            }
+            if (moveY <= document.querySelector(".model3d-top").clientHeight + document.querySelector(".model3d-nav").clientHeight) {
+                moveY = document.querySelector(".model3d-top").clientHeight + document.querySelector(".model3d-nav").clientHeight;
+            } else if (moveY >= document.body.clientHeight - document.querySelector(".model3d-step").clientHeight - el.clientHeight) {
+                moveY = document.body.clientHeight - document.querySelector(".model3d-step").clientHeight - el.clientHeight;
+            }
+            /* 判断是否是偏好及Bolton弹层 */
+            if (el == document.querySelector(".analyse") || el == document.querySelector(".preference")) {
+                el.style.margin = "0";
+            }
+            el.style.left = moveX + "px";
+            el.style.top = moveY + "px";
+        };
+
+        document.querySelector("body").ontouchend = () => {
+            document.querySelector("body").ontouchmove = null;
+        };
+    }
+    /* 拖动弹框结束 */
 
 
     /* 导航栏信息 结束 */
