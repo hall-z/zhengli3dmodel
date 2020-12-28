@@ -2854,6 +2854,7 @@ html {
   flex: 1;
   width: 100%;
   background-color: #dfe0e2;
+  /* xzw 侧边 */
 }
 .scheme .model3d .model3d-toothBox .model3d-tooth {
   position: relative;
@@ -2920,6 +2921,1041 @@ html {
   width: 6.66666667vw;
   height: auto;
   margin-bottom: 2vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav {
+  position: relative;
+  width: 124.93333333vw;
+  height: 100%;
+  padding: 6.13333333vw 0 0 7.33333333vw;
+  box-sizing: border-box;
+  border: 1px solid #1175d2;
+  background: #fff;
+}
+.scheme .model3d .model3d-toothBox .sidenav .sidenav-title {
+  height: 6.13333333vw;
+  line-height: 6.13333333vw;
+  width: 102.66666667vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .sidenav-title ul {
+  display: flex;
+  justify-content: space-between;
+  height: 6.13333333vw;
+  line-height: 6.13333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .sidenav-title ul li {
+  line-height: 6.13333333vw;
+  border: 0.53333333vw solid transparent;
+  box-sizing: border-box;
+}
+.scheme .model3d .model3d-toothBox .sidenav .sidenav-title ul .active {
+  color: #1175d2;
+  border-bottom-color: #1175d2;
+}
+.scheme .model3d .model3d-toothBox .sidenav .sidenav-bd {
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  width: 100%;
+  height: 100%;
+  padding: 11.86666667vw 0 0 7.33333333vw;
+  overflow-x: auto;
+  box-sizing: border-box;
+}
+.scheme .model3d .model3d-toothBox .sidenav .modification {
+  width: 112.26666667vw;
+  margin: auto;
+}
+.scheme .model3d .model3d-toothBox .sidenav .modification .scheme-title {
+  display: flex;
+  justify-content: space-between;
+  width: 30.66666667vw;
+  margin-top: 6.66666667vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .modification .scheme-title div:nth-of-type(2) {
+  border-left: 1px solid #1175d2;
+  padding-left: 2.66666667vw;
+  box-sizing: border-box;
+}
+.scheme .model3d .model3d-toothBox .sidenav .modification .scheme-title .active {
+  color: #1175d2;
+}
+.scheme .model3d .model3d-toothBox .sidenav .modification .scheme-bd {
+  width: 113.33333333vw;
+  height: 45.46666667vw;
+  margin-top: 2vw;
+  border: 1px solid #1175d2;
+  border-radius: 2.66666667vw;
+  padding: 1.2vw 2.66666667vw;
+  box-sizing: border-box;
+}
+.scheme .model3d .model3d-toothBox .sidenav .modification .scheme-bd .date {
+  margin-top: 3.46666667vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .modification .scheme-bd .date span {
+  color: #1175d2;
+}
+.scheme .model3d .model3d-toothBox .sidenav .modification .scheme-bd .date span:nth-child(2) {
+  margin-left: 4vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .modification .scheme-bd .text {
+  width: 60vw;
+  margin: 1.86666667vw 0;
+  line-height: 4vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .modification .operation-title {
+  margin-top: 5.33333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .modification .operation-bd {
+  width: 113.33333333vw;
+  height: 40.26666667vw;
+  border: 1px solid #1175d2;
+  border-radius: 2.66666667vw;
+  margin-top: 1.73333333vw;
+  padding: 4vw 2.66666667vw;
+  box-sizing: border-box;
+}
+.scheme .model3d .model3d-toothBox .sidenav .modification .operation-bd ul {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.scheme .model3d .model3d-toothBox .sidenav .modification .operation-bd ul li {
+  margin-top: 2vw;
+  list-style: disc;
+  margin-left: 5.33333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu {
+  width: auto;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .accmenu-title {
+  margin-left: 7.33333333vw;
+  margin-top: 9.06666667vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .accmenu-title span {
+  height: 6.13333333vw;
+  box-sizing: border-box;
+  line-height: 5.06666667vw;
+  border: 0.53333333vw solid transparent;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .accmenu-title span:nth-child(2) {
+  margin-left: 7.73333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .accmenu-title .active {
+  color: #1175d2;
+  border-bottom-color: #1175d2;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths-operation {
+  display: flex;
+  margin-left: 7.33333333vw;
+  margin-top: 5.6vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths-operation .deficiency {
+  display: flex;
+  align-items: center;
+  color: #f43e3e;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths-operation .deficiency img {
+  width: 2.4vw;
+  height: 2.13333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths-operation .deficiency span {
+  margin-left: 1.73333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths-operation .optimize {
+  display: flex;
+  align-items: center;
+  color: #999999;
+  margin-left: 8vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths-operation .optimize img {
+  width: 1.73333333vw;
+  height: 2.53333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths-operation .optimize span {
+  margin-left: 1.73333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths {
+  position: relative;
+  display: flex;
+  width: auto;
+  height: auto;
+  box-sizing: border-box;
+  margin-top: 2vw;
+  align-items: center;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths .right {
+  flex-shrink: 0;
+  margin-right: 3.73333333vw;
+  text-align: center;
+  font-size: 2.13333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths .left {
+  flex-shrink: 0;
+  margin: 0 3.73333333vw;
+  text-align: center;
+  font-size: 2.13333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths .teeth-bd {
+  position: relative;
+  padding-bottom: 11.6vw;
+  border-bottom: 1px solid #999999;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths .teeth-bd .up {
+  float: left;
+  display: flex;
+  width: 206.66666667vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 2.66666667vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths .teeth-bd .up li {
+  flex-shrink: 0;
+  text-align: center;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths .teeth-bd .up li p {
+  display: flex;
+  flex-direction: column;
+  font-size: 2.66666667vw;
+  line-height: 6.66666667vw;
+  height: 17.33333333vw;
+  color: red;
+  justify-content: flex-end;
+  width: 100%;
+  text-indent: 0;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths .teeth-bd .up li a {
+  text-align: center;
+  font-size: 3.2vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths .teeth-bd .up li:nth-child(1) img {
+  width: 12.53333333vw;
+  height: 9.86666667vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths .teeth-bd .up li:nth-child(2) img {
+  width: 13.6vw;
+  height: 10.66666667vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths .teeth-bd .up li:nth-child(3) img {
+  width: 16.8vw;
+  height: 11.73333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths .teeth-bd .up li:nth-child(4) img {
+  width: 9.06666667vw;
+  height: 12.8vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths .teeth-bd .up li:nth-child(5) img {
+  width: 9.06666667vw;
+  height: 13.6vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths .teeth-bd .up li:nth-child(6) img {
+  width: 12.26666667vw;
+  height: 17.06666667vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths .teeth-bd .up li:nth-child(7) img {
+  width: 8.26666667vw;
+  height: 14.13333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths .teeth-bd .up li:nth-child(8) img {
+  width: 12.26666667vw;
+  height: 16.8vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths .teeth-bd .up li:nth-child(9) img {
+  width: 12.26666667vw;
+  height: 16.8vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths .teeth-bd .up li:nth-child(10) img {
+  width: 8.26666667vw;
+  height: 14.13333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths .teeth-bd .up li:nth-child(11) img {
+  width: 13.06666667vw;
+  height: 17.06666667vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths .teeth-bd .up li:nth-child(12) img {
+  width: 9.06666667vw;
+  height: 14.13333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths .teeth-bd .up li:nth-child(13) img {
+  width: 9.06666667vw;
+  height: 12.53333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths .teeth-bd .up li:nth-child(14) img {
+  width: 17.06666667vw;
+  height: 12.53333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths .teeth-bd .up li:nth-child(15) img {
+  width: 14.13333333vw;
+  height: 10.66666667vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths .teeth-bd .up li:nth-child(16) img {
+  width: 12.8vw;
+  height: 9.86666667vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths .teeth-bd .down {
+  display: flex;
+  width: 206.66666667vw;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths .teeth-bd .down li {
+  flex-shrink: 0;
+  text-align: center;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths .teeth-bd .down li p {
+  display: flex;
+  flex-direction: column;
+  font-size: 5.33333333vw;
+  line-height: 6.66666667vw;
+  height: 34.66666667vw;
+  color: red;
+  text-align: center;
+  justify-content: flex-start;
+  width: 100%;
+  text-indent: 0;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths .teeth-bd .down li a {
+  font-size: 3.2vw;
+  margin-left: -4.8vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths .teeth-bd .down li:nth-child(1) img {
+  width: 12.53333333vw;
+  height: 9.86666667vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths .teeth-bd .down li:nth-child(2) img {
+  width: 13.6vw;
+  height: 10.66666667vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths .teeth-bd .down li:nth-child(3) img {
+  width: 16.8vw;
+  height: 11.73333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths .teeth-bd .down li:nth-child(4) img {
+  width: 9.06666667vw;
+  height: 12.8vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths .teeth-bd .down li:nth-child(5) img {
+  width: 9.06666667vw;
+  height: 13.6vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths .teeth-bd .down li:nth-child(6) img {
+  width: 12.26666667vw;
+  height: 17.06666667vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths .teeth-bd .down li:nth-child(7) img {
+  width: 8.53333333vw;
+  height: 13.06666667vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths .teeth-bd .down li:nth-child(8) img {
+  width: 12.26666667vw;
+  height: 16.8vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths .teeth-bd .down li:nth-child(9) img {
+  width: 12.26666667vw;
+  height: 16.8vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths .teeth-bd .down li:nth-child(10) img {
+  width: 8.26666667vw;
+  height: 14.13333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths .teeth-bd .down li:nth-child(11) img {
+  width: 13.06666667vw;
+  height: 17.06666667vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths .teeth-bd .down li:nth-child(12) img {
+  width: 9.06666667vw;
+  height: 14.13333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths .teeth-bd .down li:nth-child(13) img {
+  width: 9.06666667vw;
+  height: 12.53333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths .teeth-bd .down li:nth-child(14) img {
+  width: 17.06666667vw;
+  height: 12.53333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths .teeth-bd .down li:nth-child(15) img {
+  width: 14.13333333vw;
+  height: 10.66666667vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths .teeth-bd .down li:nth-child(16) img {
+  width: 12.8vw;
+  height: 9.86666667vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths .teeth-bd .toothBottm {
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths .teeth-bd .toothBottm li {
+  flex: 1;
+  text-align: center;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths .teeth-bd .vertical {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 206.66666667vw;
+  height: 1px;
+  background-color: #8e8d8d;
+  transform: translate(-50%, -50%);
+  margin-top: -5.8vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .teeths .teeth-bd .level {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1px;
+  height: 10.93333333vw;
+  background-color: #8e8d8d;
+  margin-top: -5.8vw;
+  transform: translate(-200%, -50%);
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .iconbox {
+  margin-top: 7.33333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .iconbox ul {
+  position: relative;
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .iconbox ul li:nth-child(1) {
+  margin-left: 11.33333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .iconbox ul li:nth-child(1) img {
+  width: 2.13333333vw;
+  height: 4.8vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .iconbox ul li:nth-child(2) {
+  margin-left: 8.66666667vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .iconbox ul li:nth-child(2) img {
+  width: 4.93333333vw;
+  height: 2.13333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .iconbox ul li:nth-child(3) {
+  margin-left: 14vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .iconbox ul li:nth-child(3) img {
+  width: 2.26666667vw;
+  height: 4.66666667vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .iconbox ul li:nth-child(4) {
+  margin-left: 8.66666667vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .iconbox ul li:nth-child(4) img {
+  width: 4.8vw;
+  height: 2.26666667vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .iconbox ul li:nth-child(5) {
+  margin-left: 14vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .iconbox ul li:nth-child(5) img {
+  width: 2.26666667vw;
+  height: 4.8vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .iconbox ul li:nth-child(6) {
+  margin-left: 7.73333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .iconbox ul li:nth-child(6) img {
+  width: 2.26666667vw;
+  height: 4.8vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .iconbox ul li:nth-child(7) {
+  margin-left: 14vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .iconbox ul li:nth-child(7) img {
+  width: 4.66666667vw;
+  height: 2.53333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .iconbox ul li:nth-child(8) {
+  margin-left: 6.66666667vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .iconbox ul li:nth-child(8) img {
+  width: 4.66666667vw;
+  height: 2.53333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .iconbox ul li:nth-child(9) {
+  position: absolute;
+  top: 50%;
+  left: 140vw;
+  margin-top: -3.8vw;
+  width: 18vw;
+  height: 7.6vw;
+  border: 1px solid #1175d2;
+  box-sizing: border-box;
+}
+.scheme .model3d .model3d-toothBox .sidenav .accmenu .iconbox ul li:nth-child(9) img {
+  width: 3.46666667vw;
+  height: 4.53333333vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -1.73333333vw;
+  margin-top: -2.26666667vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing {
+  width: auto;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .accmenu-title {
+  margin-left: 7.33333333vw;
+  margin-top: 9.06666667vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .accmenu-title span {
+  height: 6.13333333vw;
+  box-sizing: border-box;
+  line-height: 5.06666667vw;
+  border: 0.53333333vw solid transparent;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .accmenu-title span:nth-child(2) {
+  margin-left: 7.73333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .accmenu-title .active {
+  color: #1175d2;
+  border-bottom-color: #1175d2;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths-operation {
+  display: flex;
+  margin-left: 7.33333333vw;
+  margin-top: 5.6vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths-operation .deficiency {
+  display: flex;
+  align-items: center;
+  color: #f43e3e;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths-operation .deficiency img {
+  width: 2.4vw;
+  height: 2.13333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths-operation .deficiency span {
+  margin-left: 1.73333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths-operation .optimize {
+  display: flex;
+  align-items: center;
+  color: #999999;
+  margin-left: 8vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths-operation .optimize img {
+  width: 1.73333333vw;
+  height: 2.53333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths-operation .optimize span {
+  margin-left: 1.73333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths {
+  position: relative;
+  display: flex;
+  width: auto;
+  height: auto;
+  box-sizing: border-box;
+  margin-top: 2vw;
+  align-items: center;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths .right {
+  flex-shrink: 0;
+  margin-right: 3.73333333vw;
+  text-align: center;
+  font-size: 2.13333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths .left {
+  flex-shrink: 0;
+  margin: 0 3.73333333vw;
+  text-align: center;
+  font-size: 2.13333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths .teeth-bd {
+  position: relative;
+  padding-bottom: 11.6vw;
+  border-bottom: 1px solid #999999;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths .teeth-bd .up {
+  float: left;
+  display: flex;
+  width: 206.66666667vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 2.66666667vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths .teeth-bd .up li {
+  flex-shrink: 0;
+  text-align: center;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths .teeth-bd .up li p {
+  display: flex;
+  flex-direction: column;
+  font-size: 2.66666667vw;
+  line-height: 6.66666667vw;
+  height: 17.33333333vw;
+  color: red;
+  justify-content: flex-end;
+  width: 100%;
+  text-indent: 0;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths .teeth-bd .up li a {
+  text-align: center;
+  font-size: 3.2vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths .teeth-bd .up li:nth-child(1) img {
+  width: 12.53333333vw;
+  height: 9.86666667vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths .teeth-bd .up li:nth-child(2) img {
+  width: 13.6vw;
+  height: 10.66666667vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths .teeth-bd .up li:nth-child(3) img {
+  width: 16.8vw;
+  height: 11.73333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths .teeth-bd .up li:nth-child(4) img {
+  width: 9.06666667vw;
+  height: 12.8vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths .teeth-bd .up li:nth-child(5) img {
+  width: 9.06666667vw;
+  height: 13.6vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths .teeth-bd .up li:nth-child(6) img {
+  width: 12.26666667vw;
+  height: 17.06666667vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths .teeth-bd .up li:nth-child(7) img {
+  width: 8.26666667vw;
+  height: 14.13333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths .teeth-bd .up li:nth-child(8) img {
+  width: 12.26666667vw;
+  height: 16.8vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths .teeth-bd .up li:nth-child(9) img {
+  width: 12.26666667vw;
+  height: 16.8vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths .teeth-bd .up li:nth-child(10) img {
+  width: 8.26666667vw;
+  height: 14.13333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths .teeth-bd .up li:nth-child(11) img {
+  width: 13.06666667vw;
+  height: 17.06666667vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths .teeth-bd .up li:nth-child(12) img {
+  width: 9.06666667vw;
+  height: 14.13333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths .teeth-bd .up li:nth-child(13) img {
+  width: 9.06666667vw;
+  height: 12.53333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths .teeth-bd .up li:nth-child(14) img {
+  width: 17.06666667vw;
+  height: 12.53333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths .teeth-bd .up li:nth-child(15) img {
+  width: 14.13333333vw;
+  height: 10.66666667vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths .teeth-bd .up li:nth-child(16) img {
+  width: 12.8vw;
+  height: 9.86666667vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths .teeth-bd .down {
+  display: flex;
+  width: 206.66666667vw;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths .teeth-bd .down li {
+  flex-shrink: 0;
+  text-align: center;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths .teeth-bd .down li p {
+  display: flex;
+  flex-direction: column;
+  font-size: 5.33333333vw;
+  line-height: 6.66666667vw;
+  height: 34.66666667vw;
+  color: red;
+  text-align: center;
+  justify-content: flex-start;
+  width: 100%;
+  text-indent: 0;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths .teeth-bd .down li a {
+  font-size: 3.2vw;
+  margin-left: -4.8vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths .teeth-bd .down li:nth-child(1) img {
+  width: 12.53333333vw;
+  height: 9.86666667vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths .teeth-bd .down li:nth-child(2) img {
+  width: 13.6vw;
+  height: 10.66666667vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths .teeth-bd .down li:nth-child(3) img {
+  width: 16.8vw;
+  height: 11.73333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths .teeth-bd .down li:nth-child(4) img {
+  width: 9.06666667vw;
+  height: 12.8vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths .teeth-bd .down li:nth-child(5) img {
+  width: 9.06666667vw;
+  height: 13.6vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths .teeth-bd .down li:nth-child(6) img {
+  width: 12.26666667vw;
+  height: 17.06666667vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths .teeth-bd .down li:nth-child(7) img {
+  width: 8.53333333vw;
+  height: 13.06666667vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths .teeth-bd .down li:nth-child(8) img {
+  width: 12.26666667vw;
+  height: 16.8vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths .teeth-bd .down li:nth-child(9) img {
+  width: 12.26666667vw;
+  height: 16.8vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths .teeth-bd .down li:nth-child(10) img {
+  width: 8.26666667vw;
+  height: 14.13333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths .teeth-bd .down li:nth-child(11) img {
+  width: 13.06666667vw;
+  height: 17.06666667vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths .teeth-bd .down li:nth-child(12) img {
+  width: 9.06666667vw;
+  height: 14.13333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths .teeth-bd .down li:nth-child(13) img {
+  width: 9.06666667vw;
+  height: 12.53333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths .teeth-bd .down li:nth-child(14) img {
+  width: 17.06666667vw;
+  height: 12.53333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths .teeth-bd .down li:nth-child(15) img {
+  width: 14.13333333vw;
+  height: 10.66666667vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths .teeth-bd .down li:nth-child(16) img {
+  width: 12.8vw;
+  height: 9.86666667vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths .teeth-bd .toothBottm {
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths .teeth-bd .toothBottm li {
+  flex: 1;
+  text-align: center;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths .teeth-bd .vertical {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 206.66666667vw;
+  height: 1px;
+  background-color: #8e8d8d;
+  transform: translate(-50%, -50%);
+  margin-top: -5.8vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .teeths .teeth-bd .level {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1px;
+  height: 10.93333333vw;
+  background-color: #8e8d8d;
+  margin-top: -5.8vw;
+  transform: translate(-200%, -50%);
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .iconbox {
+  margin-top: 7.33333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .iconbox ul {
+  position: relative;
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .iconbox ul li:nth-child(1) {
+  margin-left: 11.33333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .iconbox ul li:nth-child(1) img {
+  width: 4vw;
+  height: 3.86666667vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .iconbox ul li:nth-child(2) {
+  margin-left: 8.66666667vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .iconbox ul li:nth-child(2) img {
+  width: 4.13333333vw;
+  height: 4.13333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .iconbox ul li:nth-child(3) {
+  margin-left: 14vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .iconbox ul li:nth-child(3) img {
+  width: 4.13333333vw;
+  height: 4.13333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .iconbox ul li:nth-child(4) {
+  position: absolute;
+  top: 50%;
+  left: 140vw;
+  margin-top: -3.8vw;
+  width: 18vw;
+  height: 7.6vw;
+  border: 1px solid #1175d2;
+  box-sizing: border-box;
+}
+.scheme .model3d .model3d-toothBox .sidenav .slicing .iconbox ul li:nth-child(4) img {
+  width: 3.46666667vw;
+  height: 4.53333333vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -1.73333333vw;
+  margin-top: -2.26666667vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .picture .picture-title ul {
+  width: 42vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  font-size: 2.93333333vw;
+  line-height: 5.06666667vw;
+  margin-top: 8.93333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .picture .picture-title ul li {
+  border: 0.26666667vw solid transparent;
+  padding: 0 0.53333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .picture .picture-title ul .active {
+  color: #1175d2;
+  border-bottom-color: #1175d2;
+}
+.scheme .model3d .model3d-toothBox .sidenav .picture .picture-bd {
+  position: relative;
+  width: 113.33333333vw;
+  height: 94vw;
+  box-sizing: border-box;
+  border: 1px solid #1175d2;
+  margin-top: 4vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .picture .picture-bd .arrleft {
+  width: 2.66666667vw;
+  height: 4.26666667vw;
+  position: absolute;
+  left: 5.33333333vw;
+  top: 57.33333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .picture .picture-bd .arrright {
+  width: 2.66666667vw;
+  height: 4.26666667vw;
+  position: absolute;
+  right: 5.33333333vw;
+  top: 57.33333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .picture .picture-bd .content {
+  width: 17.73333333vw;
+  height: 26.66666667vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -8.86666667vw;
+  margin-top: -13.33333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .generalize {
+  width: 113.33333333vw;
+  border: 1px solid #1175d2;
+  border-radius: 1.33333333vw;
+  height: 107.86666667vw;
+  padding-top: 5.33333333vw;
+  margin-top: 5.06666667vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .feedback {
+  margin-top: 2.93333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .feedback .feedback-bd {
+  position: relative;
+  width: 113.33333333vw;
+  height: 108vw;
+  border: 1px solid #0067ce;
+  margin: auto;
+}
+.scheme .model3d .model3d-toothBox .sidenav .feedback .feedback-bd .feedbackTab {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  z-index: 9;
+}
+.scheme .model3d .model3d-toothBox .sidenav .feedback .feedback-bd .feedbackTab div {
+  line-height: 5.33333333vw;
+  border-bottom: 3px solid transparent;
+  margin: 2.93333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .feedback .feedback-bd .feedbackTab .active {
+  color: #0067ce;
+  border-color: #0067ce;
+}
+.scheme .model3d .model3d-toothBox .sidenav .feedback .feedback-bd .feedbackbox {
+  position: absolute;
+  top: 0vw;
+  left: 50%;
+  margin-left: -56.66666667vw;
+  width: 100%;
+  height: 100%;
+}
+.scheme .model3d .model3d-toothBox .sidenav .feedback .feedback-bd .feedbackbox .allbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 7.33333333vw;
+  box-sizing: border-box;
+}
+.scheme .model3d .model3d-toothBox .sidenav .feedback .feedback-bd .feedbackbox .allbox .chatrecord {
+  width: 113.33333333vw;
+  height: 66.66666667vw;
+  overflow-y: auto;
+}
+.scheme .model3d .model3d-toothBox .sidenav .feedback .feedback-bd .feedbackbox .allbox ul {
+  width: 100%;
+}
+.scheme .model3d .model3d-toothBox .sidenav .feedback .feedback-bd .feedbackbox .allbox ul li {
+  display: flex;
+  align-items: top;
+  margin-top: 2vw;
+  width: 100%;
+}
+.scheme .model3d .model3d-toothBox .sidenav .feedback .feedback-bd .feedbackbox .allbox ul li p {
+  width: auto;
+  max-width: 34.93333333vw;
+  padding: 1.33333333vw 1.73333333vw;
+  line-height: 2.66666667vw;
+  border: 1px solid #1175d2;
+  border-radius: 0.66666667vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .feedback .feedback-bd .feedbackbox .allbox ul li .headportrait {
+  width: 5.33333333vw;
+  height: 5.33333333vw;
+  border-radius: 50%;
+}
+.scheme .model3d .model3d-toothBox .sidenav .feedback .feedback-bd .feedbackbox .allbox ul li span {
+  color: #afafaf;
+}
+.scheme .model3d .model3d-toothBox .sidenav .feedback .feedback-bd .feedbackbox .allbox ul .left {
+  justify-content: flex-start;
+}
+.scheme .model3d .model3d-toothBox .sidenav .feedback .feedback-bd .feedbackbox .allbox ul .left .headportrait {
+  margin: 0.66666667vw 2vw 0 3.33333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .feedback .feedback-bd .feedbackbox .allbox ul .right {
+  justify-content: flex-end;
+}
+.scheme .model3d .model3d-toothBox .sidenav .feedback .feedback-bd .feedbackbox .allbox ul .right .text {
+  text-align: right;
+}
+.scheme .model3d .model3d-toothBox .sidenav .feedback .feedback-bd .feedbackbox .allbox ul .right .text p {
+  color: #fff;
+  background: #1175d2;
+  text-align: left;
+}
+.scheme .model3d .model3d-toothBox .sidenav .feedback .feedback-bd .feedbackbox .allbox ul .right .headportrait {
+  margin: 0.66666667vw 3.33333333vw 0 2vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .feedback .feedback-bd .feedbackbox .allbox ul .date {
+  margin: 2.66666667vw 0 0.93333333vw 0;
+}
+.scheme .model3d .model3d-toothBox .sidenav .feedback .feedback-bd .feedbackbox .allbox ul .date p {
+  text-align: center;
+  border: none;
+  margin: auto;
+  padding: 0;
+}
+.scheme .model3d .model3d-toothBox .sidenav .feedback .feedback-bd .feedbackbox .allbox .chatbox {
+  position: absolute;
+  bottom: 0vw;
+  left: 50%;
+  margin-left: -56.66666667vw;
+  width: 113.33333333vw;
+  height: 34.4vw;
+  border-top: 1px solid #3e8ed9;
+  box-sizing: border-box;
+}
+.scheme .model3d .model3d-toothBox .sidenav .feedback .feedback-bd .feedbackbox .allbox .chatbox .iconbox {
+  display: flex;
+  padding: 2vw 2.66666667vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .feedback .feedback-bd .feedbackbox .allbox .chatbox .iconbox > div {
+  margin-right: 2.66666667vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .feedback .feedback-bd .feedbackbox .allbox .chatbox .iconbox .pictureicon img {
+  width: 2.4vw;
+  height: 2vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .feedback .feedback-bd .feedbackbox .allbox .chatbox .iconbox .fileicon img {
+  width: 2.4vw;
+  height: 2vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .feedback .feedback-bd .feedbackbox .allbox .chatbox .iconbox .screenshot img {
+  width: 2.4vw;
+  height: 2.4vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .feedback .feedback-bd .feedbackbox .allbox .chatbox .sendbtn {
+  position: absolute;
+  right: 2.26666667vw;
+  bottom: 1.86666667vw;
+  width: 13.33333333vw;
+  line-height: 4.8vw;
+  text-align: center;
+  background: #1175d2;
+  color: #fff;
+  border: 1.33333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .feedback .feedback-bd .feedbackbox .filebox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 6.93333333vw;
+  box-sizing: border-box;
+}
+.scheme .model3d .model3d-toothBox .sidenav .feedback .feedback-bd .feedbackbox .filebox ol {
+  display: flex;
+  width: 59.33333333vw;
+  justify-content: space-between;
+  margin: auto;
+}
+.scheme .model3d .model3d-toothBox .sidenav .feedback .feedback-bd .feedbackbox .filebox ol li div img {
+  width: 13.2vw;
+  height: 13.2vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .feedback .feedback-bd .feedbackbox .filebox ol li div p {
+  line-height: 3.46666667vw;
+  font-size: 2.26666667vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .feedback .feedback-bd .feedbackbox .filebox ol li div span {
+  color: #1175d2;
 }
 .scheme .model3d .model3d-step {
   display: flex;
