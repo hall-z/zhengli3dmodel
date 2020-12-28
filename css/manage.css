@@ -2948,6 +2948,7 @@ html {
   box-sizing: border-box;
   border: 1px solid #1175d2;
   background: #fff;
+  /* ts 分步 */
 }
 .scheme .model3d .model3d-toothBox .sidenav .sidenav-title {
   position: relative;
@@ -3976,6 +3977,162 @@ html {
 }
 .scheme .model3d .model3d-toothBox .sidenav .feedback .feedback-bd .feedbackbox .filebox ol li div span {
   color: #1175d2;
+}
+.scheme .model3d .model3d-toothBox .sidenav .substep {
+  position: relative;
+  width: 186.66666667vw;
+  margin-top: 1.33333333vw;
+  padding: 2.53333333vw 2vw 2.93333333vw 2.8vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .substep .procedure {
+  position: relative;
+  width: 85.6vw;
+  height: 98.66666667vw;
+  overflow-y: scroll;
+}
+.scheme .model3d .model3d-toothBox .sidenav .substep .procedure .step {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 3.33333333vw;
+  margin: 0;
+  padding: 0;
+}
+.scheme .model3d .model3d-toothBox .sidenav .substep .procedure .step li {
+  padding: 0;
+  margin: 0;
+  margin-right: 15.6vw;
+  font-size: 2.93333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .substep .procedure .step li:nth-of-type(11) {
+  margin-right: 0;
+}
+.scheme .model3d .model3d-toothBox .sidenav .substep .procedure .tooth-bit-t,
+.scheme .model3d .model3d-toothBox .sidenav .substep .procedure .tooth-bit-b {
+  position: absolute;
+  top: 2.66666667vw;
+  left: 0vw;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+.scheme .model3d .model3d-toothBox .sidenav .substep .procedure .tooth-bit-t li,
+.scheme .model3d .model3d-toothBox .sidenav .substep .procedure .tooth-bit-b li {
+  padding: 0;
+  margin: 0;
+  font-size: 2.93333333vw;
+  margin-bottom: 0.8vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .substep .procedure .tooth-bit-t li:nth-of-type(16),
+.scheme .model3d .model3d-toothBox .sidenav .substep .procedure .tooth-bit-b li:nth-of-type(16) {
+  margin-bottom: 0;
+}
+.scheme .model3d .model3d-toothBox .sidenav .substep .procedure .tooth-bit-b {
+  top: 78vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .substep .procedure .top {
+  width: 186.66666667vw;
+  margin-top: 4vw;
+  border-bottom: 0.4vw solid #c2c2c2;
+  border-right: 0.13333333vw solid #c2c2c2;
+  margin-left: 4vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .substep .procedure .top tr {
+  width: 186.66666667vw;
+  height: 4.53333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .substep .procedure .top tr td {
+  width: 11.46666667vw;
+  height: 2.4vw;
+  border-top: 0.4vw solid #c2c2c2;
+  border-left: 1px solid #c2c2c2;
+  box-sizing: border-box;
+}
+.scheme .model3d .model3d-toothBox .sidenav .substep .procedure .progress-bar {
+  position: absolute;
+  top: 0;
+  left: 39.2vw;
+  width: 4.8vw;
+  height: 145.6vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .substep .procedure .progress-bar .step-number {
+  position: relative;
+  width: 5.06666667vw;
+  height: 6.8vw;
+  color: #fff;
+}
+.scheme .model3d .model3d-toothBox .sidenav .substep .procedure .progress-bar .step-number img {
+  width: 100%;
+  height: 100%;
+}
+.scheme .model3d .model3d-toothBox .sidenav .substep .procedure .progress-bar .step-number span {
+  position: absolute;
+  top: 0.93333333vw;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2.93333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .substep .procedure .progress-bar .light-beam {
+  position: absolute;
+  top: 4vw;
+  left: 1.6vw;
+  width: 1.2vw;
+  opacity: 0.5;
+  background-color: #f9c67c;
+  height: 145.6vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .substep .foother {
+  width: 86.66666667vw;
+  margin: 0;
+  margin-top: 2.66666667vw;
+  margin-left: 0.93333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .substep .foother div {
+  display: inline-block;
+  width: 24vw;
+  padding: 0;
+  margin-right: 5.33333333vw;
+  margin-bottom: 2.13333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .substep .foother div img {
+  display: inline-block;
+  width: 4vw;
+  height: 0.8vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .substep .foother div span {
+  margin-left: 1.86666667vw;
+  font-size: 2.13333333vw;
+  color: #333333;
+}
+.scheme .model3d .model3d-toothBox .sidenav .substep .foother div:nth-of-type(3) {
+  margin-right: 0;
+}
+.scheme .model3d .model3d-toothBox .sidenav .substep .foother div:nth-of-type(3) img {
+  width: 1.86666667vw;
+  height: 2.13333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .substep .foother div:nth-of-type(4) {
+  margin-bottom: 0;
+}
+.scheme .model3d .model3d-toothBox .sidenav .substep .foother div:nth-of-type(4) img {
+  width: 1.86666667vw;
+  height: 2.26666667vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .substep .foother div:nth-of-type(5) {
+  margin-bottom: 0;
+}
+.scheme .model3d .model3d-toothBox .sidenav .substep .foother div:nth-of-type(5) img {
+  width: 1.86666667vw;
+  height: 2.26666667vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .substep .foother div:nth-of-type(6) {
+  margin-bottom: 0;
+  margin-right: 0;
+}
+.scheme .model3d .model3d-toothBox .sidenav .substep .foother div:nth-of-type(6) img {
+  width: 2.26666667vw;
+  height: 2vw;
 }
 .scheme .model3d .model3d-step {
   display: flex;
