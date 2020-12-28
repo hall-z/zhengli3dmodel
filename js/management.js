@@ -1520,7 +1520,7 @@ $(function () {
 
     /* 3d方案 开始 */
 
-
+    
     /* 控制进度条灰色 1 代表灰色 0代表蓝色 */
     let planArrayObj = {
         up: [
@@ -1754,6 +1754,7 @@ $(function () {
         $(".sidenav-bd").children().eq($(e.currentTarget).index()).show().siblings().hide();
     })
     /* 侧边栏导航点击切换 结束 */
+
 
     /* 导航栏信息 结束 */
     /* 分步信息 开始 */
