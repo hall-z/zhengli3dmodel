@@ -2943,6 +2943,13 @@ html {
   height: auto;
   margin-bottom: 2vw;
 }
+.scheme .model3d .model3d-toothBox .sidenavBox {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 124.93333333vw;
+  height: 100%;
+}
 .scheme .model3d .model3d-toothBox .sidenav {
   position: absolute;
   right: 0;

@@ -1520,7 +1520,7 @@ $(function () {
 
     /* 3d方案 开始 */
 
-    
+
     /* 控制进度条灰色 1 代表灰色 0代表蓝色 */
     let planArrayObj = {
         up: [
@@ -1737,7 +1737,7 @@ $(function () {
 
     /* 侧边导航栏点击事件 开始 */
     $(".model3d-toothNav li").on("click", (e) => {
-        $(".sidenav").removeClass("dn").css("animation", "fadeInRight 1s forwards");
+        $(".sidenavBox").removeClass("dn").css("animation", "fadeInRight 1s forwards");
         $(".sidenav-bd").children().eq($(e.currentTarget).index()).show();
         $(".sidenav-title ul").children().eq($(e.currentTarget).index()).addClass("active");
         $(".sidenav-bd").children().eq($(e.currentTarget).index()).siblings().hide();
@@ -1766,7 +1766,7 @@ $(function () {
 
     /* 点击按钮收起侧边栏 开始 */
     $(".shouq").on("click", () => {
-        $(".sidenav").css("animation", "fadeOutRight 1s forwards");
+        $(".sidenavBox").css("animation", "fadeOutRight 1s forwards");
     })
     /* 点击按钮收起侧边栏 结束 */
 
