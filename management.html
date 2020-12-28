@@ -2095,13 +2095,13 @@
                 <ul></ul>
                 <div class="modelchoice">
                     <span>切换方案：</span>
+                    <div class="xuanz">
+                        <span>方案一</span>
+                        <div>
+                            <img src="img/img/jiantou.png">
+                        </div>
+                    </div>
                     <ul>
-                        <li class="xuanz">
-                            方案一
-                            <div>
-                                <img src="img/img/jiantou.png">
-                            </div>
-                        </li>
                         <li>方案一</li>
                         <li>方案二</li>
                         <li>方案三</li>
@@ -2152,7 +2152,7 @@
                     </li>
                 </ul>
                 <!-- xzw 侧边导航 -->
-                <div class="sidenav">
+                <div class="sidenav dn">
                     <!-- 测导航内容标题 -->
                     <div class="sidenav-title">
                         <ul>
@@ -2202,7 +2202,7 @@
                             <div class="accmenu-title">
                                 <span class="active">颊侧</span>
                                 <span class="">舌侧</span>
-                            </div>  
+                            </div>
                             <div class="teeths-operation">
                                 <div class="deficiency"><img src="img/deficiency.png" alt=""><span>缺失牙齿</span></div>
                                 <div class="optimize"><img src="img/optimize.png" alt=""><span>优化附件</span></div>
@@ -2384,7 +2384,7 @@
                             <div class="accmenu-title">
                                 <span class="active">颊侧</span>
                                 <span class="">舌侧</span>
-                            </div>  
+                            </div>
                             <div class="teeths-operation">
                                 <div class="deficiency"><img src="img/deficiency.png" alt=""><span>缺失牙齿</span></div>
                             </div>
@@ -2547,7 +2547,7 @@
                         </div>
                         <!-- 图片 -->
                         <div class="picture dn">
-                            <div class="picture-title"> 
+                            <div class="picture-title">
                                 <ul>
                                     <li class="active">面向照</li>
                                     <li>口内照</li>
@@ -2569,66 +2569,68 @@
                         <!-- 概括 -->
                         <div class="generalize">
                             <div class="generalize-bd">
-                                
+
                             </div>
                         </div>
                         <!-- 反馈 -->
                         <div class="feedback dn" v-show="layerSelect == 'feedback'">
                             <div class="feedback-bd">
-                              <div class="feedbackTab">
-                                <div class="all active">所有</div>
-                                <div class="flie" >文件</div>
-                              </div>
-                              <div class="feedbackbox">
-                                <div class="allbox">
-                                  <div class="chatrecord">
-                                    <ul>
-                                      <li class="date"><p>12.07</p></li>
-                                      <li class="right">
-                                        <div class="text">
-                                          <span>14:20</span>
-                                          <p>占位符占位符占位符占位符占位符占位符占位符占位符占位符占位符占位符</p>
-                                        </div>
-                                        <div class="headportrait">
-                                          <img src="img/headportrait.png">
-                                        </div>
-                                      </li>
-                                      <li class="left">
-                                        <div class="headportrait">
-                                          <img src="img/headportrait.png">
-                                        </div>
-                                        <div class="text">
-                                          <span>14:20</span>
-                                          <p>占位符占位符占位符占位符占位符占位符占位符占位符占位符占位符占位符</p>
-                                        </div>
-                                      </li>
-                                      <li class="right">
-                                        <div class="text">
-                                          <span>14:20</span>
-                                          <p>占位符占位符占位符占位符占位符占位符占位符占位符占位符占位符占位符</p>
-                                        </div>
-                                        <div class="headportrait">
-                                          <img src="img/headportrait.png">
-                                        </div>
-                                      </li>
-                                    </ul>
-                                  </div>
-                                  <div class="chatbox">
-                                    <div class="iconbox">
-                                      <div class="pictureicon">
-                                        <img src="img/backpictureicon.png" alt="">
-                                      </div>
-                                      <div class="fileicon">
-                                        <img src="img/backfileicon.png" alt="">
-                                      </div>
-                                      <div class="screenshot">
-                                        <img src="img/screenshot.png" alt="">
-                                      </div>
-                                    </div>
-                                    <div class="sendbtn">发送</div>
-                                  </div>
+                                <div class="feedbackTab">
+                                    <div class="all active">所有</div>
+                                    <div class="flie">文件</div>
                                 </div>
-                              </div>
+                                <div class="feedbackbox">
+                                    <div class="allbox">
+                                        <div class="chatrecord">
+                                            <ul>
+                                                <li class="date">
+                                                    <p>12.07</p>
+                                                </li>
+                                                <li class="right">
+                                                    <div class="text">
+                                                        <span>14:20</span>
+                                                        <p>占位符占位符占位符占位符占位符占位符占位符占位符占位符占位符占位符</p>
+                                                    </div>
+                                                    <div class="headportrait">
+                                                        <img src="img/headportrait.png">
+                                                    </div>
+                                                </li>
+                                                <li class="left">
+                                                    <div class="headportrait">
+                                                        <img src="img/headportrait.png">
+                                                    </div>
+                                                    <div class="text">
+                                                        <span>14:20</span>
+                                                        <p>占位符占位符占位符占位符占位符占位符占位符占位符占位符占位符占位符</p>
+                                                    </div>
+                                                </li>
+                                                <li class="right">
+                                                    <div class="text">
+                                                        <span>14:20</span>
+                                                        <p>占位符占位符占位符占位符占位符占位符占位符占位符占位符占位符占位符</p>
+                                                    </div>
+                                                    <div class="headportrait">
+                                                        <img src="img/headportrait.png">
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="chatbox">
+                                            <div class="iconbox">
+                                                <div class="pictureicon">
+                                                    <img src="img/backpictureicon.png" alt="">
+                                                </div>
+                                                <div class="fileicon">
+                                                    <img src="img/backfileicon.png" alt="">
+                                                </div>
+                                                <div class="screenshot">
+                                                    <img src="img/screenshot.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="sendbtn">发送</div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
