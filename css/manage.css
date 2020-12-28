@@ -3772,6 +3772,9 @@ html {
   margin-left: -1.73333333vw;
   margin-top: -2.26666667vw;
 }
+.scheme .model3d .model3d-toothBox .sidenav .picture {
+  height: 100%;
+}
 .scheme .model3d .model3d-toothBox .sidenav .picture .picture-title ul {
   width: 42vw;
   display: flex;
@@ -3780,7 +3783,7 @@ html {
   margin: auto;
   font-size: 2.93333333vw;
   line-height: 5.06666667vw;
-  margin-top: 8.93333333vw;
+  padding-top: 8.93333333vw;
 }
 .scheme .model3d .model3d-toothBox .sidenav .picture .picture-title ul li {
   border: 0.26666667vw solid transparent;
@@ -3793,7 +3796,7 @@ html {
 .scheme .model3d .model3d-toothBox .sidenav .picture .picture-bd {
   position: relative;
   width: 113.33333333vw;
-  height: 94vw;
+  height: 80%;
   box-sizing: border-box;
   border: 1px solid #1175d2;
   margin-top: 4vw;

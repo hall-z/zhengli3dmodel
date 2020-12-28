@@ -4799,6 +4799,7 @@ html {
                 }
 
                 .picture {
+                    height: 100%;
                     .picture-title {
                         ul {
                             width: 315 /@rem;
@@ -4808,7 +4809,7 @@ html {
                             margin: auto;
                             font-size: 22 / @rem;
                             line-height: 38 / @rem;
-                            margin-top: 67 / @rem;
+                            padding-top: 67 / @rem;
 
                             li {
                                 border: 2 / @rem solid transparent;
@@ -4824,7 +4825,9 @@ html {
 
                     .picture-bd {
                         position: relative;
-                        .setwh(850, 705);
+                        // .setwh(850, 705);
+                        width: 850 / @rem;
+                        height: 80%;
                         box-sizing: border-box;
                         border: 1px solid #1175d2;
                         margin-top: 30 / @rem;
