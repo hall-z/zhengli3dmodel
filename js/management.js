@@ -1745,6 +1745,22 @@ $(function () {
     })
     /* 侧边导航栏点击事件 结束 */
 
+    /* 点击切换方案备注历史记录开始 */
+    $(".scheme-title div").click((e) => {
+        $(e.currentTarget).addClass("active").siblings().removeClass("active");
+        $(".scheme-bd").hide()
+        $(".scheme-bd").eq($(e.currentTarget).index()).show();
+    })
+    /* 点击切换方案备注历史记录结束 */
+
+    /* 点击切换所有文件开始 */
+    $(".feedbackTab div").click((e) => {
+        $(e.currentTarget).addClass("active").siblings().removeClass("active");
+        $(".feedbackbox").hide();
+        $(".feedbackbox").eq($(e.currentTarget).index()).show();
+    })
+    /* 点击切换所有文件结束 */
+
     /* 选择方案 开始 */
     $(".modelchoice .xuanz").on("click", () => {
         $(".modelchoice ul").slideToggle();
