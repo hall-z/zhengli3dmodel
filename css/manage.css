@@ -2844,7 +2844,7 @@ html {
   position: absolute;
   z-index: 2;
   top: 6.66666667vw;
-  right: 0.13333333vw;
+  right: 0;
   border: 1px solid #1175d2;
   background-color: #fff;
   color: #1175d2;
@@ -2950,6 +2950,25 @@ html {
   width: 124.93333333vw;
   height: 100%;
 }
+.scheme .model3d .model3d-toothBox .swiper-container {
+  height: 86%;
+}
+.scheme .model3d .model3d-toothBox .swiper-container img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+.scheme .model3d .model3d-toothBox .swiperBox {
+  border: 1px solid #1175d2;
+  width: 96%;
+  height: 78%;
+  margin-top: 4vw;
+}
 .scheme .model3d .model3d-toothBox .sidenav {
   position: absolute;
   right: 0;
@@ -3030,6 +3049,7 @@ html {
   border-radius: 2.66666667vw;
   padding: 1.2vw 2.66666667vw;
   box-sizing: border-box;
+  overflow-y: auto;
 }
 .scheme .model3d .model3d-toothBox .sidenav .modification .scheme-bd .date {
   margin-top: 3.46666667vw;
@@ -3806,27 +3826,30 @@ html {
   color: #1175d2;
   border-bottom-color: #1175d2;
 }
-.scheme .model3d .model3d-toothBox .sidenav .picture .picture-bd {
-  position: relative;
-  width: 113.33333333vw;
-  height: 80%;
-  box-sizing: border-box;
-  border: 1px solid #1175d2;
-  margin-top: 4vw;
-}
-.scheme .model3d .model3d-toothBox .sidenav .picture .picture-bd .arrleft {
+.scheme .model3d .model3d-toothBox .sidenav .picture .arrleft {
   width: 2.66666667vw;
   height: 4.26666667vw;
   position: absolute;
   left: 5.33333333vw;
   top: 57.33333333vw;
 }
-.scheme .model3d .model3d-toothBox .sidenav .picture .picture-bd .arrright {
+.scheme .model3d .model3d-toothBox .sidenav .picture .arrleft:after {
+  font-size: 0;
+}
+.scheme .model3d .model3d-toothBox .sidenav .picture .arrright {
   width: 2.66666667vw;
   height: 4.26666667vw;
   position: absolute;
   right: 5.33333333vw;
   top: 57.33333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .picture .arrright:after {
+  font-size: 0;
+}
+.scheme .model3d .model3d-toothBox .sidenav .picture .picture-bd {
+  position: relative;
+  height: 95%;
+  box-sizing: border-box;
 }
 .scheme .model3d .model3d-toothBox .sidenav .picture .picture-bd .content {
   width: 17.73333333vw;
@@ -3836,6 +3859,9 @@ html {
   left: 50%;
   margin-left: -8.86666667vw;
   margin-top: -13.33333333vw;
+}
+.scheme .model3d .model3d-toothBox .sidenav .picture .picture-bd .content:after {
+  width: 0;
 }
 .scheme .model3d .model3d-toothBox .sidenav .generalize {
   width: 113.33333333vw;
@@ -3887,11 +3913,15 @@ html {
   height: 100%;
   padding-top: 7.33333333vw;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
 }
 .scheme .model3d .model3d-toothBox .sidenav .feedback .feedback-bd .feedbackbox .allbox .chatrecord {
   width: 113.33333333vw;
   height: 66.66666667vw;
   overflow-y: auto;
+  flex: 1;
 }
 .scheme .model3d .model3d-toothBox .sidenav .feedback .feedback-bd .feedbackbox .allbox ul {
   width: 100%;
@@ -3948,14 +3978,13 @@ html {
   padding: 0;
 }
 .scheme .model3d .model3d-toothBox .sidenav .feedback .feedback-bd .feedbackbox .allbox .chatbox {
-  position: absolute;
-  bottom: 0vw;
-  left: 50%;
-  margin-left: -56.66666667vw;
+  position: relative;
   width: 113.33333333vw;
   height: 34.4vw;
+  min-height: 34.4vw;
   border-top: 1px solid #3e8ed9;
   box-sizing: border-box;
+  background-color: #fff;
 }
 .scheme .model3d .model3d-toothBox .sidenav .feedback .feedback-bd .feedbackbox .allbox .chatbox .iconbox {
   display: flex;
@@ -4320,8 +4349,8 @@ html {
 }
 .scheme .amount .content .content-top .dental-arch ul li .photo,
 .scheme .amount .content .content-top .pars-basilaris ul li .photo {
-  width: 2.53333333vw;
-  height: 2.4vw;
+  width: 3.46666667vw;
+  height: 3.46666667vw;
   overflow: hidden;
   margin: auto;
 }

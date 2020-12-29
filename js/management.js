@@ -1776,6 +1776,68 @@ $(function () {
     })
     /* 点击切换移动方式 结束 */
 
+    /* 点击切换照片开始 */
+    let mxArr = [
+        "img/13.png",
+        "img/14.png",
+        "img/15.png"
+    ]
+    let knArr = [
+        "img/16.png",
+        "img/17.png",
+        "img/18.png"
+    ]
+    let XArr = [
+        "img/21.png",
+        "img/22.png",
+        "img/23.png",
+        "img/24.png"
+    ]
+    var swiper = new Swiper('.swiper-container', {
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        observer: true,
+        observeParents: true,
+        observeSlideChildren: true,
+        on: {
+            transitionStart: function () {
+                judge(this.activeIndex);
+            },
+        },
+    });
+    let zhaopArr = [...mxArr, ...knArr, ...XArr];
+    let zhaopS = '';
+    zhaopArr.forEach((item, index) => {
+        zhaopS += `
+            <div  class="swiper-slide">
+                <img src="${item}">
+            </div>
+        `
+    })
+    $(".swiper-wrapper").html(zhaopS);
+    function judge (idx) {
+        $(".picture-title ul li").removeClass("active");
+        if (idx >= 0 && idx < mxArr.length) {
+            $(".picture-title ul li").eq(0).addClass("active");
+        } else if (idx >= mxArr.length && idx < mxArr.length + knArr.length) {
+            $(".picture-title ul li").eq(1).addClass("active");
+        } else if (idx >= mxArr.length + knArr.length && idx < zhaopArr.length) {
+            $(".picture-title ul li").eq(2).addClass("active");
+        }
+    }
+    $(".picture-title ul li").click((e) => {
+        if ($(e.currentTarget).index() === 0) {
+            swiper.slideTo(0);
+        } else if ($(e.currentTarget).index() === 1) {
+            swiper.slideTo(mxArr.length);
+        } else if ($(e.currentTarget).index() === 2) {
+            swiper.slideTo(mxArr.length + XArr.length - 1);
+        }
+    })
+    /* 点击切换照片结束 */
+
     /* 导航栏信息 结束 */
     /* 分步信息 开始 */
     let stepMsgList = [

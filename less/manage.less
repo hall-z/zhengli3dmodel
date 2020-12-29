@@ -3592,7 +3592,7 @@ html {
                     position: absolute;
                     z-index: 2;
                     top: 50 / @rem;
-                    right: 1/@rem;
+                    right: 0;
                     border: 1px solid #1175d2;
                     background-color: #fff;
                     color: #1175d2;
@@ -3710,6 +3710,25 @@ html {
                 width: 937 / @rem;
                 height: 100%;
             }
+            .swiper-container {
+                height: 86%;
+                img {
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%,-50%);
+                    width: auto;
+                    height: auto;
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
+            .swiperBox {
+                border: 1px solid #1175d2;
+                width: 96%;
+                height: 78%;
+                margin-top: 30 / @rem;
+            }
             .sidenav {
                 position: absolute;
                 right: 0;
@@ -3793,6 +3812,7 @@ html {
                         border-radius: 20 / @rem;
                         padding: 9 / @rem 20 / @rem;
                         box-sizing: border-box;
+                        overflow-y: auto;
 
                         .date {
                             margin-top: 26 / @rem;
@@ -4841,28 +4861,36 @@ html {
                             }
                         }
                     }
+                    .arrleft {
+                        .setwh(20, 32);
+                        .lt(40, 430);
+                        &:after {
+                            font-size: 0;
+                        }
+                    }
+
+                    .arrright {
+                        .setwh(20, 32);
+                        .rt(40, 430);
+                        &:after {
+                            font-size: 0;
+                        }
+                    }
 
                     .picture-bd {
                         position: relative;
-                        width: 850 / @rem;
-                        height: 80%;
+                        // width: 850 / @rem;
+                        height: 95%;
                         box-sizing: border-box;
-                        border: 1px solid #1175d2;
-                        margin-top: 30 / @rem;
 
-                        .arrleft {
-                            .setwh(20, 32);
-                            .lt(40, 430)
-                        }
-
-                        .arrright {
-                            .setwh(20, 32);
-                            .rt(40, 430)
-                        }
+                        
 
                         .content {
                             .setwh(133, 200);
                             .cc(133, 200);
+                            &:after {
+                                width: 0;
+                            }
                         }
                     }
                 }
@@ -4917,15 +4945,19 @@ html {
                                 height: 100%;
                                 padding-top: 55 / @rem;
                                 box-sizing: border-box;
+                                display: flex;
+                                flex-direction: column;
+                                background-color: #f9f9f9;
 
                                 .chatrecord {
                                     .setwh(850, 500);
                                     overflow-y: auto;
+                                    flex: 1;
+
                                 }
 
                                 ul {
                                     width: 100%;
-
                                     li {
                                         display: flex;
                                         align-items: top;
@@ -4990,11 +5022,13 @@ html {
                                 }
 
                                 .chatbox {
-                                    .bc(0, 850);
+                                    // .bc(0, 850);
+                                    position: relative;
                                     .setwh(850, 258);
+                                    min-height: 258 / @rem;
                                     border-top: 1px solid #3e8ed9;
                                     box-sizing: border-box;
-
+                                    background-color: #fff;
                                     .iconbox {
                                         display: flex;
                                         padding: 15 / @rem 20 / @rem;
@@ -5429,8 +5463,8 @@ html {
                             margin-right: 39 / @rem;
 
                             .photo {
-                                width: 19 / @rem;
-                                height: 18 / @rem;
+                                width: 26 / @rem;
+                                height: 26 / @rem;
                                 overflow: hidden;
                                 margin: auto;
 

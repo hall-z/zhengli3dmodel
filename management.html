@@ -21,6 +21,8 @@
     <!-- <link rel="stylesheet" href="css/viewer.css"> -->
     <!-- 引入放大插件 -->
     <link rel="stylesheet" href="css/viewer.css">
+    <!-- 引入swiper插件样式 -->
+    <link rel="stylesheet" href="css/swiper.min.css">
 </head>
 
 <body>
@@ -2560,17 +2562,23 @@
                                         <li>x光片</li>
                                     </ul>
                                 </div>
-                                <div class="picture-bd">
-                                    <div class="arrleft">
-                                        <img src="img/arrowsleft.png" alt="">
-                                    </div>
-                                    <div class="arrright">
-                                        <img src="img/arrowsright.png" alt="">
-                                    </div>
-                                    <div class="content">
-                                        <img src="img/beeimgtmp.png" alt="">
+                                <div class="swiperBox">
+                                    <div class="swiper-container">
+                                        <div class="picture-bd swiper-wrapper">
+                                            <div class="content">
+                                                <img src="img/beeimgtmp.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-button-next arrright">
+                                            <img src="img/arrowsright.png" alt="">
+                                        </div>
+                                        <div class="swiper-button-prev arrleft">
+                                            <img src="img/arrowsleft.png" alt="">
+                                        </div>
                                     </div>
                                 </div>
+
+
                             </div>
                             <!-- ts 侧面 分步 -->
                             <div class="substep dn">
@@ -5724,9 +5732,12 @@
     </div>
     <!-- 患者照片- x光片 上传照片弹窗 结束 -->
 
+
     <!-- 幕旋转提示 -->
     <script src="js/LandscapeTip.js"></script>
     <script src="js/jquery.min.3.5.1.js"></script>
+    <!-- swiper插件 -->
+    <script src="js/swiper.min.js"></script>
     <script src="js/CensoredWord-0.0.1.js"></script>
     <script src="js/chooseDate.js"></script>
     <script src="js/ruidate.js"></script>
