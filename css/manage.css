@@ -3025,7 +3025,7 @@ html {
 .scheme .model3d .model3d-toothBox .sidenav .modification {
   width: 112.26666667vw;
   margin: auto;
-  height: 100%;
+  height: 93%;
 }
 .scheme .model3d .model3d-toothBox .sidenav .modification .scheme-title {
   display: flex;
@@ -3047,7 +3047,7 @@ html {
   margin-top: 2vw;
   border: 1px solid #1175d2;
   border-radius: 2.66666667vw;
-  padding: 1.2vw 2.66666667vw;
+  padding: 1.2vw 2.66666667vw 2vw;
   box-sizing: border-box;
   overflow-y: auto;
 }
