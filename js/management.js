@@ -1700,39 +1700,39 @@ $(function () {
     })
 
     /* 拖动弹框开始 */
-    function monolayerMove (e) {
-        console.log(e.currentTarget, e, e.target);
-        let el = e.currentTarget;
-        let startL = el.offsetLeft;
-        let startT = el.offsetTop;
-        let startY = e.pageY;
-        let startX = e.pageX;
-        // document.querySelector(".moveAmount").onmousemove = (e) => {
-        el.ontouchmove = (e) => {
-            let moveX = e.pageX - startX + startL;
-            let moveY = e.pageY - startY + startT;
-            if (moveX <= 0) {
-                moveX = 0;
-            } else if (moveX >= document.querySelector(".model3d-toothBox").clientWidth - el.clientWidth) {
-                moveX = document.querySelector(".model3d-toothBox").clientWidth - el.clientWidth;
-            }
-            if (moveY <= document.querySelector(".model3d-top").clientHeight + document.querySelector(".model3d-nav").clientHeight) {
-                moveY = document.querySelector(".model3d-top").clientHeight + document.querySelector(".model3d-nav").clientHeight;
-            } else if (moveY >= document.body.clientHeight - document.querySelector(".model3d-step").clientHeight - el.clientHeight) {
-                moveY = document.body.clientHeight - document.querySelector(".model3d-step").clientHeight - el.clientHeight;
-            }
-            /* 判断是否是偏好及Bolton弹层 */
-            if (el == document.querySelector(".analyse") || el == document.querySelector(".preference")) {
-                el.style.margin = "0";
-            }
-            el.style.left = moveX + "px";
-            el.style.top = moveY + "px";
-        };
+    // function monolayerMove (e) {
+    //     console.log(e.currentTarget, e, e.target);
+    //     let el = e.currentTarget;
+    //     let startL = el.offsetLeft;
+    //     let startT = el.offsetTop;
+    //     let startY = e.pageY;
+    //     let startX = e.pageX;
+    //     // document.querySelector(".moveAmount").onmousemove = (e) => {
+    //     el.ontouchmove = (e) => {
+    //         let moveX = e.pageX - startX + startL;
+    //         let moveY = e.pageY - startY + startT;
+    //         if (moveX <= 0) {
+    //             moveX = 0;
+    //         } else if (moveX >= document.querySelector(".model3d-toothBox").clientWidth - el.clientWidth) {
+    //             moveX = document.querySelector(".model3d-toothBox").clientWidth - el.clientWidth;
+    //         }
+    //         if (moveY <= document.querySelector(".model3d-top").clientHeight + document.querySelector(".model3d-nav").clientHeight) {
+    //             moveY = document.querySelector(".model3d-top").clientHeight + document.querySelector(".model3d-nav").clientHeight;
+    //         } else if (moveY >= document.body.clientHeight - document.querySelector(".model3d-step").clientHeight - el.clientHeight) {
+    //             moveY = document.body.clientHeight - document.querySelector(".model3d-step").clientHeight - el.clientHeight;
+    //         }
+    //         /* 判断是否是偏好及Bolton弹层 */
+    //         if (el == document.querySelector(".analyse") || el == document.querySelector(".preference")) {
+    //             el.style.margin = "0";
+    //         }
+    //         el.style.left = moveX + "px";
+    //         el.style.top = moveY + "px";
+    //     };
 
-        // el.ontouchend = () => {
-        //     document.querySelector("body").ontouchmove = null;
-        // };
-    }
+    //     // el.ontouchend = () => {
+    //     //     document.querySelector("body").ontouchmove = null;
+    //     // };
+    // }
     /* 拖动弹框结束 */
 
     /* 侧边导航栏点击事件 开始 */
@@ -1937,63 +1937,63 @@ $(function () {
 
 
     /* 3d方案 偏好选择 旋转 */
-    $(".preference .content .interface .rotate ul li").click(function(e){
-        console.log($(this).children(".photo").children("img"),$(this).siblings());
-        $(this).children(".photo").children("img").eq(0).css("display","none");
-        $(e.currentTarget).siblings().find("img:nth-of-type(1)").css("display","block");
+    $(".preference .content .interface .rotate ul li").click(function (e) {
+        console.log($(this).children(".photo").children("img"), $(this).siblings());
+        $(this).children(".photo").children("img").eq(0).css("display", "none");
+        $(e.currentTarget).siblings().find("img:nth-of-type(1)").css("display", "block");
     })
     /* 3d方案 偏好选择 患者 */
-    $(".preference .content .interface .patient ul li").click(function(e){
-        $(this).children(".photo").children("img").eq(0).css("display","none");
-        $(this).siblings().children(".photo").children("img").eq(0).css("display","block");
+    $(".preference .content .interface .patient ul li").click(function (e) {
+        $(this).children(".photo").children("img").eq(0).css("display", "none");
+        $(this).siblings().children(".photo").children("img").eq(0).css("display", "block");
     })
-    
+
     /* 3d方案 偏好颜色选择 */
     var colorFlag = true; //判断颜色
-    $(".preference .select .arrow").click(function(){
+    $(".preference .select .arrow").click(function () {
         if (colorFlag) {
             $(this).siblings(".color-selection").removeClass("dn");
-            $(this).children("img").eq(0).css("display","none");
+            $(this).children("img").eq(0).css("display", "none");
             colorFlag = false;
-        }else {
+        } else {
             $(this).siblings(".color-selection").addClass("dn");
-            $(this).children("img").eq(0).css("display","block");
+            $(this).children("img").eq(0).css("display", "block");
             colorFlag = true;
         }
     })
 
     /* 3d方案 偏好牙齿选择 */
     var theethFlag = true; //判断颜色
-    $(".preference .interface .foother .choice").click(function(){
+    $(".preference .interface .foother .choice").click(function () {
         console.log(111);
         if (theethFlag) {
-            $(this).children("img").eq(0).css("display","none");
-            $(this).children("img").eq(1).css("display","block");
+            $(this).children("img").eq(0).css("display", "none");
+            $(this).children("img").eq(1).css("display", "block");
             theethFlag = false;
-        }else {
-            $(this).children("img").eq(0).css("display","block");
-            $(this).children("img").eq(1).css("display","none");
+        } else {
+            $(this).children("img").eq(0).css("display", "block");
+            $(this).children("img").eq(1).css("display", "none");
             theethFlag = true;
         }
     })
 
     /* 3d方案 更换颜色 */
-    $(".color-selection li").click(function(){
+    $(".color-selection li").click(function () {
         $(this).addClass("active");
         $(this).siblings().removeClass("active");
         var color = $(this).css("background-color");
-        $(this).parent().siblings(".background-color").css("background-color",color);
+        $(this).parent().siblings(".background-color").css("background-color", color);
     })
 
     /* 3d方案 移动量选择 旋转 */
-    $(".amount .dental-arch ul li").click(function(e){
-        $(this).children(".photo").children("img").eq(0).css("display","none");
-        $(e.currentTarget).siblings().find("img:nth-of-type(1)").css("display","block");
+    $(".amount .dental-arch ul li").click(function (e) {
+        $(this).children(".photo").children("img").eq(0).css("display", "none");
+        $(e.currentTarget).siblings().find("img:nth-of-type(1)").css("display", "block");
     })
     /* 3d方案 移动量选择 患者 */
-    $(".amount .pars-basilaris ul li").click(function(e){
-        $(this).children(".photo").children("img").eq(0).css("display","none");
-        $(this).siblings().children(".photo").children("img").eq(0).css("display","block");
+    $(".amount .pars-basilaris ul li").click(function (e) {
+        $(this).children(".photo").children("img").eq(0).css("display", "none");
+        $(this).siblings().children(".photo").children("img").eq(0).css("display", "block");
     })
 
     /* 记录3d路径 */

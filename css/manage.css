@@ -2963,6 +2963,10 @@ html {
   max-width: 100%;
   max-height: 100%;
 }
+.scheme .model3d .model3d-toothBox .swiper-container .swiper-button-next,
+.scheme .model3d .model3d-toothBox .swiper-container .swiper-button-prev {
+  outline: none;
+}
 .scheme .model3d .model3d-toothBox .swiperBox {
   border: 1px solid #1175d2;
   width: 96%;
