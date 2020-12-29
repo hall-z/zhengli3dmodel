@@ -5403,12 +5403,13 @@ html {
     /* ts 移动量 */
     .amount {
         position: absolute;
-        bottom: 116 / @rem;
+        bottom: 146 / @rem;
         left: 200 / @rem;
         width: 1942 / @rem;
         background-color: #f9f9f9;
         overflow: hidden;
         height: 623 / @rem;
+        z-index: 6;
 
         .header {
             display: flex;
@@ -5542,11 +5543,12 @@ html {
     /* ts Bloton分析 */
     .analyse {
         position: absolute;
-        top: 210 / @rem;
+        top: 280 / @rem;
         left: 0 / @rem;
         width: 700 / @rem;
         background-color: #f9f9f9;
         overflow: hidden;
+        z-index: 6;
 
         .header {
             display: flex;
@@ -5673,13 +5675,13 @@ html {
     /* ts 偏好 */
     .preference {
         position: absolute;
-        top: 54%;
+        top: 280 / @rem;
         left: 50%;
         margin-left: -350 / @rem;
-        margin-top: -324 / @rem;
         width: 700 / @rem;
         background-color: #f9f9f9;
         overflow: hidden;
+        z-index: 6;
 
         .header {
             display: flex;
@@ -5773,6 +5775,7 @@ html {
                     }
 
                     .right {
+                        position: relative;
                         margin-left: 79 / @rem;
                     }
                 }
@@ -5823,9 +5826,9 @@ html {
 
                 .color-selection {
                     position: absolute;
-                    top: 38 / @rem;
+                    top: 52 / @rem;
                     left: 0;
-                    width: 190 / @rem;
+                    width: 230 / @rem;
                     height: 50 / @rem;
                     padding: 15 / @rem 7 / @rem;
                     border: 1px solid #f99400;
@@ -5838,18 +5841,57 @@ html {
                         height: 24 / @rem;
                         box-sizing: border-box;
                         margin-right: 9 / @rem;
+                        background: #dfe0e2;
                     }
 
                     li.active {
                         border: 1px solid #f99400;
                     }
 
+                    li:nth-of-type(2) {
+                        background: #000000;
+                    }
+
+                    li:nth-of-type(3) {
+                        background: #ffffff;
+                    }
+
+                    li:nth-of-type(4) {
+                        background: #eaf7fe;
+                    }
+
+                    li:nth-of-type(5) {
+                        background: #666158;
+                    }
+
                     li:nth-of-type(6) {
                         margin-right: 0;
+                        background: #251e18;
+                    }
+
+                    li:nth-of-type(7) {
+                        background: #e76f6f;
+                    }
+
+                    li:nth-of-type(8) {
+                        background: #ecdecd;
+                    }
+
+                    li:nth-of-type(9) {
+                        background: #e7976f;
+                    }
+
+                    li:nth-of-type(10) {
+                        background: #d3e76f;
+                    }
+
+                    li:nth-of-type(11) {
+                        background: #6fe7e7;
                     }
 
                     li:nth-of-type(12) {
                         margin-right: 0;
+                        background: #6fabe7;
                     }
                 }
             }
