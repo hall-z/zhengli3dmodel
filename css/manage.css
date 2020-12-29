@@ -4203,8 +4203,8 @@ html {
 }
 .scheme .model3d .model3d-toothBox .sidenav .substep .procedure .progress-bar .light-beam {
   position: absolute;
-  top: 4vw;
-  left: 1.6vw;
+  top: 6.8vw;
+  left: 1.73333333vw;
   width: 1.2vw;
   opacity: 0.5;
   background-color: #f9c67c;
@@ -4725,6 +4725,9 @@ html {
   position: relative;
   margin-left: 10.53333333vw;
 }
+.scheme .preference .content .color .background .right .color-selection {
+  left: -11.2vw;
+}
 .scheme .preference .content .color .bite {
   display: flex;
 }
@@ -4866,21 +4869,22 @@ html {
   color: #666;
   font-size: 3.2vw;
 }
-.scheme .preference .content .interface .select {
+.scheme .preference .content .interface .foother {
   display: flex;
   flex-direction: row;
   margin-bottom: 18.66666667vw;
 }
-.scheme .preference .content .interface .select .choice {
+.scheme .preference .content .interface .foother .choice {
   width: 3.46666667vw;
   height: 3.46666667vw;
   margin: 0;
+  overflow: hidden;
 }
-.scheme .preference .content .interface .select .choice img {
+.scheme .preference .content .interface .foother .choice img {
   width: 100%;
   height: 100%;
 }
-.scheme .preference .content .interface .select span {
+.scheme .preference .content .interface .foother span {
   font-size: 3.2vw;
   color: #333;
   margin-left: 1.73333333vw;
